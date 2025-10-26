@@ -1,0 +1,80 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+*.egg-info/
+dist/
+build/
+
+# Environment variables (IMPORTANT - don't share API keys!)
+.env
+.env.local
+*.key
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Data files (tracked with DVC instead!)
+data/raw/*.csv
+data/raw/*.json
+data/raw/*.parquet
+data/raw/*.xlsx
+data/processed/*.csv
+data/processed/*.json
+data/processed/*.parquet
+data/embeddings/*.parquet
+
+# Keep DVC metadata
+!data/.dvc
+!data/**/*.dvc
+
+# Logs
+*.log
+logs/**/*.log
+airflow/logs/**
+
+# Databases
+*.db
+*.sqlite
+*.sqlite3
+postgres_data/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Docker
+*.pid
+docker-compose.override.yml
+
+# Large files
+*.tar.gz
+*.zip
+*.7z
+*.rar
+
+# Airflow
+airflow.db
+airflow.cfg
+webserver_config.py
+airflow-webserver.pid
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+.cache/

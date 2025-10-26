@@ -1,0 +1,63 @@
+# ============================================
+# PROPBOT - WEEK 1-2 DEPENDENCIES
+# Data Collection Phase
+# ============================================
+
+# Core data processing
+pandas==2.1.0
+numpy==1.25.2
+
+# HTTP requests for APIs
+requests==2.31.0
+
+# Environment management
+python-dotenv==1.0.0
+
+# Progress bars
+tqdm==4.66.1
+
+# Geospatial calculations
+geopy==2.4.0
+
+# Date/time utilities
+python-dateutil==2.8.2
+
+# Excel file handling
+openpyxl==3.1.2
+
+# Logging
+loguru==0.7.2
+
+# ============================================
+# WEEK 3-4: DATABASE & PIPELINE (Install later)
+# ============================================
+# Uncomment these when you reach Week 3:
+# psycopg2-binary==2.9.9
+# sqlalchemy==2.0.23
+# chromadb==0.4.22
+# apache-airflow==2.7.3
+# dvc==3.30.0
+
+# ============================================
+# WEEK 5-6: EMBEDDINGS & RAG (Install later)
+# ============================================
+# Uncomment these when you reach Week 5:
+# sentence-transformers==2.2.2
+# transformers==4.36.0
+
+# ============================================
+# WEEK 7+: API & LLM (Install later)
+# ============================================
+# Uncomment these when you reach Week 7:
+# fastapi==0.109.0
+# uvicorn[standard]==0.25.0
+# openai==1.6.1
+# pydantic==2.5.0
+
+# ============================================
+# TESTING (Install later)
+# ============================================
+# Uncomment when you start testing:
+# pytest==7.4.3
+# pytest-cov==4.1.0
+# great-expectations==0.18.8
