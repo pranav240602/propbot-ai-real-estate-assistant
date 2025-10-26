@@ -10,7 +10,7 @@
 3. Gayatri Nair
 4. Priyanka Raj Rajendran
 5. Nishchay Gowda
-6. Shivakumar Lokesh
+6. Shivakumar Hassan Lokesh
 
 ##  Project Overview
 PropBot is an intelligent conversational AI assistant for Boston real estate search. It combines:
