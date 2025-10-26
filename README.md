@@ -116,6 +116,11 @@ MIT License - Academic Project
 
 ##  Contact
 Dhanush Manoharan - manoharan.dh@northeastern.edu  
+Pranav Rangbulla -
+Gayatri Nair -
+Priyanka Raj Rajendran -
+Nishchay Gowda - 
+Shivakumar Hassan Lokesh - 
 GitHub: https://github.com/pranav240602/propbot-ai-real-estate-assistant
 ```
 
