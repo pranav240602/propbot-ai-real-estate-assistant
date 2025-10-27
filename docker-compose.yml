@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  chromadb:
+    image: chromadb/chroma
+    container_name: propbot_chromadb
+    restart: always
+    ports:
+      - "8000:8000"
