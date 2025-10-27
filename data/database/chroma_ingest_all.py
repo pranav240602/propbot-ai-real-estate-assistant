@@ -74,20 +74,20 @@ def store_to_chroma(csv_path, collection_name, text_columns, meta_columns, batch
 # =============================
 if __name__ == "__main__":
 
-    # 🏠 Properties
-    # store_to_chroma(
-    #     csv_path="data/processed/Boston/properties_CLEAN_20251025.csv",
-    #     collection_name="propbot_properties",
-    #     text_columns=[
-    #         "full_address", "CITY", "zip_code", "LU_DESC",
-    #         "STRUCTURE_CLASS", "EXT_FINISHED", "OVERALL_COND",
-    #         "HEAT_TYPE", "AC_TYPE"
-    #     ],
-    #     meta_columns=[
-    #         "zip_code", "CITY", "TOTAL_VALUE", "LAND_VALUE",
-    #         "BLDG_VALUE", "BED_RMS", "FULL_BTH", "NUM_PARKING", "year_built"
-    #     ]
-    # )
+    🏠 Properties
+    store_to_chroma(
+        csv_path="data/processed/Boston/properties_CLEAN_20251025.csv",
+        collection_name="propbot_properties",
+        text_columns=[
+            "full_address", "CITY", "zip_code", "LU_DESC",
+            "STRUCTURE_CLASS", "EXT_FINISHED", "OVERALL_COND",
+            "HEAT_TYPE", "AC_TYPE"
+        ],
+        meta_columns=[
+            "zip_code", "CITY", "TOTAL_VALUE", "LAND_VALUE",
+            "BLDG_VALUE", "BED_RMS", "FULL_BTH", "NUM_PARKING", "year_built"
+        ]
+    )
 
     # 🚓 Crime
     store_to_chroma(
@@ -116,32 +116,32 @@ if __name__ == "__main__":
 
     )
 
-    # 🏪 Amenities
-    # store_to_chroma(
-    #     csv_path="data/processed/Boston/amenities_CLEAN_20251025.csv",
-    #     collection_name="propbot_amenities",
-    #     text_columns=[
-    #         "name", "category", "address", "zip_code"
-    #     ],
-    #     meta_columns=[
-    #         "zip_code", "category", "rating", "latitude", "longitude"
-    #     ]
-    # )
+    🏪 Amenities
+    store_to_chroma(
+        csv_path="data/processed/Boston/amenities_CLEAN_20251025.csv",
+        collection_name="propbot_amenities",
+        text_columns=[
+            "name", "category", "address", "zip_code"
+        ],
+        meta_columns=[
+            "zip_code", "category", "rating", "latitude", "longitude"
+        ]
+    )
 
 
-    # 🚉 Transit
-    # store_to_chroma(
-    #     csv_path="data/processed/Boston/transit_CLEAN_20251025.csv",
-    #     collection_name="propbot_transit",
-    #     text_columns=[
-    #         "station_name",       # Descriptive station name
-    #         "municipality",       # City/town
-    #         "wheelchair_accessible",  # Accessibility info
-    #         "vehicle_type"        # Bus/train/light rail indicator
-    #     ],
-    #     meta_columns=[
-    #         "station_id", "latitude", "longitude", "location_type"
-    #     ]
-    # )
+    🚉 Transit
+    store_to_chroma(
+        csv_path="data/processed/Boston/transit_CLEAN_20251025.csv",
+        collection_name="propbot_transit",
+        text_columns=[
+            "station_name",       # Descriptive station name
+            "municipality",       # City/town
+            "wheelchair_accessible",  # Accessibility info
+            "vehicle_type"        # Bus/train/light rail indicator
+        ],
+        meta_columns=[
+            "station_id", "latitude", "longitude", "location_type"
+        ]
+    )
 
     print("✅ All datasets stored successfully in ChromaDB!")
