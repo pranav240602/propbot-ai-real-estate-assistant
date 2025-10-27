@@ -80,3 +80,6 @@ temp/
 .cache/
 /data
 /chroma_backup
+docker-compose.yaml
+dags/
+logs/
