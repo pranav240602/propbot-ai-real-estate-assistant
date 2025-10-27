@@ -1,0 +1,23 @@
+stages:
+  data_acquisition:
+    cmd: python scripts/Boston/collect_properties.py
+    deps:
+      - scripts/Boston/collect_properties.py
+    outs:
+      - data/raw/
+
+  preprocessing:
+    cmd: python scripts/Boston/clean_all_datasets.py
+    deps:
+      - scripts/Boston/clean_all_datasets.py
+      - data/raw/
+    outs:
+      - data/processed/
+
+  chromadb_ingestion:
+    cmd: python data/database/chroma_ingest_all.py
+    deps:
+      - data/database/chroma_ingest_all.py
+      - data/processed/
+    outs:
+      - chroma_backup/

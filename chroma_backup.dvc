@@ -1,0 +1,6 @@
+outs:
+- md5: 8fd56c18d1c63ff56de0bba488d2a739.dir
+  size: 6934288860
+  nfiles: 63
+  hash: md5
+  path: chroma_backup

@@ -78,3 +78,5 @@ tmp/
 temp/
 *.tmp
 .cache/
+/data
+/chroma_backup
