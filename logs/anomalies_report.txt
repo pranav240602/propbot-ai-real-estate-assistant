@@ -1,0 +1,107 @@
+Anomaly Detection Report - 2025-10-27 13:45:49.856487
+============================================================
+
+{'file': 'transit_CLEAN_20251025.csv', 'type': 'missing_values', 'column': 'vehicle_type', 'count': 120, 'percentage': 3.978779840848806}
+{'file': 'transit_CLEAN_20251025.csv', 'type': 'outliers', 'column': 'longitude', 'count': 2, 'percentage': 0.0663129973474801, 'bounds': '[-71.21, -70.98]'}
+{'file': 'transit_CLEAN_20251025.csv', 'type': 'outliers', 'column': 'location_type', 'count': 120, 'percentage': 3.978779840848806, 'bounds': '[0.00, 0.00]'}
+{'file': 'transit_CLEAN_20251025.csv', 'type': 'outliers', 'column': 'vehicle_type', 'count': 318, 'percentage': 10.543766578249338, 'bounds': '[3.00, 3.00]'}
+{'file': 'boston_crime_2020_2025_complete_20251024.csv', 'type': 'missing_values', 'column': 'OFFENSE_CODE_GROUP', 'count': 316467, 'percentage': 100.0}
+{'file': 'boston_crime_2020_2025_complete_20251024.csv', 'type': 'missing_values', 'column': 'DISTRICT', 'count': 1498, 'percentage': 0.4733510918989973}
+{'file': 'boston_crime_2020_2025_complete_20251024.csv', 'type': 'missing_values', 'column': 'REPORTING_AREA', 'count': 17547, 'percentage': 5.544653944961086}
+{'file': 'boston_crime_2020_2025_complete_20251024.csv', 'type': 'missing_values', 'column': 'OCCURRED_ON_DATE', 'count': 100000, 'percentage': 31.598871288317582}
+{'file': 'boston_crime_2020_2025_complete_20251024.csv', 'type': 'missing_values', 'column': 'UCR_PART', 'count': 316467, 'percentage': 100.0}
+{'file': 'boston_crime_2020_2025_complete_20251024.csv', 'type': 'missing_values', 'column': 'STREET', 'count': 681, 'percentage': 0.21518831347344275}
+{'file': 'boston_crime_2020_2025_complete_20251024.csv', 'type': 'missing_values', 'column': 'LAT', 'count': 13198, 'percentage': 4.170419032632154}
+{'file': 'boston_crime_2020_2025_complete_20251024.csv', 'type': 'missing_values', 'column': 'LONG', 'count': 13198, 'percentage': 4.170419032632154}
+{'file': 'boston_crime_2020_2025_complete_20251024.csv', 'type': 'missing_values', 'column': 'LOCATION', 'count': 13198, 'percentage': 4.170419032632154}
+{'file': 'boston_crime_2020_2025_complete_20251024.csv', 'type': 'missing_values', 'column': '_ID', 'count': 216467, 'percentage': 68.40112871168242}
+{'file': 'boston_crime_2020_2025_complete_20251024.csv', 'type': 'outliers', 'column': 'OFFENSE_CODE', 'count': 1, 'percentage': 0.00031598871288317584, 'bounds': '[-2046.50, 6349.50]'}
+{'file': 'boston_crime_2020_2025_complete_20251024.csv', 'type': 'outliers', 'column': 'SHOOTING', 'count': 3493, 'percentage': 1.1037485741009332, 'bounds': '[0.00, 0.00]'}
+{'file': 'boston_crime_2020_2025_complete_20251024.csv', 'type': 'outliers', 'column': 'LAT', 'count': 7, 'percentage': 0.0022119209901822305, 'bounds': '[42.22, 42.43]'}
+{'file': 'boston_crime_2020_2025_complete_20251024.csv', 'type': 'outliers', 'column': 'LONG', 'count': 5410, 'percentage': 1.7094989366979814, 'bounds': '[-71.16, -71.00]'}
+{'file': 'crime_2020_2025_CLEAN_20251025.csv', 'type': 'missing_values', 'column': 'OFFENSE_CODE_GROUP', 'count': 316467, 'percentage': 100.0}
+{'file': 'crime_2020_2025_CLEAN_20251025.csv', 'type': 'missing_values', 'column': 'DISTRICT', 'count': 1498, 'percentage': 0.4733510918989973}
+{'file': 'crime_2020_2025_CLEAN_20251025.csv', 'type': 'missing_values', 'column': 'REPORTING_AREA', 'count': 17547, 'percentage': 5.544653944961086}
+{'file': 'crime_2020_2025_CLEAN_20251025.csv', 'type': 'missing_values', 'column': 'UCR_PART', 'count': 316467, 'percentage': 100.0}
+{'file': 'crime_2020_2025_CLEAN_20251025.csv', 'type': 'missing_values', 'column': 'STREET', 'count': 681, 'percentage': 0.21518831347344275}
+{'file': 'crime_2020_2025_CLEAN_20251025.csv', 'type': 'missing_values', 'column': 'LAT', 'count': 13198, 'percentage': 4.170419032632154}
+{'file': 'crime_2020_2025_CLEAN_20251025.csv', 'type': 'missing_values', 'column': 'LONG', 'count': 13198, 'percentage': 4.170419032632154}
+{'file': 'crime_2020_2025_CLEAN_20251025.csv', 'type': 'missing_values', 'column': 'LOCATION', 'count': 13198, 'percentage': 4.170419032632154}
+{'file': 'crime_2020_2025_CLEAN_20251025.csv', 'type': 'missing_values', 'column': '_ID', 'count': 216467, 'percentage': 68.40112871168242}
+{'file': 'crime_2020_2025_CLEAN_20251025.csv', 'type': 'outliers', 'column': 'OFFENSE_CODE', 'count': 1, 'percentage': 0.00031598871288317584, 'bounds': '[-2046.50, 6349.50]'}
+{'file': 'crime_2020_2025_CLEAN_20251025.csv', 'type': 'outliers', 'column': 'SHOOTING', 'count': 3493, 'percentage': 1.1037485741009332, 'bounds': '[0.00, 0.00]'}
+{'file': 'crime_2020_2025_CLEAN_20251025.csv', 'type': 'outliers', 'column': 'LAT', 'count': 7, 'percentage': 0.0022119209901822305, 'bounds': '[42.22, 42.43]'}
+{'file': 'crime_2020_2025_CLEAN_20251025.csv', 'type': 'outliers', 'column': 'LONG', 'count': 5410, 'percentage': 1.7094989366979814, 'bounds': '[-71.16, -71.00]'}
+{'file': 'amenities_CLEAN_20251025.csv', 'type': 'missing_values', 'column': 'price', 'count': 1000, 'percentage': 48.661800486618006}
+{'file': 'amenities_CLEAN_20251025.csv', 'type': 'missing_values', 'column': 'phone', 'count': 245, 'percentage': 11.922141119221411}
+{'file': 'amenities_CLEAN_20251025.csv', 'type': 'missing_values', 'column': 'address', 'count': 43, 'percentage': 2.0924574209245743}
+{'file': 'amenities_CLEAN_20251025.csv', 'type': 'missing_values', 'column': 'transactions', 'count': 1168, 'percentage': 56.83698296836983}
+{'file': 'amenities_CLEAN_20251025.csv', 'type': 'outliers', 'column': 'rating', 'count': 234, 'percentage': 11.386861313868613, 'bounds': '[1.50, 6.30]'}
+{'file': 'amenities_CLEAN_20251025.csv', 'type': 'outliers', 'column': 'review_count', 'count': 266, 'percentage': 12.944038929440389, 'bounds': '[-259.00, 445.00]'}
+{'file': 'amenities_CLEAN_20251025.csv', 'type': 'outliers', 'column': 'phone', 'count': 278, 'percentage': 13.527980535279804, 'bounds': '[16165785877.12, 16186072356.12]'}
+{'file': 'amenities_CLEAN_20251025.csv', 'type': 'outliers', 'column': 'zip_code', 'count': 441, 'percentage': 21.45985401459854, 'bounds': '[2077.00, 2181.00]'}
+{'file': 'amenities_CLEAN_20251025.csv', 'type': 'outliers', 'column': 'latitude', 'count': 136, 'percentage': 6.618004866180048, 'bounds': '[42.26, 42.42]'}
+{'file': 'amenities_CLEAN_20251025.csv', 'type': 'outliers', 'column': 'longitude', 'count': 35, 'percentage': 1.70316301703163, 'bounds': '[-71.21, -70.97]'}
+{'file': 'amenities_CLEAN_20251025.csv', 'type': 'outliers', 'column': 'distance_meters', 'count': 135, 'percentage': 6.569343065693431, 'bounds': '[-2450.54, 5855.25]'}
+{'file': 'properties_CLEAN_20251025.csv', 'type': 'missing_values', 'column': 'CM_ID', 'count': 4, 'percentage': 0.01334311828674361}
+{'file': 'properties_CLEAN_20251025.csv', 'type': 'missing_values', 'column': 'GIS_ID', 'count': 2, 'percentage': 0.006671559143371805}
+{'file': 'properties_CLEAN_20251025.csv', 'type': 'missing_values', 'column': 'unit_number', 'count': 12556, 'percentage': 41.8840483020882}
+{'file': 'properties_CLEAN_20251025.csv', 'type': 'missing_values', 'column': 'BLDG_TYPE', 'count': 321, 'percentage': 1.0707852425111748}
+{'file': 'properties_CLEAN_20251025.csv', 'type': 'missing_values', 'column': 'MAIL_ADDRESSEE', 'count': 22998, 'percentage': 76.7162585896324}
+{'file': 'properties_CLEAN_20251025.csv', 'type': 'missing_values', 'column': 'MAIL_ADDRESS', 'count': 1, 'percentage': 0.0033357795716859027}
+{'file': 'properties_CLEAN_20251025.csv', 'type': 'missing_values', 'column': 'MAIL_STATE', 'count': 1, 'percentage': 0.0033357795716859027}
+{'file': 'properties_CLEAN_20251025.csv', 'type': 'missing_values', 'column': 'MAIL_ZIPCODE', 'count': 23, 'percentage': 0.07672293014877578}
+{'file': 'properties_CLEAN_20251025.csv', 'type': 'missing_values', 'column': 'RES_FLOOR', 'count': 4855, 'percentage': 16.19520982053506}
+{'file': 'properties_CLEAN_20251025.csv', 'type': 'missing_values', 'column': 'CD_FLOOR', 'count': 15374, 'percentage': 51.28427513509908}
+{'file': 'properties_CLEAN_20251025.csv', 'type': 'missing_values', 'column': 'LAND_SF', 'count': 17912, 'percentage': 59.75048368803789}
+{'file': 'properties_CLEAN_20251025.csv', 'type': 'missing_values', 'column': 'gross_square_feet', 'count': 3620, 'percentage': 12.07552204950297}
+{'file': 'properties_CLEAN_20251025.csv', 'type': 'missing_values', 'column': 'living_square_feet', 'count': 3620, 'percentage': 12.07552204950297}
+{'file': 'properties_CLEAN_20251025.csv', 'type': 'missing_values', 'column': 'year_built', 'count': 4858, 'percentage': 16.205217159250115}
+{'file': 'properties_CLEAN_20251025.csv', 'type': 'missing_values', 'column': 'YR_REMODEL', 'count': 13522, 'percentage': 45.10641136833678}
+{'file': 'properties_CLEAN_20251025.csv', 'type': 'missing_values', 'column': 'STRUCTURE_CLASS', 'count': 20432, 'percentage': 68.15664820868636}
+{'file': 'properties_CLEAN_20251025.csv', 'type': 'missing_values', 'column': 'ROOF_STRUCTURE', 'count': 7601, 'percentage': 25.355260524384548}
+{'file': 'properties_CLEAN_20251025.csv', 'type': 'missing_values', 'column': 'ROOF_COVER', 'count': 7596, 'percentage': 25.338581626526118}
+{'file': 'properties_CLEAN_20251025.csv', 'type': 'missing_values', 'column': 'INT_WALL', 'count': 9363, 'percentage': 31.23290412969511}
+{'file': 'properties_CLEAN_20251025.csv', 'type': 'missing_values', 'column': 'EXT_FINISHED', 'count': 4853, 'percentage': 16.188538261391688}
+{'file': 'properties_CLEAN_20251025.csv', 'type': 'missing_values', 'column': 'INT_COND', 'count': 9365, 'percentage': 31.239575688838485}
+{'file': 'properties_CLEAN_20251025.csv', 'type': 'missing_values', 'column': 'EXT_COND', 'count': 7588, 'percentage': 25.31189538995263}
+{'file': 'properties_CLEAN_20251025.csv', 'type': 'missing_values', 'column': 'OVERALL_COND', 'count': 1352, 'percentage': 4.509973980919341}
+{'file': 'properties_CLEAN_20251025.csv', 'type': 'missing_values', 'column': 'BDRM_COND', 'count': 15381, 'percentage': 51.30762559210087}
+{'file': 'properties_CLEAN_20251025.csv', 'type': 'missing_values', 'column': 'BTHRM_STYLE1', 'count': 9329, 'percentage': 31.11948762425779}
+{'file': 'properties_CLEAN_20251025.csv', 'type': 'missing_values', 'column': 'BTHRM_STYLE2', 'count': 17365, 'percentage': 57.92581226232571}
+{'file': 'properties_CLEAN_20251025.csv', 'type': 'missing_values', 'column': 'BTHRM_STYLE3', 'count': 24275, 'percentage': 80.97604910267529}
+{'file': 'properties_CLEAN_20251025.csv', 'type': 'missing_values', 'column': 'KITCHEN_TYPE', 'count': 9434, 'percentage': 31.469744479284813}
+{'file': 'properties_CLEAN_20251025.csv', 'type': 'missing_values', 'column': 'KITCHEN_STYLE1', 'count': 9431, 'percentage': 31.45973714056975}
+{'file': 'properties_CLEAN_20251025.csv', 'type': 'missing_values', 'column': 'KITCHEN_STYLE2', 'count': 26006, 'percentage': 86.7502835412636}
+{'file': 'properties_CLEAN_20251025.csv', 'type': 'missing_values', 'column': 'KITCHEN_STYLE3', 'count': 27566, 'percentage': 91.95409967309361}
+{'file': 'properties_CLEAN_20251025.csv', 'type': 'missing_values', 'column': 'HEAT_TYPE', 'count': 9367, 'percentage': 31.246247247981852}
+{'file': 'properties_CLEAN_20251025.csv', 'type': 'missing_values', 'column': 'HEAT_FUEL', 'count': 15364, 'percentage': 51.25091733938222}
+{'file': 'properties_CLEAN_20251025.csv', 'type': 'missing_values', 'column': 'AC_TYPE', 'count': 9368, 'percentage': 31.24958302755354}
+{'file': 'properties_CLEAN_20251025.csv', 'type': 'missing_values', 'column': 'ORIENTATION', 'count': 15372, 'percentage': 51.2776035759557}
+{'file': 'properties_CLEAN_20251025.csv', 'type': 'missing_values', 'column': 'PROP_VIEW', 'count': 9173, 'percentage': 30.599106011074788}
+{'file': 'properties_CLEAN_20251025.csv', 'type': 'missing_values', 'column': 'CORNER_UNIT', 'count': 15370, 'percentage': 51.27093201681233}
+{'file': 'properties_CLEAN_20251025.csv', 'type': 'outliers', 'column': 'zip_code', 'count': 152, 'percentage': 0.5070384948962572, 'bounds': '[2085.50, 2153.50]'}
+{'file': 'properties_CLEAN_20251025.csv', 'type': 'outliers', 'column': 'NUM_BLDGS', 'count': 180, 'percentage': 0.6004403229034626, 'bounds': '[1.00, 1.00]'}
+{'file': 'properties_CLEAN_20251025.csv', 'type': 'outliers', 'column': 'LUC', 'count': 6697, 'percentage': 22.339715791580492, 'bounds': '[93.00, 117.00]'}
+{'file': 'properties_CLEAN_20251025.csv', 'type': 'outliers', 'column': 'RES_FLOOR', 'count': 358, 'percentage': 1.1942090866635533, 'bounds': '[-2.00, 6.00]'}
+{'file': 'properties_CLEAN_20251025.csv', 'type': 'outliers', 'column': 'CD_FLOOR', 'count': 1900, 'percentage': 6.3379811862032165, 'bounds': '[-5.50, 14.50]'}
+{'file': 'properties_CLEAN_20251025.csv', 'type': 'outliers', 'column': 'RES_UNITS', 'count': 1395, 'percentage': 4.653412502501834, 'bounds': '[-1.50, 2.50]'}
+{'file': 'properties_CLEAN_20251025.csv', 'type': 'outliers', 'column': 'COM_UNITS', 'count': 2886, 'percentage': 9.627059843885515, 'bounds': '[0.00, 0.00]'}
+{'file': 'properties_CLEAN_20251025.csv', 'type': 'outliers', 'column': 'RC_UNITS', 'count': 581, 'percentage': 1.9380879311495098, 'bounds': '[0.00, 0.00]'}
+{'file': 'properties_CLEAN_20251025.csv', 'type': 'outliers', 'column': 'LAND_SF', 'count': 1493, 'percentage': 4.980318900527053, 'bounds': '[-2400.00, 7320.00]'}
+{'file': 'properties_CLEAN_20251025.csv', 'type': 'outliers', 'column': 'gross_square_feet', 'count': 1690, 'percentage': 5.637467476149176, 'bounds': '[-2371.50, 5864.50]'}
+{'file': 'properties_CLEAN_20251025.csv', 'type': 'outliers', 'column': 'living_square_feet', 'count': 1833, 'percentage': 6.11448395490026, 'bounds': '[-1388.08, 4220.12]'}
+{'file': 'properties_CLEAN_20251025.csv', 'type': 'outliers', 'column': 'year_built', 'count': 2, 'percentage': 0.006671559143371805, 'bounds': '[1767.00, 2119.00]'}
+{'file': 'properties_CLEAN_20251025.csv', 'type': 'outliers', 'column': 'YR_REMODEL', 'count': 2, 'percentage': 0.006671559143371805, 'bounds': '[1947.50, 2055.50]'}
+{'file': 'properties_CLEAN_20251025.csv', 'type': 'outliers', 'column': 'BED_RMS', 'count': 1964, 'percentage': 6.551471078791113, 'bounds': '[-3.00, 5.00]'}
+{'file': 'properties_CLEAN_20251025.csv', 'type': 'outliers', 'column': 'FULL_BTH', 'count': 60, 'percentage': 0.20014677430115418, 'bounds': '[-3.00, 5.00]'}
+{'file': 'properties_CLEAN_20251025.csv', 'type': 'outliers', 'column': 'HLF_BTH', 'count': 4639, 'percentage': 15.474681433050904, 'bounds': '[0.00, 0.00]'}
+{'file': 'properties_CLEAN_20251025.csv', 'type': 'outliers', 'column': 'KITCHEN', 'count': 2462, 'percentage': 8.212689305490693, 'bounds': '[-1.50, 2.50]'}
+{'file': 'properties_CLEAN_20251025.csv', 'type': 'outliers', 'column': 'TT_RMS', 'count': 1879, 'percentage': 6.267929815197812, 'bounds': '[-7.50, 12.50]'}
+{'file': 'properties_CLEAN_20251025.csv', 'type': 'outliers', 'column': 'FIRE_PLACE', 'count': 3852, 'percentage': 12.849422910134098, 'bounds': '[0.00, 0.00]'}
+{'file': 'properties_CLEAN_20251025.csv', 'type': 'outliers', 'column': 'NUM_PARKING', 'count': 6346, 'percentage': 21.16885716191874, 'bounds': '[0.00, 0.00]'}
+{'file': 'demographics_CLEAN_20251025.csv', 'type': 'outliers', 'column': 'zip_code', 'count': 5, 'percentage': 16.666666666666664, 'bounds': '[2091.00, 2159.00]'}
+{'file': 'demographics_CLEAN_20251025.csv', 'type': 'outliers', 'column': 'median_age', 'count': 1, 'percentage': 3.3333333333333335, 'bounds': '[20.01, 47.51]'}
+{'file': 'demographics_CLEAN_20251025.csv', 'type': 'outliers', 'column': 'bachelors_degree', 'count': 2, 'percentage': 6.666666666666667, 'bounds': '[-3221.62, 11111.38]'}
+{'file': 'demographics_CLEAN_20251025.csv', 'type': 'outliers', 'column': 'masters_degree', 'count': 2, 'percentage': 6.666666666666667, 'bounds': '[-2073.25, 6526.75]'}
+{'file': 'demographics_CLEAN_20251025.csv', 'type': 'outliers', 'column': 'hispanic_latino', 'count': 1, 'percentage': 3.3333333333333335, 'bounds': '[-7382.12, 14840.88]'}

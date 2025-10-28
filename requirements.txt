@@ -29,35 +29,41 @@ openpyxl==3.1.2
 loguru==0.7.2
 
 # ============================================
-# WEEK 3-4: DATABASE & PIPELINE (Install later)
+# WEEK 3-4: DATABASE & PIPELINE
 # ============================================
-# Uncomment these when you reach Week 3:
-# psycopg2-binary==2.9.9
-# sqlalchemy==2.0.23
-# chromadb==0.4.22
-# apache-airflow==2.7.3
-# dvc==3.30.0
+psycopg2-binary==2.9.9
+sqlalchemy==2.0.23
+chromadb==0.4.22
+apache-airflow==2.7.3
+dvc==3.30.0
 
 # ============================================
-# WEEK 5-6: EMBEDDINGS & RAG (Install later)
+# WEEK 5-6: EMBEDDINGS & RAG
 # ============================================
-# Uncomment these when you reach Week 5:
-# sentence-transformers==2.2.2
-# transformers==4.36.0
+sentence-transformers==2.2.2
+transformers==4.36.0
 
 # ============================================
-# WEEK 7+: API & LLM (Install later)
+# WEEK 7+: API & LLM
 # ============================================
-# Uncomment these when you reach Week 7:
-# fastapi==0.109.0
-# uvicorn[standard]==0.25.0
-# openai==1.6.1
-# pydantic==2.5.0
+fastapi==0.109.0
+uvicorn[standard]==0.25.0
+openai==1.6.1
+pydantic==2.5.0
 
 # ============================================
-# TESTING (Install later)
+# TESTING & VALIDATION (REQUIRED BY RAMI)
 # ============================================
-# Uncomment when you start testing:
-# pytest==7.4.3
-# pytest-cov==4.1.0
-# great-expectations==0.18.8
+pytest==7.4.3
+pytest-cov==4.1.0
+great-expectations==0.18.8
+coverage==7.3.0
+
+# ============================================
+# ADDITIONAL MLOPS TOOLS
+# ============================================
+# For fairness analysis
+fairlearn==0.9.0
+
+# For statistical analysis
+scipy==1.11.3

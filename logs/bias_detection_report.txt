@@ -1,0 +1,9 @@
+Bias Detection Report - 2025-10-27 13:46:38.092520
+============================================================
+
+Total findings: 4
+
+{'type': 'underrepresentation', 'slice': 'District', 'value': 'A7', 'percentage': 4.87, 'count': 15408}
+{'type': 'underrepresentation', 'slice': 'District', 'value': 'E5', 'percentage': 4.82, 'count': 15255}
+{'type': 'underrepresentation', 'slice': 'District', 'value': 'A15', 'percentage': 1.95, 'count': 6172}
+{'type': 'underrepresentation', 'slice': 'District', 'value': 'External', 'percentage': 0.19, 'count': 591}

@@ -81,5 +81,40 @@ temp/
 /data
 /chroma_backup
 docker-compose.yaml
-dags/
-logs/
+
+# ============================================
+# TESTING & COVERAGE (ADDED FOR RAMI'S REQUIREMENTS)
+# ============================================
+# Pytest cache
+.pytest_cache/
+.pytest/
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+.hypothesis/
+
+# ============================================
+# GREAT EXPECTATIONS (ADDED FOR RAMI'S REQUIREMENTS)
+# ============================================
+great_expectations/uncommitted/
+great_expectations/.ge_store_backend_id
+great_expectations/uncommitted/
+great_expectations/uncommitted/validations/
+great_expectations/uncommitted/data_docs/
+
+# ============================================
+# DOCUMENTATION ARTIFACTS
+# ============================================
+# Keep placeholder files but ignore generated reports
+docs/*.html
+docs/coverage_report/
+
+# ============================================
+# LARGE BACKUP FILES
+# ============================================
+chroma_db_backup.zip
+*.backup

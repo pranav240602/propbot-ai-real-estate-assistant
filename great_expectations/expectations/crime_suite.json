@@ -1,0 +1,44 @@
+{
+  "expectation_suite_name": "crime_suite",
+  "meta": {
+    "great_expectations_version": "0.18.0"
+  },
+  "expectations": [
+    {
+      "expectation_type": "expect_table_columns_to_match_ordered_list",
+      "kwargs": {
+        "column_list": ["incident_number", "offense_code", "offense_description", "district", "occurred_on_date", "lat", "long"]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "incident_number"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_unique",
+      "kwargs": {
+        "column": "incident_number"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "district"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_set",
+      "kwargs": {
+        "column": "district",
+        "value_set": ["A1", "A7", "B2", "B3", "C6", "C11", "D4", "D14", "E5", "E13", "E18"]
+      },
+      "meta": {}
+    }
+  ]
+}
