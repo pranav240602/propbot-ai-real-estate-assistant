@@ -29,7 +29,7 @@ PropBot is an intelligent conversational AI assistant for Boston real estate sea
 
 PropBot aggregates real estate and urban data from multiple authoritative sources to provide comprehensive property intelligence for Boston's 23 neighborhoods.
 
-**Collection Period:** January 2023 - October 2024  
+**Collection Period:** January 2023 - October 2025  
 **Geographic Coverage:** All Boston neighborhoods  
 **Update Frequency:** Weekly for crime data, monthly for properties
 
