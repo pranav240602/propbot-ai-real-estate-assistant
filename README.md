@@ -762,9 +762,9 @@ Docker containers mount local directories for persistence:
 | `./data` | `/opt/airflow/data` | Raw and processed data |
 
 **Benefits:**
-- ✅ Changes to local files immediately reflect in container
-- ✅ Data persists after container restart
-- ✅ Easy to edit code without rebuilding images
+-  Changes to local files immediately reflect in container
+-  Data persists after container restart
+-  Easy to edit code without rebuilding images
 
 ### Environment Variables
 
@@ -976,11 +976,11 @@ Pipeline Steps:
 
 | Module | Coverage | Status |
 |--------|----------|--------|
-| `scripts/acquisition/` | 87% | ✅ Pass |
-| `scripts/preprocessing/` | 89% | ✅ Pass |
-| `scripts/validation/` | 85% | ✅ Pass |
-| `dags/` | 82% | ✅ Pass |
-| **Overall** | **87%** | ✅ Pass |
+| `scripts/acquisition/` | 87% |  Pass |
+| `scripts/preprocessing/` | 89% |  Pass |
+| `scripts/validation/` | 85% | Pass |
+| `dags/` | 82% |  Pass |
+| **Overall** | **87%** |  Pass |
 
 ### Running Tests Locally
 
@@ -1045,11 +1045,11 @@ start htmlcov/index.html  # Windows
 
 ### CI/CD Best Practices
 
-✅ **Automated Testing:** All tests run automatically on every commit  
-✅ **Coverage Enforcement:** Builds fail if coverage drops below 80%  
-✅ **Fast Feedback:** Results available within 8 minutes  
-✅ **Artifact Storage:** Coverage reports saved for 90 days  
-✅ **Branch Protection:** Main branch requires passing tests before merge
+ **Automated Testing:** All tests run automatically on every commit  
+ **Coverage Enforcement:** Builds fail if coverage drops below 80%  
+ **Fast Feedback:** Results available within 8 minutes  
+ **Artifact Storage:** Coverage reports saved for 90 days  
+ **Branch Protection:** Main branch requires passing tests before merge
 
 ### Viewing CI/CD Results
 
@@ -1163,11 +1163,11 @@ We maintain three comprehensive expectation suites:
 **Location:** `great_expectations/expectations/property_suite.json`
 
 **Validations:**
-- ✅ Column existence and ordering
-- ✅ `property_id` is unique and non-null
-- ✅ Price range validation (100K - 10M USD)
-- ✅ Bedrooms range (0-10)
-- ✅ Geographic coordinates within Boston bounds
+-  Column existence and ordering
+-  `property_id` is unique and non-null
+-  Price range validation (100K - 10M USD)
+-  Bedrooms range (0-10)
+-  Geographic coordinates within Boston bounds
   - Latitude: 42.2 to 42.5
   - Longitude: -71.2 to -70.9
 
@@ -1187,20 +1187,20 @@ We maintain three comprehensive expectation suites:
 **Location:** `great_expectations/expectations/crime_suite.json`
 
 **Validations:**
-- ✅ `incident_number` is unique and non-null
-- ✅ District values match Boston PD districts
+-  `incident_number` is unique and non-null
+-  District values match Boston PD districts
   - Valid districts: A1, A7, B2, B3, C6, C11, D4, D14, E5, E13, E18
-- ✅ Required columns present
-- ✅ No null values in critical fields
+-  Required columns present
+-  No null values in critical fields
 
 #### 3. Demographics Suite (`demographics_suite.json`)
 **Location:** `great_expectations/expectations/demographics_suite.json`
 
 **Validations:**
-- ✅ `zipcode` is unique and non-null
-- ✅ Population range validation (1K - 100K)
-- ✅ Median income range (20K - 200K USD)
-- ✅ All required demographic columns present
+-  `zipcode` is unique and non-null
+-  Population range validation (1K - 100K)
+-  Median income range (20K - 200K USD)
+-  All required demographic columns present
 
 ### Running Validations
 
@@ -1443,6 +1443,6 @@ For questions or issues, please contact:
 
 ---
 
-**Last Updated:** October 27, 2024  
+**Last Updated:** October 27, 2025  
 **Milestone:** Data Pipeline (Milestone 1)  
 **Status:**  Complete
