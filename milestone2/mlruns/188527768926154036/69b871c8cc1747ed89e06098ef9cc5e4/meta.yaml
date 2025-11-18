@@ -1,0 +1,14 @@
+artifact_uri: file:////Users/pranavrangbulla/Documents/propbot-ai-real-estate-assistant/milestone2/mlruns/188527768926154036/69b871c8cc1747ed89e06098ef9cc5e4/artifacts
+end_time: 1762978139508
+entry_point_name: ''
+experiment_id: '188527768926154036'
+lifecycle_stage: active
+run_id: 69b871c8cc1747ed89e06098ef9cc5e4
+run_name: hyperparameter_tuning_best
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1762978139504
+status: 3
+tags: []
+user_id: pranavrangbulla

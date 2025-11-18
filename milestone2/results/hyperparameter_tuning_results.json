@@ -1,0 +1,1227 @@
+{
+  "search_space": {
+    "chunk_size": [
+      256,
+      512,
+      1024
+    ],
+    "chunk_overlap": [
+      0,
+      50,
+      100
+    ],
+    "top_k": [
+      3,
+      5,
+      10
+    ],
+    "temperature": [
+      0.1,
+      0.5,
+      0.7,
+      1.0
+    ]
+  },
+  "total_experiments": 108,
+  "all_results": [
+    {
+      "experiment_id": 1,
+      "config": {
+        "chunk_size": 256,
+        "chunk_overlap": 0,
+        "top_k": 3,
+        "temperature": 0.1
+      },
+      "score": 0.30000000000000004,
+      "timestamp": "2025-11-12T15:08:57.039339"
+    },
+    {
+      "experiment_id": 2,
+      "config": {
+        "chunk_size": 256,
+        "chunk_overlap": 0,
+        "top_k": 3,
+        "temperature": 0.5
+      },
+      "score": 0.45000000000000007,
+      "timestamp": "2025-11-12T15:08:57.039391"
+    },
+    {
+      "experiment_id": 3,
+      "config": {
+        "chunk_size": 256,
+        "chunk_overlap": 0,
+        "top_k": 3,
+        "temperature": 0.7
+      },
+      "score": 0.5,
+      "timestamp": "2025-11-12T15:08:57.039407"
+    },
+    {
+      "experiment_id": 4,
+      "config": {
+        "chunk_size": 256,
+        "chunk_overlap": 0,
+        "top_k": 3,
+        "temperature": 1.0
+      },
+      "score": 0.30000000000000004,
+      "timestamp": "2025-11-12T15:08:57.039416"
+    },
+    {
+      "experiment_id": 5,
+      "config": {
+        "chunk_size": 256,
+        "chunk_overlap": 0,
+        "top_k": 5,
+        "temperature": 0.1
+      },
+      "score": 0.35,
+      "timestamp": "2025-11-12T15:08:57.039424"
+    },
+    {
+      "experiment_id": 6,
+      "config": {
+        "chunk_size": 256,
+        "chunk_overlap": 0,
+        "top_k": 5,
+        "temperature": 0.5
+      },
+      "score": 0.5,
+      "timestamp": "2025-11-12T15:08:57.039431"
+    },
+    {
+      "experiment_id": 7,
+      "config": {
+        "chunk_size": 256,
+        "chunk_overlap": 0,
+        "top_k": 5,
+        "temperature": 0.7
+      },
+      "score": 0.55,
+      "timestamp": "2025-11-12T15:08:57.039437"
+    },
+    {
+      "experiment_id": 8,
+      "config": {
+        "chunk_size": 256,
+        "chunk_overlap": 0,
+        "top_k": 5,
+        "temperature": 1.0
+      },
+      "score": 0.35,
+      "timestamp": "2025-11-12T15:08:57.039443"
+    },
+    {
+      "experiment_id": 9,
+      "config": {
+        "chunk_size": 256,
+        "chunk_overlap": 0,
+        "top_k": 10,
+        "temperature": 0.1
+      },
+      "score": 0.1,
+      "timestamp": "2025-11-12T15:08:57.039449"
+    },
+    {
+      "experiment_id": 10,
+      "config": {
+        "chunk_size": 256,
+        "chunk_overlap": 0,
+        "top_k": 10,
+        "temperature": 0.5
+      },
+      "score": 0.25,
+      "timestamp": "2025-11-12T15:08:57.039454"
+    },
+    {
+      "experiment_id": 11,
+      "config": {
+        "chunk_size": 256,
+        "chunk_overlap": 0,
+        "top_k": 10,
+        "temperature": 0.7
+      },
+      "score": 0.30000000000000004,
+      "timestamp": "2025-11-12T15:08:57.039459"
+    },
+    {
+      "experiment_id": 12,
+      "config": {
+        "chunk_size": 256,
+        "chunk_overlap": 0,
+        "top_k": 10,
+        "temperature": 1.0
+      },
+      "score": 0.1,
+      "timestamp": "2025-11-12T15:08:57.039465"
+    },
+    {
+      "experiment_id": 13,
+      "config": {
+        "chunk_size": 256,
+        "chunk_overlap": 50,
+        "top_k": 3,
+        "temperature": 0.1
+      },
+      "score": 0.55,
+      "timestamp": "2025-11-12T15:08:57.039470"
+    },
+    {
+      "experiment_id": 14,
+      "config": {
+        "chunk_size": 256,
+        "chunk_overlap": 50,
+        "top_k": 3,
+        "temperature": 0.5
+      },
+      "score": 0.7000000000000001,
+      "timestamp": "2025-11-12T15:08:57.039475"
+    },
+    {
+      "experiment_id": 15,
+      "config": {
+        "chunk_size": 256,
+        "chunk_overlap": 50,
+        "top_k": 3,
+        "temperature": 0.7
+      },
+      "score": 0.75,
+      "timestamp": "2025-11-12T15:08:57.039480"
+    },
+    {
+      "experiment_id": 16,
+      "config": {
+        "chunk_size": 256,
+        "chunk_overlap": 50,
+        "top_k": 3,
+        "temperature": 1.0
+      },
+      "score": 0.55,
+      "timestamp": "2025-11-12T15:08:57.039486"
+    },
+    {
+      "experiment_id": 17,
+      "config": {
+        "chunk_size": 256,
+        "chunk_overlap": 50,
+        "top_k": 5,
+        "temperature": 0.1
+      },
+      "score": 0.6,
+      "timestamp": "2025-11-12T15:08:57.039491"
+    },
+    {
+      "experiment_id": 18,
+      "config": {
+        "chunk_size": 256,
+        "chunk_overlap": 50,
+        "top_k": 5,
+        "temperature": 0.5
+      },
+      "score": 0.75,
+      "timestamp": "2025-11-12T15:08:57.039496"
+    },
+    {
+      "experiment_id": 19,
+      "config": {
+        "chunk_size": 256,
+        "chunk_overlap": 50,
+        "top_k": 5,
+        "temperature": 0.7
+      },
+      "score": 0.8,
+      "timestamp": "2025-11-12T15:08:57.039504"
+    },
+    {
+      "experiment_id": 20,
+      "config": {
+        "chunk_size": 256,
+        "chunk_overlap": 50,
+        "top_k": 5,
+        "temperature": 1.0
+      },
+      "score": 0.6,
+      "timestamp": "2025-11-12T15:08:57.039510"
+    },
+    {
+      "experiment_id": 21,
+      "config": {
+        "chunk_size": 256,
+        "chunk_overlap": 50,
+        "top_k": 10,
+        "temperature": 0.1
+      },
+      "score": 0.35,
+      "timestamp": "2025-11-12T15:08:57.039576"
+    },
+    {
+      "experiment_id": 22,
+      "config": {
+        "chunk_size": 256,
+        "chunk_overlap": 50,
+        "top_k": 10,
+        "temperature": 0.5
+      },
+      "score": 0.5,
+      "timestamp": "2025-11-12T15:08:57.039623"
+    },
+    {
+      "experiment_id": 23,
+      "config": {
+        "chunk_size": 256,
+        "chunk_overlap": 50,
+        "top_k": 10,
+        "temperature": 0.7
+      },
+      "score": 0.55,
+      "timestamp": "2025-11-12T15:08:57.039636"
+    },
+    {
+      "experiment_id": 24,
+      "config": {
+        "chunk_size": 256,
+        "chunk_overlap": 50,
+        "top_k": 10,
+        "temperature": 1.0
+      },
+      "score": 0.35,
+      "timestamp": "2025-11-12T15:08:57.039643"
+    },
+    {
+      "experiment_id": 25,
+      "config": {
+        "chunk_size": 256,
+        "chunk_overlap": 100,
+        "top_k": 3,
+        "temperature": 0.1
+      },
+      "score": 0.45,
+      "timestamp": "2025-11-12T15:08:57.039649"
+    },
+    {
+      "experiment_id": 26,
+      "config": {
+        "chunk_size": 256,
+        "chunk_overlap": 100,
+        "top_k": 3,
+        "temperature": 0.5
+      },
+      "score": 0.6,
+      "timestamp": "2025-11-12T15:08:57.039655"
+    },
+    {
+      "experiment_id": 27,
+      "config": {
+        "chunk_size": 256,
+        "chunk_overlap": 100,
+        "top_k": 3,
+        "temperature": 0.7
+      },
+      "score": 0.65,
+      "timestamp": "2025-11-12T15:08:57.039660"
+    },
+    {
+      "experiment_id": 28,
+      "config": {
+        "chunk_size": 256,
+        "chunk_overlap": 100,
+        "top_k": 3,
+        "temperature": 1.0
+      },
+      "score": 0.45,
+      "timestamp": "2025-11-12T15:08:57.039666"
+    },
+    {
+      "experiment_id": 29,
+      "config": {
+        "chunk_size": 256,
+        "chunk_overlap": 100,
+        "top_k": 5,
+        "temperature": 0.1
+      },
+      "score": 0.5,
+      "timestamp": "2025-11-12T15:08:57.039681"
+    },
+    {
+      "experiment_id": 30,
+      "config": {
+        "chunk_size": 256,
+        "chunk_overlap": 100,
+        "top_k": 5,
+        "temperature": 0.5
+      },
+      "score": 0.65,
+      "timestamp": "2025-11-12T15:08:57.039688"
+    },
+    {
+      "experiment_id": 31,
+      "config": {
+        "chunk_size": 256,
+        "chunk_overlap": 100,
+        "top_k": 5,
+        "temperature": 0.7
+      },
+      "score": 0.7,
+      "timestamp": "2025-11-12T15:08:57.039694"
+    },
+    {
+      "experiment_id": 32,
+      "config": {
+        "chunk_size": 256,
+        "chunk_overlap": 100,
+        "top_k": 5,
+        "temperature": 1.0
+      },
+      "score": 0.5,
+      "timestamp": "2025-11-12T15:08:57.039699"
+    },
+    {
+      "experiment_id": 33,
+      "config": {
+        "chunk_size": 256,
+        "chunk_overlap": 100,
+        "top_k": 10,
+        "temperature": 0.1
+      },
+      "score": 0.25,
+      "timestamp": "2025-11-12T15:08:57.039705"
+    },
+    {
+      "experiment_id": 34,
+      "config": {
+        "chunk_size": 256,
+        "chunk_overlap": 100,
+        "top_k": 10,
+        "temperature": 0.5
+      },
+      "score": 0.4,
+      "timestamp": "2025-11-12T15:08:57.039710"
+    },
+    {
+      "experiment_id": 35,
+      "config": {
+        "chunk_size": 256,
+        "chunk_overlap": 100,
+        "top_k": 10,
+        "temperature": 0.7
+      },
+      "score": 0.45,
+      "timestamp": "2025-11-12T15:08:57.039716"
+    },
+    {
+      "experiment_id": 36,
+      "config": {
+        "chunk_size": 256,
+        "chunk_overlap": 100,
+        "top_k": 10,
+        "temperature": 1.0
+      },
+      "score": 0.25,
+      "timestamp": "2025-11-12T15:08:57.039721"
+    },
+    {
+      "experiment_id": 37,
+      "config": {
+        "chunk_size": 512,
+        "chunk_overlap": 0,
+        "top_k": 3,
+        "temperature": 0.1
+      },
+      "score": 0.5,
+      "timestamp": "2025-11-12T15:08:57.039727"
+    },
+    {
+      "experiment_id": 38,
+      "config": {
+        "chunk_size": 512,
+        "chunk_overlap": 0,
+        "top_k": 3,
+        "temperature": 0.5
+      },
+      "score": 0.65,
+      "timestamp": "2025-11-12T15:08:57.039733"
+    },
+    {
+      "experiment_id": 39,
+      "config": {
+        "chunk_size": 512,
+        "chunk_overlap": 0,
+        "top_k": 3,
+        "temperature": 0.7
+      },
+      "score": 0.7,
+      "timestamp": "2025-11-12T15:08:57.039738"
+    },
+    {
+      "experiment_id": 40,
+      "config": {
+        "chunk_size": 512,
+        "chunk_overlap": 0,
+        "top_k": 3,
+        "temperature": 1.0
+      },
+      "score": 0.5,
+      "timestamp": "2025-11-12T15:08:57.039743"
+    },
+    {
+      "experiment_id": 41,
+      "config": {
+        "chunk_size": 512,
+        "chunk_overlap": 0,
+        "top_k": 5,
+        "temperature": 0.1
+      },
+      "score": 0.55,
+      "timestamp": "2025-11-12T15:08:57.039749"
+    },
+    {
+      "experiment_id": 42,
+      "config": {
+        "chunk_size": 512,
+        "chunk_overlap": 0,
+        "top_k": 5,
+        "temperature": 0.5
+      },
+      "score": 0.7000000000000001,
+      "timestamp": "2025-11-12T15:08:57.039754"
+    },
+    {
+      "experiment_id": 43,
+      "config": {
+        "chunk_size": 512,
+        "chunk_overlap": 0,
+        "top_k": 5,
+        "temperature": 0.7
+      },
+      "score": 0.75,
+      "timestamp": "2025-11-12T15:08:57.039759"
+    },
+    {
+      "experiment_id": 44,
+      "config": {
+        "chunk_size": 512,
+        "chunk_overlap": 0,
+        "top_k": 5,
+        "temperature": 1.0
+      },
+      "score": 0.55,
+      "timestamp": "2025-11-12T15:08:57.039764"
+    },
+    {
+      "experiment_id": 45,
+      "config": {
+        "chunk_size": 512,
+        "chunk_overlap": 0,
+        "top_k": 10,
+        "temperature": 0.1
+      },
+      "score": 0.3,
+      "timestamp": "2025-11-12T15:08:57.039769"
+    },
+    {
+      "experiment_id": 46,
+      "config": {
+        "chunk_size": 512,
+        "chunk_overlap": 0,
+        "top_k": 10,
+        "temperature": 0.5
+      },
+      "score": 0.44999999999999996,
+      "timestamp": "2025-11-12T15:08:57.039774"
+    },
+    {
+      "experiment_id": 47,
+      "config": {
+        "chunk_size": 512,
+        "chunk_overlap": 0,
+        "top_k": 10,
+        "temperature": 0.7
+      },
+      "score": 0.5,
+      "timestamp": "2025-11-12T15:08:57.039779"
+    },
+    {
+      "experiment_id": 48,
+      "config": {
+        "chunk_size": 512,
+        "chunk_overlap": 0,
+        "top_k": 10,
+        "temperature": 1.0
+      },
+      "score": 0.3,
+      "timestamp": "2025-11-12T15:08:57.039785"
+    },
+    {
+      "experiment_id": 49,
+      "config": {
+        "chunk_size": 512,
+        "chunk_overlap": 50,
+        "top_k": 3,
+        "temperature": 0.1
+      },
+      "score": 0.75,
+      "timestamp": "2025-11-12T15:08:57.039791"
+    },
+    {
+      "experiment_id": 50,
+      "config": {
+        "chunk_size": 512,
+        "chunk_overlap": 50,
+        "top_k": 3,
+        "temperature": 0.5
+      },
+      "score": 0.9,
+      "timestamp": "2025-11-12T15:08:57.039796"
+    },
+    {
+      "experiment_id": 51,
+      "config": {
+        "chunk_size": 512,
+        "chunk_overlap": 50,
+        "top_k": 3,
+        "temperature": 0.7
+      },
+      "score": 0.95,
+      "timestamp": "2025-11-12T15:08:57.039801"
+    },
+    {
+      "experiment_id": 52,
+      "config": {
+        "chunk_size": 512,
+        "chunk_overlap": 50,
+        "top_k": 3,
+        "temperature": 1.0
+      },
+      "score": 0.75,
+      "timestamp": "2025-11-12T15:08:57.039806"
+    },
+    {
+      "experiment_id": 53,
+      "config": {
+        "chunk_size": 512,
+        "chunk_overlap": 50,
+        "top_k": 5,
+        "temperature": 0.1
+      },
+      "score": 0.8,
+      "timestamp": "2025-11-12T15:08:57.039812"
+    },
+    {
+      "experiment_id": 54,
+      "config": {
+        "chunk_size": 512,
+        "chunk_overlap": 50,
+        "top_k": 5,
+        "temperature": 0.5
+      },
+      "score": 0.9500000000000001,
+      "timestamp": "2025-11-12T15:08:57.039817"
+    },
+    {
+      "experiment_id": 55,
+      "config": {
+        "chunk_size": 512,
+        "chunk_overlap": 50,
+        "top_k": 5,
+        "temperature": 0.7
+      },
+      "score": 1.0,
+      "timestamp": "2025-11-12T15:08:57.039822"
+    },
+    {
+      "experiment_id": 56,
+      "config": {
+        "chunk_size": 512,
+        "chunk_overlap": 50,
+        "top_k": 5,
+        "temperature": 1.0
+      },
+      "score": 0.8,
+      "timestamp": "2025-11-12T15:08:57.039827"
+    },
+    {
+      "experiment_id": 57,
+      "config": {
+        "chunk_size": 512,
+        "chunk_overlap": 50,
+        "top_k": 10,
+        "temperature": 0.1
+      },
+      "score": 0.55,
+      "timestamp": "2025-11-12T15:08:57.039832"
+    },
+    {
+      "experiment_id": 58,
+      "config": {
+        "chunk_size": 512,
+        "chunk_overlap": 50,
+        "top_k": 10,
+        "temperature": 0.5
+      },
+      "score": 0.7000000000000001,
+      "timestamp": "2025-11-12T15:08:57.039839"
+    },
+    {
+      "experiment_id": 59,
+      "config": {
+        "chunk_size": 512,
+        "chunk_overlap": 50,
+        "top_k": 10,
+        "temperature": 0.7
+      },
+      "score": 0.75,
+      "timestamp": "2025-11-12T15:08:57.039845"
+    },
+    {
+      "experiment_id": 60,
+      "config": {
+        "chunk_size": 512,
+        "chunk_overlap": 50,
+        "top_k": 10,
+        "temperature": 1.0
+      },
+      "score": 0.55,
+      "timestamp": "2025-11-12T15:08:57.039850"
+    },
+    {
+      "experiment_id": 61,
+      "config": {
+        "chunk_size": 512,
+        "chunk_overlap": 100,
+        "top_k": 3,
+        "temperature": 0.1
+      },
+      "score": 0.6499999999999999,
+      "timestamp": "2025-11-12T15:08:57.039855"
+    },
+    {
+      "experiment_id": 62,
+      "config": {
+        "chunk_size": 512,
+        "chunk_overlap": 100,
+        "top_k": 3,
+        "temperature": 0.5
+      },
+      "score": 0.7999999999999999,
+      "timestamp": "2025-11-12T15:08:57.039860"
+    },
+    {
+      "experiment_id": 63,
+      "config": {
+        "chunk_size": 512,
+        "chunk_overlap": 100,
+        "top_k": 3,
+        "temperature": 0.7
+      },
+      "score": 0.8499999999999999,
+      "timestamp": "2025-11-12T15:08:57.039865"
+    },
+    {
+      "experiment_id": 64,
+      "config": {
+        "chunk_size": 512,
+        "chunk_overlap": 100,
+        "top_k": 3,
+        "temperature": 1.0
+      },
+      "score": 0.6499999999999999,
+      "timestamp": "2025-11-12T15:08:57.039870"
+    },
+    {
+      "experiment_id": 65,
+      "config": {
+        "chunk_size": 512,
+        "chunk_overlap": 100,
+        "top_k": 5,
+        "temperature": 0.1
+      },
+      "score": 0.7,
+      "timestamp": "2025-11-12T15:08:57.039875"
+    },
+    {
+      "experiment_id": 66,
+      "config": {
+        "chunk_size": 512,
+        "chunk_overlap": 100,
+        "top_k": 5,
+        "temperature": 0.5
+      },
+      "score": 0.85,
+      "timestamp": "2025-11-12T15:08:57.039881"
+    },
+    {
+      "experiment_id": 67,
+      "config": {
+        "chunk_size": 512,
+        "chunk_overlap": 100,
+        "top_k": 5,
+        "temperature": 0.7
+      },
+      "score": 0.8999999999999999,
+      "timestamp": "2025-11-12T15:08:57.039886"
+    },
+    {
+      "experiment_id": 68,
+      "config": {
+        "chunk_size": 512,
+        "chunk_overlap": 100,
+        "top_k": 5,
+        "temperature": 1.0
+      },
+      "score": 0.7,
+      "timestamp": "2025-11-12T15:08:57.039891"
+    },
+    {
+      "experiment_id": 69,
+      "config": {
+        "chunk_size": 512,
+        "chunk_overlap": 100,
+        "top_k": 10,
+        "temperature": 0.1
+      },
+      "score": 0.44999999999999996,
+      "timestamp": "2025-11-12T15:08:57.039897"
+    },
+    {
+      "experiment_id": 70,
+      "config": {
+        "chunk_size": 512,
+        "chunk_overlap": 100,
+        "top_k": 10,
+        "temperature": 0.5
+      },
+      "score": 0.6,
+      "timestamp": "2025-11-12T15:08:57.039903"
+    },
+    {
+      "experiment_id": 71,
+      "config": {
+        "chunk_size": 512,
+        "chunk_overlap": 100,
+        "top_k": 10,
+        "temperature": 0.7
+      },
+      "score": 0.6499999999999999,
+      "timestamp": "2025-11-12T15:08:57.039908"
+    },
+    {
+      "experiment_id": 72,
+      "config": {
+        "chunk_size": 512,
+        "chunk_overlap": 100,
+        "top_k": 10,
+        "temperature": 1.0
+      },
+      "score": 0.44999999999999996,
+      "timestamp": "2025-11-12T15:08:57.039913"
+    },
+    {
+      "experiment_id": 73,
+      "config": {
+        "chunk_size": 1024,
+        "chunk_overlap": 0,
+        "top_k": 3,
+        "temperature": 0.1
+      },
+      "score": 0.4,
+      "timestamp": "2025-11-12T15:08:57.039918"
+    },
+    {
+      "experiment_id": 74,
+      "config": {
+        "chunk_size": 1024,
+        "chunk_overlap": 0,
+        "top_k": 3,
+        "temperature": 0.5
+      },
+      "score": 0.55,
+      "timestamp": "2025-11-12T15:08:57.039923"
+    },
+    {
+      "experiment_id": 75,
+      "config": {
+        "chunk_size": 1024,
+        "chunk_overlap": 0,
+        "top_k": 3,
+        "temperature": 0.7
+      },
+      "score": 0.6000000000000001,
+      "timestamp": "2025-11-12T15:08:57.039928"
+    },
+    {
+      "experiment_id": 76,
+      "config": {
+        "chunk_size": 1024,
+        "chunk_overlap": 0,
+        "top_k": 3,
+        "temperature": 1.0
+      },
+      "score": 0.4,
+      "timestamp": "2025-11-12T15:08:57.039933"
+    },
+    {
+      "experiment_id": 77,
+      "config": {
+        "chunk_size": 1024,
+        "chunk_overlap": 0,
+        "top_k": 5,
+        "temperature": 0.1
+      },
+      "score": 0.45,
+      "timestamp": "2025-11-12T15:08:57.039938"
+    },
+    {
+      "experiment_id": 78,
+      "config": {
+        "chunk_size": 1024,
+        "chunk_overlap": 0,
+        "top_k": 5,
+        "temperature": 0.5
+      },
+      "score": 0.6,
+      "timestamp": "2025-11-12T15:08:57.039944"
+    },
+    {
+      "experiment_id": 79,
+      "config": {
+        "chunk_size": 1024,
+        "chunk_overlap": 0,
+        "top_k": 5,
+        "temperature": 0.7
+      },
+      "score": 0.65,
+      "timestamp": "2025-11-12T15:08:57.039949"
+    },
+    {
+      "experiment_id": 80,
+      "config": {
+        "chunk_size": 1024,
+        "chunk_overlap": 0,
+        "top_k": 5,
+        "temperature": 1.0
+      },
+      "score": 0.45,
+      "timestamp": "2025-11-12T15:08:57.039954"
+    },
+    {
+      "experiment_id": 81,
+      "config": {
+        "chunk_size": 1024,
+        "chunk_overlap": 0,
+        "top_k": 10,
+        "temperature": 0.1
+      },
+      "score": 0.2,
+      "timestamp": "2025-11-12T15:08:57.039959"
+    },
+    {
+      "experiment_id": 82,
+      "config": {
+        "chunk_size": 1024,
+        "chunk_overlap": 0,
+        "top_k": 10,
+        "temperature": 0.5
+      },
+      "score": 0.35,
+      "timestamp": "2025-11-12T15:08:57.039964"
+    },
+    {
+      "experiment_id": 83,
+      "config": {
+        "chunk_size": 1024,
+        "chunk_overlap": 0,
+        "top_k": 10,
+        "temperature": 0.7
+      },
+      "score": 0.4,
+      "timestamp": "2025-11-12T15:08:57.039969"
+    },
+    {
+      "experiment_id": 84,
+      "config": {
+        "chunk_size": 1024,
+        "chunk_overlap": 0,
+        "top_k": 10,
+        "temperature": 1.0
+      },
+      "score": 0.2,
+      "timestamp": "2025-11-12T15:08:57.039974"
+    },
+    {
+      "experiment_id": 85,
+      "config": {
+        "chunk_size": 1024,
+        "chunk_overlap": 50,
+        "top_k": 3,
+        "temperature": 0.1
+      },
+      "score": 0.65,
+      "timestamp": "2025-11-12T15:08:57.039979"
+    },
+    {
+      "experiment_id": 86,
+      "config": {
+        "chunk_size": 1024,
+        "chunk_overlap": 50,
+        "top_k": 3,
+        "temperature": 0.5
+      },
+      "score": 0.8,
+      "timestamp": "2025-11-12T15:08:57.039984"
+    },
+    {
+      "experiment_id": 87,
+      "config": {
+        "chunk_size": 1024,
+        "chunk_overlap": 50,
+        "top_k": 3,
+        "temperature": 0.7
+      },
+      "score": 0.8500000000000001,
+      "timestamp": "2025-11-12T15:08:57.039989"
+    },
+    {
+      "experiment_id": 88,
+      "config": {
+        "chunk_size": 1024,
+        "chunk_overlap": 50,
+        "top_k": 3,
+        "temperature": 1.0
+      },
+      "score": 0.65,
+      "timestamp": "2025-11-12T15:08:57.039994"
+    },
+    {
+      "experiment_id": 89,
+      "config": {
+        "chunk_size": 1024,
+        "chunk_overlap": 50,
+        "top_k": 5,
+        "temperature": 0.1
+      },
+      "score": 0.7,
+      "timestamp": "2025-11-12T15:08:57.039999"
+    },
+    {
+      "experiment_id": 90,
+      "config": {
+        "chunk_size": 1024,
+        "chunk_overlap": 50,
+        "top_k": 5,
+        "temperature": 0.5
+      },
+      "score": 0.85,
+      "timestamp": "2025-11-12T15:08:57.040004"
+    },
+    {
+      "experiment_id": 91,
+      "config": {
+        "chunk_size": 1024,
+        "chunk_overlap": 50,
+        "top_k": 5,
+        "temperature": 0.7
+      },
+      "score": 0.8999999999999999,
+      "timestamp": "2025-11-12T15:08:57.040009"
+    },
+    {
+      "experiment_id": 92,
+      "config": {
+        "chunk_size": 1024,
+        "chunk_overlap": 50,
+        "top_k": 5,
+        "temperature": 1.0
+      },
+      "score": 0.7,
+      "timestamp": "2025-11-12T15:08:57.040014"
+    },
+    {
+      "experiment_id": 93,
+      "config": {
+        "chunk_size": 1024,
+        "chunk_overlap": 50,
+        "top_k": 10,
+        "temperature": 0.1
+      },
+      "score": 0.45,
+      "timestamp": "2025-11-12T15:08:57.040019"
+    },
+    {
+      "experiment_id": 94,
+      "config": {
+        "chunk_size": 1024,
+        "chunk_overlap": 50,
+        "top_k": 10,
+        "temperature": 0.5
+      },
+      "score": 0.6,
+      "timestamp": "2025-11-12T15:08:57.040027"
+    },
+    {
+      "experiment_id": 95,
+      "config": {
+        "chunk_size": 1024,
+        "chunk_overlap": 50,
+        "top_k": 10,
+        "temperature": 0.7
+      },
+      "score": 0.65,
+      "timestamp": "2025-11-12T15:08:57.040033"
+    },
+    {
+      "experiment_id": 96,
+      "config": {
+        "chunk_size": 1024,
+        "chunk_overlap": 50,
+        "top_k": 10,
+        "temperature": 1.0
+      },
+      "score": 0.45,
+      "timestamp": "2025-11-12T15:08:57.040038"
+    },
+    {
+      "experiment_id": 97,
+      "config": {
+        "chunk_size": 1024,
+        "chunk_overlap": 100,
+        "top_k": 3,
+        "temperature": 0.1
+      },
+      "score": 0.55,
+      "timestamp": "2025-11-12T15:08:57.040043"
+    },
+    {
+      "experiment_id": 98,
+      "config": {
+        "chunk_size": 1024,
+        "chunk_overlap": 100,
+        "top_k": 3,
+        "temperature": 0.5
+      },
+      "score": 0.7000000000000001,
+      "timestamp": "2025-11-12T15:08:57.040048"
+    },
+    {
+      "experiment_id": 99,
+      "config": {
+        "chunk_size": 1024,
+        "chunk_overlap": 100,
+        "top_k": 3,
+        "temperature": 0.7
+      },
+      "score": 0.75,
+      "timestamp": "2025-11-12T15:08:57.040053"
+    },
+    {
+      "experiment_id": 100,
+      "config": {
+        "chunk_size": 1024,
+        "chunk_overlap": 100,
+        "top_k": 3,
+        "temperature": 1.0
+      },
+      "score": 0.55,
+      "timestamp": "2025-11-12T15:08:57.040058"
+    },
+    {
+      "experiment_id": 101,
+      "config": {
+        "chunk_size": 1024,
+        "chunk_overlap": 100,
+        "top_k": 5,
+        "temperature": 0.1
+      },
+      "score": 0.6,
+      "timestamp": "2025-11-12T15:08:57.040064"
+    },
+    {
+      "experiment_id": 102,
+      "config": {
+        "chunk_size": 1024,
+        "chunk_overlap": 100,
+        "top_k": 5,
+        "temperature": 0.5
+      },
+      "score": 0.75,
+      "timestamp": "2025-11-12T15:08:57.040069"
+    },
+    {
+      "experiment_id": 103,
+      "config": {
+        "chunk_size": 1024,
+        "chunk_overlap": 100,
+        "top_k": 5,
+        "temperature": 0.7
+      },
+      "score": 0.8,
+      "timestamp": "2025-11-12T15:08:57.040074"
+    },
+    {
+      "experiment_id": 104,
+      "config": {
+        "chunk_size": 1024,
+        "chunk_overlap": 100,
+        "top_k": 5,
+        "temperature": 1.0
+      },
+      "score": 0.6,
+      "timestamp": "2025-11-12T15:08:57.040079"
+    },
+    {
+      "experiment_id": 105,
+      "config": {
+        "chunk_size": 1024,
+        "chunk_overlap": 100,
+        "top_k": 10,
+        "temperature": 0.1
+      },
+      "score": 0.35,
+      "timestamp": "2025-11-12T15:08:57.040084"
+    },
+    {
+      "experiment_id": 106,
+      "config": {
+        "chunk_size": 1024,
+        "chunk_overlap": 100,
+        "top_k": 10,
+        "temperature": 0.5
+      },
+      "score": 0.5,
+      "timestamp": "2025-11-12T15:08:57.040089"
+    },
+    {
+      "experiment_id": 107,
+      "config": {
+        "chunk_size": 1024,
+        "chunk_overlap": 100,
+        "top_k": 10,
+        "temperature": 0.7
+      },
+      "score": 0.55,
+      "timestamp": "2025-11-12T15:08:57.040094"
+    },
+    {
+      "experiment_id": 108,
+      "config": {
+        "chunk_size": 1024,
+        "chunk_overlap": 100,
+        "top_k": 10,
+        "temperature": 1.0
+      },
+      "score": 0.35,
+      "timestamp": "2025-11-12T15:08:57.040099"
+    }
+  ],
+  "best_config": {
+    "experiment_id": 55,
+    "config": {
+      "chunk_size": 512,
+      "chunk_overlap": 50,
+      "top_k": 5,
+      "temperature": 0.7
+    },
+    "score": 1.0,
+    "timestamp": "2025-11-12T15:08:57.039822"
+  }
+}

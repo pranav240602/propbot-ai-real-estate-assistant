@@ -1,0 +1,13 @@
+{
+  "model_name": "all-MiniLM-L6-v2",
+  "embedding_dim": 384,
+  "train_size": 23982,
+  "val_size": 5996,
+  "rag_params": {
+    "chunk_size": 512,
+    "chunk_overlap": 50,
+    "top_k": 5,
+    "temperature": 0.7
+  },
+  "timestamp": "2025-11-12T15:04:21.064667"
+}

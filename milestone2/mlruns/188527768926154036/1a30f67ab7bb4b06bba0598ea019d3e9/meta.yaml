@@ -1,0 +1,14 @@
+artifact_uri: file:////Users/pranavrangbulla/Documents/propbot-ai-real-estate-assistant/milestone2/mlruns/188527768926154036/1a30f67ab7bb4b06bba0598ea019d3e9/artifacts
+end_time: 1762978139516
+entry_point_name: ''
+experiment_id: '188527768926154036'
+lifecycle_stage: active
+run_id: 1a30f67ab7bb4b06bba0598ea019d3e9
+run_name: bias_detection
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1762978139513
+status: 3
+tags: []
+user_id: pranavrangbulla

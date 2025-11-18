@@ -1,0 +1,6 @@
+{
+  "chunk_size": 512,
+  "chunk_overlap": 50,
+  "top_k": 5,
+  "temperature": 0.7
+}

@@ -1,0 +1,17 @@
+{
+  "total_samples": 29978,
+  "anomalies_detected": 1499,
+  "anomaly_percentage": 5.000333577957169,
+  "normal_samples": 28479,
+  "detection_method": "Isolation Forest",
+  "contamination_rate": 0.05,
+  "features_used": [
+    "TOTAL_VALUE",
+    "year_built",
+    "gross_square_feet",
+    "living_square_feet",
+    "BED_RMS",
+    "FULL_BTH"
+  ],
+  "timestamp": "2025-11-16T14:25:30.949877"
+}

@@ -1,0 +1,26 @@
+version: '3.9'
+
+services:
+  chromadb:
+    image: chromadb/chroma
+    container_name: propbot_chromadb
+    restart: always
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./chroma_data:/chroma/chroma_data
+  
+  backend:
+    build: .
+    container_name: propbot_backend
+    restart: always
+    ports:
+      - "8001:8001"
+    environment:
+      - CHROMADB_HOST=chromadb
+      - CHROMADB_PORT=8000
+    depends_on:
+      - chromadb
+    volumes:
+      - ./results:/app/results
+      - ./models:/app/models

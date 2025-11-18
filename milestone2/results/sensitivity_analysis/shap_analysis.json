@@ -1,0 +1,22 @@
+{
+  "method": "SHAP",
+  "samples_analyzed": 100,
+  "features": [
+    "TOTAL_VALUE",
+    "year_built",
+    "gross_square_feet",
+    "living_square_feet",
+    "BED_RMS",
+    "FULL_BTH"
+  ],
+  "feature_importance": {
+    "TOTAL_VALUE": 618316.1442831431,
+    "gross_square_feet": 544550.758259742,
+    "living_square_feet": 469547.94330559147,
+    "year_built": 5834.948678759141,
+    "FULL_BTH": 1438.4580534371898,
+    "BED_RMS": 970.3981217872309
+  },
+  "plot_path": "results/sensitivity_analysis/shap_summary.png",
+  "timestamp": "2025-11-12T15:09:01.080020"
+}

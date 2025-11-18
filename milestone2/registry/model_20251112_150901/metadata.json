@@ -1,0 +1,13 @@
+{
+  "model_name": "propbot-milestone2",
+  "version": "20251112_150901",
+  "framework": "sentence-transformers",
+  "model_type": "embedding + RAG",
+  "timestamp": "2025-11-12T15:09:01.213658",
+  "artifacts": [
+    "bias_detection_report.json",
+    "best_config.json",
+    "validation_report.json",
+    "model_config.json"
+  ]
+}

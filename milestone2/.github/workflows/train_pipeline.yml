@@ -1,0 +1,101 @@
+name: PropBot Model Training Pipeline
+
+on:
+  push:
+    branches: [main, master]
+    paths:
+      - 'src/**'
+      - 'data/**'
+  workflow_dispatch:
+
+jobs:
+  train-validate-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+      
+      - name: Load data
+        run: |
+          python src/data_loader.py
+      
+      - name: Train model
+        run: |
+          python src/train_model.py
+      
+      - name: Hyperparameter tuning
+        run: |
+          python src/hyperparameter_tuning.py
+      
+      - name: Validate model
+        run: |
+          python src/validate_model.py
+      
+      - name: Bias detection
+        run: |
+          python src/bias_detection.py
+      
+      - name: Check validation metrics
+        run: |
+          python -c "
+          import json
+          with open('results/validation_report.json') as f:
+              report = json.load(f)
+          accuracy = report['metrics']['accuracy']
+          print(f'Accuracy: {accuracy}')
+          if accuracy < 0.7:
+              raise Exception('Model accuracy below threshold!')
+          print('✅ Validation passed')
+          "
+      
+      - name: Check bias findings
+        run: |
+          python -c "
+          import json
+          with open('results/bias_metrics/bias_detection_report.json') as f:
+              report = json.load(f)
+          high_severity = sum(1 for b in report['bias_findings'] if b['severity'] == 'HIGH')
+          print(f'High severity bias issues: {high_severity}')
+          if high_severity > 2:
+              raise Exception('Too many high severity bias issues!')
+          print('✅ Bias check passed')
+          "
+      
+      - name: Track experiments
+        run: |
+          python src/experiment_tracking.py
+      
+      - name: Run sensitivity analysis
+        run: |
+          python src/sensitivity_analysis/shap_analysis.py
+      
+      - name: Push to model registry
+        if: success()
+        run: |
+          python src/push_to_registry.py
+        env:
+          GCP_PROJECT_ID: ${{ secrets.GCP_PROJECT_ID }}
+          GCP_CREDENTIALS: ${{ secrets.GCP_CREDENTIALS }}
+      
+      - name: Notify on success
+        if: success()
+        run: |
+          echo "✅ Pipeline completed successfully!"
+          echo "Model trained, validated, and pushed to registry"
+      
+      - name: Notify on failure
+        if: failure()
+        run: |
+          echo "❌ Pipeline failed!"
+          echo "Check logs for details"

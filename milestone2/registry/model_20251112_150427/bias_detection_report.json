@@ -1,0 +1,132 @@
+{
+  "total_samples": 5996,
+  "slices_analyzed": {
+    "neighborhoods": [
+      "Back Bay",
+      "Beacon Hill",
+      "South End",
+      "Dorchester",
+      "Roxbury",
+      "Jamaica Plain",
+      "Charlestown",
+      "East Boston"
+    ],
+    "price_ranges": [
+      "<$300K",
+      "$300K-$600K",
+      "$600K-$1M",
+      ">$1M"
+    ],
+    "property_types": [
+      "Condo",
+      "Single Family",
+      "Multi-family",
+      "Townhouse"
+    ],
+    "building_age": [
+      "Pre-1900",
+      "1900-1950",
+      "1950-2000",
+      "Post-2000"
+    ]
+  },
+  "slice_metrics": {
+    "neighborhood_slice": {
+      "Charlestown": {
+        "count": 723,
+        "accuracy": 1.0,
+        "f1_score": 0.0
+      },
+      "Dorchester": {
+        "count": 784,
+        "accuracy": 0.7002551020408163,
+        "f1_score": 0.8237059264816204
+      },
+      "Roxbury": {
+        "count": 780,
+        "accuracy": 0.7,
+        "f1_score": 0.0
+      },
+      "South End": {
+        "count": 732,
+        "accuracy": 1.0,
+        "f1_score": 0.0
+      },
+      "East Boston": {
+        "count": 726,
+        "accuracy": 1.0,
+        "f1_score": 1.0
+      },
+      "Beacon Hill": {
+        "count": 726,
+        "accuracy": 1.0,
+        "f1_score": 1.0
+      },
+      "Jamaica Plain": {
+        "count": 743,
+        "accuracy": 1.0,
+        "f1_score": 1.0
+      },
+      "Back Bay": {
+        "count": 782,
+        "accuracy": 1.0,
+        "f1_score": 0.0
+      }
+    },
+    "price_slice": {},
+    "age_slice": {
+      "1950-2000": {
+        "count": 945,
+        "accuracy": 0.928042328042328,
+        "f1_score": 0.9293139293139293
+      },
+      "1900-1950": {
+        "count": 1724,
+        "accuracy": 0.9222737819025522,
+        "f1_score": 0.9184914841849149
+      },
+      "Post-2000": {
+        "count": 897,
+        "accuracy": 0.915273132664437,
+        "f1_score": 0.9172113289760349
+      },
+      "Pre-1900": {
+        "count": 1432,
+        "accuracy": 0.9168994413407822,
+        "f1_score": 0.9167249825052485
+      }
+    },
+    "property_type_slice": {
+      "Multi-family": {
+        "count": 1509,
+        "accuracy": 0.9211398277004639,
+        "f1_score": 0.9208250166333999
+      },
+      "Single Family": {
+        "count": 1549,
+        "accuracy": 0.921885087153002,
+        "f1_score": 0.9214795587280986
+      },
+      "Townhouse": {
+        "count": 1460,
+        "accuracy": 0.9321917808219178,
+        "f1_score": 0.9295373665480428
+      },
+      "Condo": {
+        "count": 1478,
+        "accuracy": 0.912043301759134,
+        "f1_score": 0.9137931034482759
+      }
+    }
+  },
+  "bias_findings": [
+    {
+      "slice_type": "neighborhood_slice",
+      "disparity": 0.30000000000000004,
+      "max_accuracy": 1.0,
+      "min_accuracy": 0.7,
+      "severity": "HIGH"
+    }
+  ],
+  "timestamp": "2025-11-12T15:04:23.972141"
+}
