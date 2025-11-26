@@ -27,8 +27,8 @@ class HyperparameterTuner:
             'temperature': [0.1, 0.5, 0.7, 1.0]
         }
         
-        logger.info("🔧 Hyperparameter Tuner initialized")
-        logger.info(f"📊 Search space: {self.search_space}")
+        logger.info(" Hyperparameter Tuner initialized")
+        logger.info(f" Search space: {self.search_space}")
     
     def calculate_combinations(self):
         """Calculate total combinations"""
@@ -40,11 +40,11 @@ class HyperparameterTuner:
     def run_tuning(self):
         """Run hyperparameter search"""
         logger.info("="*60)
-        logger.info("🚀 STARTING HYPERPARAMETER TUNING")
+        logger.info(" STARTING HYPERPARAMETER TUNING")
         logger.info("="*60)
         
         total_combinations = self.calculate_combinations()
-        logger.info(f"📊 Total combinations to test: {total_combinations}")
+        logger.info(f" Total combinations to test: {total_combinations}")
         
         results = []
         
@@ -66,13 +66,13 @@ class HyperparameterTuner:
             }
             results.append(result)
             
-            logger.info(f"✅ Experiment {idx}/{total_combinations}: Score = {score:.4f}")
+            logger.info(f" Experiment {idx}/{total_combinations}: Score = {score:.4f}")
         
         # Find best config
         best_result = max(results, key=lambda x: x['score'])
         
         logger.info("="*60)
-        logger.info("🏆 BEST CONFIGURATION FOUND")
+        logger.info(" BEST CONFIGURATION FOUND")
         logger.info(f"   Config: {best_result['config']}")
         logger.info(f"   Score: {best_result['score']:.4f}")
         logger.info("="*60)
@@ -87,7 +87,7 @@ class HyperparameterTuner:
                 'best_config': best_result
             }, f, indent=2)
         
-        logger.info(f"✅ Results saved to {results_path}")
+        logger.info(f" Results saved to {results_path}")
         
         # Save best config separately
         best_config_path = os.path.join(self.results_dir, 'best_config.json')
@@ -132,5 +132,5 @@ if __name__ == "__main__":
     tuner = HyperparameterTuner()
     best = tuner.run_tuning()
     
-    print("\n🏆 BEST HYPERPARAMETERS:")
+    print("\n BEST HYPERPARAMETERS:")
     print(json.dumps(best['config'], indent=2))
