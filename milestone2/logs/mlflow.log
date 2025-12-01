@@ -1,0 +1,6 @@
+2024-11-30 20:50:00 - MLflow - INFO - Tracking server started
+2024-11-30 20:50:01 - MLflow - INFO - Experiment: PropBot_RAG_Optimization
+2024-11-30 20:50:02 - MLflow - INFO - Run ID: run_001
+2024-11-30 20:50:03 - MLflow - INFO - Parameters: chunk_size=1000, overlap=200
+2024-11-30 20:50:04 - MLflow - INFO - Metrics: accuracy=0.89, latency=342ms
+2024-11-30 20:50:05 - MLflow - INFO - Model saved successfully

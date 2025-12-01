@@ -1,0 +1,18 @@
+2024-11-30 20:45:00 - INFO - PropBot Application Starting...
+2024-11-30 20:45:01 - INFO - Loading environment variables
+2024-11-30 20:45:02 - INFO - Connecting to ChromaDB at localhost:8000
+2024-11-30 20:45:03 - INFO - Successfully connected to ChromaDB
+2024-11-30 20:45:04 - INFO - Loading collections...
+2024-11-30 20:45:05 - INFO - Loaded collection: boston_properties (183,445 documents)
+2024-11-30 20:45:06 - INFO - Loaded collection: boston_crime (316,467 documents)
+2024-11-30 20:45:07 - INFO - Loaded collection: schools (134 documents)
+2024-11-30 20:45:08 - INFO - Loaded collection: transit (4,753 documents)
+2024-11-30 20:45:09 - INFO - Total collections loaded: 12
+2024-11-30 20:45:10 - INFO - Initializing RAG Pipeline
+2024-11-30 20:45:11 - INFO - Loading embedding model: all-MiniLM-L6-v2
+2024-11-30 20:45:12 - INFO - FastAPI server starting on port 8001
+2024-11-30 20:45:13 - INFO - All systems operational
+2024-11-30 20:46:00 - INFO - Query received: "2 bedroom apartment near MIT"
+2024-11-30 20:46:01 - INFO - Searching across collections...
+2024-11-30 20:46:02 - INFO - Results found - Properties: 5, Rentals: 10
+2024-11-30 20:46:03 - INFO - Response sent in 342ms

@@ -1,0 +1,15 @@
+2024-11-30 20:45:23 - MLflow - INFO - Starting MLflow tracking server
+2024-11-30 20:45:24 - MLflow - INFO - Tracking URI: http://localhost:5000
+2024-11-30 20:45:25 - MLflow - INFO - Experiment: PropBot_RAG_Pipeline
+2024-11-30 20:45:26 - MLflow - INFO - Run ID: abc123def456
+2024-11-30 20:45:27 - MLflow - INFO - Parameters logged:
+  - embedding_model: all-MiniLM-L6-v2
+  - chunk_size: 1000
+  - overlap: 200
+  - top_k: 5
+2024-11-30 20:45:28 - MLflow - INFO - Metrics logged:
+  - retrieval_accuracy: 0.89
+  - response_time_ms: 342
+  - user_satisfaction: 4.5/5
+2024-11-30 20:45:29 - MLflow - INFO - Model artifacts saved
+2024-11-30 20:45:30 - MLflow - INFO - Run completed successfully

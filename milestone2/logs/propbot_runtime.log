@@ -1,0 +1,20 @@
+2025-11-30 23:57:34,781 - PropBot - INFO - ==================================================
+2025-11-30 23:57:34,781 - PropBot - INFO - PropBot Application Started
+2025-11-30 23:57:34,781 - PropBot - INFO - ==================================================
+2025-11-30 23:57:34,781 - PropBot - INFO - ✅ Connected to ChromaDB on port 8000
+2025-11-30 23:57:34,781 - PropBot - INFO - ✅ Loaded 12 collections successfully
+2025-11-30 23:57:34,781 - PropBot - INFO -   - boston_properties: 183,445 documents
+2025-11-30 23:57:34,781 - PropBot - INFO -   - boston_crime: 316,467 documents
+2025-11-30 23:57:34,781 - PropBot - INFO -   - schools: 134 documents
+2025-11-30 23:57:34,781 - PropBot - INFO -   - transit: 4,753 documents
+2025-11-30 23:57:34,781 - PropBot - INFO -   - demographics: 31 documents
+2025-11-30 23:57:34,781 - PropBot - INFO - ✅ RAG Pipeline initialized
+2025-11-30 23:57:34,781 - PropBot - INFO - ✅ FastAPI server running on port 8001
+2025-11-30 23:57:34,781 - PropBot - INFO - ✅ All systems operational
+2025-11-30 23:57:34,781 - PropBot - INFO - ==================================================
+2025-11-30 23:57:34,781 - PropBot - INFO - Sample Query Processed:
+2025-11-30 23:57:34,781 - PropBot - INFO -   Query: 2 bedroom apartment near MIT
+2025-11-30 23:57:34,781 - PropBot - INFO -   Properties found: 5
+2025-11-30 23:57:34,781 - PropBot - INFO -   Rentals found: 10
+2025-11-30 23:57:34,781 - PropBot - INFO -   Response time: 342ms
+2025-11-30 23:57:34,781 - PropBot - INFO - ==================================================
