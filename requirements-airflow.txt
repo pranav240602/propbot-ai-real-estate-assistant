@@ -1,0 +1,2 @@
+# Airflow (use in Docker only, not in CI/CD)
+apache-airflow==2.7.3

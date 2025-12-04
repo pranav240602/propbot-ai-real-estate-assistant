@@ -120,3 +120,16 @@ Then start with:
 ```bash
 docker-compose up -d
 ```
+
+## For Airflow Development
+
+Airflow runs separately in Docker. If you need to work on DAGs:
+```bash
+# Install Airflow dependencies (optional, only for DAG development)
+pip install -r requirements-airflow.txt
+
+# OR better: Use Docker
+docker-compose up airflow
+```
+
+**Note:** CI/CD doesn't test Airflow to avoid dependency conflicts.
