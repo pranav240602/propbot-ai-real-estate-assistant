@@ -91,3 +91,32 @@ Once backend is running, visit:
 
 **Port already in use?**
 - Change port: `uvicorn main:app --reload --port 8001`
+
+## Common Issues & Fixes
+
+### ChromaDB Telemetry Error
+If you see "telemetry data not found" or ChromaDB connection errors:
+
+**Already fixed in `.env.example`!** Just make sure your `.env` has:
+```bash
+ANONYMIZED_TELEMETRY=False
+```
+
+### Docker ChromaDB Setup
+If running ChromaDB in Docker, use this in your `docker-compose.yml`:
+```yaml
+services:
+  chroma:
+    image: chromadb/chroma:latest
+    environment:
+      - ANONYMIZED_TELEMETRY=False
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./chroma_data:/chroma/chroma
+```
+
+Then start with:
+```bash
+docker-compose up -d
+```
