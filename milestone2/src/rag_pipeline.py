@@ -10,7 +10,7 @@ from openai import OpenAI
 from dotenv import load_dotenv
 import logging
 from typing import List, Dict, Optional
-from spellchecker import SpellChecker
+from pyspellchecker import SpellChecker
 import re
 
 logging.basicConfig(level=logging.INFO)
@@ -30,8 +30,8 @@ class PropBotRAG:
         logger.info("✅ Connected to OpenAI")
         
         self.chroma_client = chromadb.HttpClient(
-            host=os.getenv('CHROMADB_HOST', 'localhost'),
-            port=int(os.getenv('CHROMADB_PORT', '8000'))
+            host='localhost',
+            port=8000
         )
         logger.info("✅ Connected to ChromaDB")
         
@@ -59,159 +59,9 @@ class PropBotRAG:
             'brighton', 'fenway', 'south boston', 'seaport', 'west end'
         ]
         
-        # FEATURE 1: Conversation memory
         self.conversation_context = {}
     
-    def correct_spelling(self, text: str) -> str:
-        """Auto-correct spelling mistakes"""
-        words = text.split()
-        corrected_words = []
-        
-        for word in words:
-            if not word.isalpha():
-                corrected_words.append(word)
-                continue
-            
-            lower_word = word.lower()
-            
-            if any(hood in lower_word for hood in self.boston_neighborhoods):
-                corrected_words.append(word)
-                continue
-            
-            correction = self.spell.correction(lower_word)
-            if correction and correction != lower_word:
-                logger.info(f"📝 Corrected: '{word}' → '{correction}'")
-                corrected_words.append(correction)
-            else:
-                corrected_words.append(word)
-        
-        return ' '.join(corrected_words)
-    
-    def extract_intent(self, query: str, conversation_id: str = None) -> Dict:
-        """Extract user intent with conversation context"""
-        query_lower = query.lower()
-        
-        intent = {
-            'type': 'general',
-            'action': None,
-            'filters': {},
-            'context_used': False
-        }
-        
-        # Check conversation context for missing info
-        if conversation_id and conversation_id in self.conversation_context:
-            context = self.conversation_context[conversation_id]
-            
-            # If user says "cheaper" or "more affordable", use previous filters
-            if any(word in query_lower for word in ['cheaper', 'affordable', 'less expensive', 'lower price']):
-                if 'last_filters' in context:
-                    intent['filters'] = context['last_filters'].copy()
-                    if 'max_price' in intent['filters']:
-                        intent['filters']['max_price'] *= 0.8  # Reduce by 20%
-                    intent['context_used'] = True
-                    logger.info("🧠 Using conversation context for 'cheaper'")
-            
-            # If user says "similar", use previous neighborhood
-            if any(word in query_lower for word in ['similar', 'like that', 'same area']):
-                if 'last_neighborhood' in context:
-                    intent['filters']['neighborhood'] = context['last_neighborhood']
-                    intent['context_used'] = True
-                    logger.info("🧠 Using conversation context for 'similar'")
-        
-        # Detect rental vs buy
-        if any(word in query_lower for word in ['rent', 'rental', 'lease', 'apartment']):
-            intent['type'] = 'rental'
-            intent['action'] = 'search_rentals'
-        elif any(word in query_lower for word in ['buy', 'purchase', 'sale', 'for sale']):
-            intent['type'] = 'buy'
-            intent['action'] = 'search_sales'
-        
-        # Detect comparison
-        if any(word in query_lower for word in ['compare', 'vs', 'versus', 'difference']):
-            intent['type'] = 'compare'
-            intent['action'] = 'compare_properties'
-        
-        # Extract bedrooms
-        bedroom_match = re.search(r'(\d+)\s*(br|bed|bedroom)', query_lower)
-        if bedroom_match:
-            intent['filters']['bedrooms'] = int(bedroom_match.group(1))
-        
-        # Extract price
-        price_match = re.search(r'\$?(\d+)k', query_lower)
-        if price_match:
-            intent['filters']['max_price'] = int(price_match.group(1)) * 1000
-        
-        # Extract neighborhood
-        for neighborhood in self.boston_neighborhoods:
-            if neighborhood in query_lower:
-                intent['filters']['neighborhood'] = neighborhood.title()
-                break
-        
-        logger.info(f"🎯 Intent: {intent}")
-        return intent
-    
-    def update_conversation_context(self, conversation_id: str, intent: Dict, query: str):
-        """Update conversation memory"""
-        if not conversation_id:
-            return
-        
-        if conversation_id not in self.conversation_context:
-            self.conversation_context[conversation_id] = {
-                'queries': [],
-                'last_filters': {},
-                'last_neighborhood': None,
-                'search_count': 0
-            }
-        
-        context = self.conversation_context[conversation_id]
-        context['queries'].append(query)
-        context['search_count'] += 1
-        
-        if intent['filters']:
-            context['last_filters'] = intent['filters']
-            if 'neighborhood' in intent['filters']:
-                context['last_neighborhood'] = intent['filters']['neighborhood']
-    
-    def generate_follow_up_suggestions(self, intent: Dict, documents: List[Dict]) -> str:
-        """Generate helpful follow-up suggestions"""
-        suggestions = []
-        
-        if documents:
-            suggestions.append("💡 What would you like to do next?\n")
-            
-            if intent['filters'].get('neighborhood'):
-                suggestions.append("   • Calculate commute times to downtown")
-                suggestions.append("   • See crime rates for this area")
-            
-            suggestions.append("   • Compare these properties side-by-side")
-            suggestions.append("   • Get mortgage payment estimates")
-            suggestions.append("   • Save properties to favorites")
-            
-            if intent['type'] == 'rental':
-                suggestions.append("   • See similar properties to buy instead")
-            else:
-                suggestions.append("   • Check rental prices in this area")
-        
-        return "\n".join(suggestions)
-    
-    def validate_query(self, query: str) -> Dict:
-        """Validate query with friendly responses"""
-        if not query or len(query.strip()) < 3:
-            return {
-                'valid': False,
-                'message': "I'm here to help! 🏠 Try asking me something like:\n• 'Show me 3 bedroom properties in Back Bay'\n• 'What are rentals under $3000?'\n• 'Compare Beacon Hill vs South End'"
-            }
-        
-        vague_queries = ['hi', 'hello', 'hey', 'help', 'what', 'huh', 'ok', 'yes', 'no']
-        if query.lower().strip() in vague_queries:
-            return {
-                'valid': False,
-                'message': "Hi there! 👋 I'm PropBot, your Boston real estate expert!\n\nI can help you:\n• Find properties to buy or rent\n• Compare neighborhoods\n• Predict prices\n• Calculate commute times\n\nWhat would you like to know about Boston real estate?"
-            }
-        
-        return {'valid': True}
-    
-    def retrieve_documents(self, query: str, collection_name: str = None) -> List[Dict]:
+    def retrieve_documents(self, query: str, collection_name: str = None, k: int = 5) -> List[Dict]:
         """Retrieve relevant documents from ChromaDB"""
         logger.info(f"🔍 Retrieving documents for: {query}")
         
@@ -225,7 +75,7 @@ class PropBotRAG:
                 
                 results = collection.query(
                     query_embeddings=[query_embedding],
-                    n_results=self.top_k
+                    n_results=k
                 )
                 
                 if results['documents'][0]:
@@ -242,156 +92,148 @@ class PropBotRAG:
         
         all_results.sort(key=lambda x: x['distance'])
         logger.info(f"✅ Retrieved {len(all_results)} documents")
-        return all_results[:self.top_k]
+        return all_results[:k]
     
-    def generate_response_with_gpt(self, query: str, documents: List[Dict], intent: Dict, conversation_id: str = None) -> str:
-        """Generate friendly, specific response with GPT"""
-        
-        if not documents:
-            if intent['type'] == 'rental':
-                return """I couldn't find rentals matching your criteria right now. 😊
+    def chat(self, query: str, conversation_id: str = None) -> dict:
+        """
+        Enhanced chat with greeting detection and OpenAI responses
+        """
+        try:
+            logger.info(f"Processing query: {query}")
+            
+            # STEP 1: Detect greetings and introductions
+            query_lower = query.lower().strip()
+            greeting_words = ['hi', 'hello', 'hey', 'good morning', 'good afternoon', 'good evening', 'greetings', 'sup', 'yo', 'hii', 'hiii']
+            intro_patterns = ['my name is', 'i am', "i'm", 'this is', 'im', 'i m']
+            
+            is_greeting = any(query_lower.startswith(word) for word in greeting_words)
+            is_intro = any(pattern in query_lower for pattern in intro_patterns)
+            
+            # Check if it's ONLY a greeting (not a property question)
+            property_keywords = ['property', 'properties', 'home', 'house', 'apartment', 'condo', 'bedroom', 'bathroom', 
+                               'rent', 'rental', 'lease', 'buy', 'purchase', 'price', 'neighborhood', 'area', 'location',
+                               'show', 'find', 'search', 'looking']
+            has_property_intent = any(keyword in query_lower for keyword in property_keywords)
+            
+            # If it's just a greeting/intro without property questions
+            if (is_greeting or is_intro) and not has_property_intent and len(query.split()) < 20:
+                # Extract name if provided
+                name = None
+                for pattern in intro_patterns:
+                    if pattern in query_lower:
+                        parts = query_lower.split(pattern)
+                        if len(parts) > 1:
+                            name_part = parts[1].strip()
+                            # Remove punctuation and get first word
+                            name_part = re.sub(r'[^\w\s]', '', name_part)
+                            name = name_part.split()[0] if name_part else None
+                            if name:
+                                name = name.capitalize()
+                            break
+                
+                # Simple, friendly greeting response
+                if name:
+                    greeting_response = f"Hi {name}! 👋 How can I help you today?"
+                else:
+                    greeting_response = "Hi there! 👋 How can I help you today?"
+                
+                logger.info(f"✅ Greeting detected, responding without property search")
+                
+                return {
+                    "answer": greeting_response,
+                    "sources": [],
+                    "documents_retrieved": 0
+                }
+            
+            # STEP 2: If not just a greeting, search for properties
+            logger.info("🔍 Property question detected, searching ChromaDB...")
+            
+            all_results = []
+            for collection in self.collection_names[:5]:
+                try:
+                    results = self.retrieve_documents(query, collection, k=3)
+                    all_results.extend(results)
+                except Exception as e:
+                    logger.warning(f"Failed to search {collection}: {e}")
+                    continue
+            
+            all_results.sort(key=lambda x: x['distance'])
+            top_results = all_results[:10]
+            
+            # Build context
+            context = "\n\n".join([
+                f"Source {i+1} ({doc['collection']}):\n{doc['document'][:500]}"
+                for i, doc in enumerate(top_results)
+            ])
+            
+            # System prompt for property questions
+            system_prompt = """You are PropBot, a friendly Boston real estate AI assistant.
 
-Let me help you search better:
-- Try adjusting your budget (most Boston rentals are $2,000-$4,000/month)
-- Consider different neighborhoods (Allston and Brighton are more affordable!)
-- Change bedroom requirements
-
-Or ask: "What's the average rent in Boston?" """
-            else:
-                return """I couldn't find properties matching those exact criteria. 🏠
-
-Here's what you can try:
-- Explore different neighborhoods (I know all of Boston!)
-- Adjust your price range
-- Try different bedroom/bathroom combinations
-
-Ask me: "What neighborhoods are available?" or "Show me all 3 bedroom properties" """
-        
-        context = "\n\n".join([f"Property {i+1}: {doc['document']}" for i, doc in enumerate(documents)])
-        
-        # Context-aware system prompt
-        context_note = ""
-        if conversation_id and conversation_id in self.conversation_context:
-            ctx = self.conversation_context[conversation_id]
-            if ctx['search_count'] > 1:
-                context_note = f"\n\nNOTE: This is the user's {ctx['search_count']} search. Reference previous searches naturally if relevant."
-        
-        system_prompt = f"""You are PropBot, a friendly and knowledgeable Boston real estate expert! 🏠
-
-YOUR PERSONALITY:
-- Warm, enthusiastic, and helpful
+When answering property questions:
+- Be specific with addresses, prices, and features
 - Use emojis sparingly (1-2 per response)
-- Be conversational and natural
-- Show excitement about great properties
-- Empathetic when properties are out of budget
+- Format property details clearly with bullet points
+- Highlight the best option
+- Keep responses concise (2-3 paragraphs)
+- Suggest relevant follow-up actions"""
 
-YOUR RESPONSE STYLE:
-1. Start with a friendly acknowledgment
-2. Give SPECIFIC details (addresses, exact prices, features)
-3. Use bullet points for multiple properties
-4. Compare properties when showing multiple
-5. Highlight the BEST option
-6. End with a helpful suggestion or question
-
-FORMATTING:
-- Use line breaks for readability
-- Bold important numbers (in markdown)
-- Keep responses concise but complete (300-400 words max)
-{context_note}"""
-
-        user_prompt = f"""User Question: {query}
+            if len(top_results) > 0:
+                user_message = f"""User Query: {query}
 
 Boston Real Estate Data:
 {context}
 
-Provide a helpful, well-formatted response."""
+Provide a helpful response with specific property recommendations."""
+            else:
+                user_message = f"""User Query: {query}
 
-        try:
+No property data found. Politely suggest they rephrase or try different criteria."""
+            
+            # Get OpenAI response
             response = self.openai_client.chat.completions.create(
                 model="gpt-3.5-turbo",
                 messages=[
                     {"role": "system", "content": system_prompt},
-                    {"role": "user", "content": user_prompt}
+                    {"role": "user", "content": user_message}
                 ],
-                temperature=self.temperature,
-                max_tokens=600
+                temperature=0.7,
+                max_tokens=500
             )
             
             answer = response.choices[0].message.content
-            logger.info("✅ Generated friendly GPT response")
-            return answer
+            
+            sources = [
+                {
+                    "collection": doc['collection'],
+                    "relevance": round(1 - doc['distance'], 3),
+                    "snippet": doc['document'][:200] + "..."
+                }
+                for doc in top_results[:5]
+            ]
+            
+            return {
+                "answer": answer,
+                "sources": sources,
+                "documents_retrieved": len(top_results)
+            }
             
         except Exception as e:
-            logger.error(f"❌ OpenAI error: {e}")
-            return f"I found {len(documents)} great options! Here's the first:\n\n{documents[0]['document'][:300]}..."
-    
-    def chat(self, query: str, conversation_id: Optional[str] = None) -> Dict:
-        """Main chat with memory and personality"""
-        logger.info(f"💬 Query: {query}")
-        
-        # Validate
-        validation = self.validate_query(query)
-        if not validation['valid']:
+            logger.error(f"Chat error: {e}")
             return {
-                'answer': validation['message'],
-                'sources': [],
-                'documents_retrieved': 0,
-                'follow_up_suggestions': []
+                "answer": "I apologize, but I encountered an error. Please try rephrasing your question! 🏠",
+                "sources": [],
+                "documents_retrieved": 0
             }
-        
-        # Correct spelling
-        corrected_query = self.correct_spelling(query)
-        if corrected_query != query:
-            logger.info(f"📝 Corrected: {query} → {corrected_query}")
-        
-        # Extract intent (with conversation memory)
-        intent = self.extract_intent(corrected_query, conversation_id)
-        
-        # Update conversation context
-        self.update_conversation_context(conversation_id, intent, query)
-        
-        # Retrieve documents
-        documents = self.retrieve_documents(corrected_query)
-        
-        # Generate response
-        answer = self.generate_response_with_gpt(corrected_query, documents, intent, conversation_id)
-        
-        # Generate follow-up suggestions
-        follow_ups = self.generate_follow_up_suggestions(intent, documents)
-        
-        # Add follow-ups to answer
-        if follow_ups:
-            answer = f"{answer}\n\n{follow_ups}"
-        
-        # Format sources
-        sources = [
-            {
-                'collection': doc['collection'],
-                'relevance': round(1 - doc['distance'], 3),
-                'snippet': doc['document'][:200] + "..."
-            }
-            for doc in documents
-        ]
-        
-        return {
-            'answer': answer,
-            'sources': sources,
-            'documents_retrieved': len(documents),
-            'corrected_query': corrected_query if corrected_query != query else None,
-            'intent_detected': intent['type'],
-            'context_used': intent.get('context_used', False)
-        }
 
 def test_rag():
     """Test enhanced RAG"""
     logger.info("🧪 Testing Enhanced RAG...")
     
     rag = PropBotRAG()
-    conv_id = "test_conv_123"
     
     test_queries = [
+        "Hi I am Pranav",
         "Show me 3 bedroom properties in Back Bay",
-        "What about cheaper options?",  # Uses context!
         "Tell me about rentals under $3000"
     ]
     
@@ -400,14 +242,7 @@ def test_rag():
         print(f"💬 Query: {query}")
         print('='*70)
         
-        result = rag.chat(query, conversation_id=conv_id)
-        
-        if result.get('corrected_query'):
-            print(f"✏️  Corrected to: {result['corrected_query']}")
-        
-        if result.get('context_used'):
-            print(f"🧠 Used conversation memory!")
-        
+        result = rag.chat(query)
         print(f"\n{result['answer']}\n")
 
 if __name__ == "__main__":
