@@ -1,0 +1,25 @@
+neighborhood,Shape_Length,Shape_Area,source_file,cleaned_date
+Allston,0.11384055756333,0.00038989200193,boston_neighborhood_boundaries_approximated_by_2020_census_tracts.csv,2025-11-30 19:58:13
+Back Bay,0.054830660007761,0.000145395383591,boston_neighborhood_boundaries_approximated_by_2020_census_tracts.csv,2025-11-30 19:58:13
+Beacon Hill,0.037223991892674,8.0117827771e-05,boston_neighborhood_boundaries_approximated_by_2020_census_tracts.csv,2025-11-30 19:58:13
+Brighton,0.152514410409402,0.000809297088931,boston_neighborhood_boundaries_approximated_by_2020_census_tracts.csv,2025-11-30 19:58:13
+Charlestown,0.110220490059477,0.000520700139741,boston_neighborhood_boundaries_approximated_by_2020_census_tracts.csv,2025-11-30 19:58:13
+Chinatown,0.029769739790034,3.1264144584e-05,boston_neighborhood_boundaries_approximated_by_2020_census_tracts.csv,2025-11-30 19:58:13
+Dorchester,0.256765038982957,0.002224430616928,boston_neighborhood_boundaries_approximated_by_2020_census_tracts.csv,2025-11-30 19:58:13
+Downtown,0.10249129550224,0.000217306846344,boston_neighborhood_boundaries_approximated_by_2020_census_tracts.csv,2025-11-30 19:58:13
+East Boston,0.242243812956229,0.001838898984547,boston_neighborhood_boundaries_approximated_by_2020_census_tracts.csv,2025-11-30 19:58:13
+Fenway,0.31680569415656,0.000429409787566,boston_neighborhood_boundaries_approximated_by_2020_census_tracts.csv,2025-11-30 19:58:13
+Harbor Islands,0.368377811935201,0.000946169693705,boston_neighborhood_boundaries_approximated_by_2020_census_tracts.csv,2025-11-30 19:58:13
+Hyde Park,0.21493382844056,0.001439401858317,boston_neighborhood_boundaries_approximated_by_2020_census_tracts.csv,2025-11-30 19:58:13
+Jamaica Plain,0.24952909688982,0.000999039398301,boston_neighborhood_boundaries_approximated_by_2020_census_tracts.csv,2025-11-30 19:58:13
+Longwood,0.041669291766188,5.5408472123e-05,boston_neighborhood_boundaries_approximated_by_2020_census_tracts.csv,2025-11-30 19:58:13
+Mattapan,0.163854050267757,0.000778476843789,boston_neighborhood_boundaries_approximated_by_2020_census_tracts.csv,2025-11-30 19:58:13
+Mission Hill,0.061469328064945,0.000170177083057,boston_neighborhood_boundaries_approximated_by_2020_census_tracts.csv,2025-11-30 19:58:13
+North End,0.040362143059776,8.6003476519e-05,boston_neighborhood_boundaries_approximated_by_2020_census_tracts.csv,2025-11-30 19:58:13
+Roslindale,0.149750185711538,0.000619930472069,boston_neighborhood_boundaries_approximated_by_2020_census_tracts.csv,2025-11-30 19:58:13
+Roxbury,0.171812651569063,0.000983026964555,boston_neighborhood_boundaries_approximated_by_2020_census_tracts.csv,2025-11-30 19:58:13
+South Boston,0.153582175239118,0.000647488306605,boston_neighborhood_boundaries_approximated_by_2020_census_tracts.csv,2025-11-30 19:58:13
+South Boston Waterfront,0.116811059933182,0.000534542458901,boston_neighborhood_boundaries_approximated_by_2020_census_tracts.csv,2025-11-30 19:58:13
+South End,0.075146685095101,0.00023913912812,boston_neighborhood_boundaries_approximated_by_2020_census_tracts.csv,2025-11-30 19:58:13
+West End,0.044883419286384,8.5035791687e-05,boston_neighborhood_boundaries_approximated_by_2020_census_tracts.csv,2025-11-30 19:58:13
+West Roxbury,0.216024567398815,0.001477334739468,boston_neighborhood_boundaries_approximated_by_2020_census_tracts.csv,2025-11-30 19:58:13

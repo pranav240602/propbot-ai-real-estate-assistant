@@ -1,0 +1,3196 @@
+{
+  "data": [
+    {
+      "zpid": 59145002,
+      "location": {
+        "latitude": 42.29198,
+        "longitude": -71.12147
+      },
+      "address": {
+        "streetAddress": "19 Delford St",
+        "zipcode": "02131",
+        "city": "Roslindale",
+        "state": "MA"
+      },
+      "media": {
+        "propertyPhotoLinks": {
+          "highResolutionLink": "https://photos.zillowstatic.com/fp/05cd4c14172d69cbae867cd19932d3a3-p_f.jpg"
+        },
+        "thirdPartyPhotoLinks": {
+          "streetViewLink": "https://maps.googleapis.com/maps/api/streetview?size=1600x240&location=42.2919807434082,-71.12146759033203&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=8NutZ3oCvYY2RuoKkeAyqBUGVjs=",
+          "satelliteLink": "https://maps.googleapis.com/maps/api/staticmap?mobile=false&sensor=true&maptype=satellite&size=1600x480&zoom=19&center=42.2919807434082,-71.12146759033203&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=rwLlQOV2LRdbBB9Z14utKD7t7xQ=",
+          "streetViewMetadataLink": "https://maps.googleapis.com/maps/api/streetview/metadata?location=42.2919807434082,-71.12146759033203&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=bOo_fsZ7vqccTkPmqFz7_JLiIpc="
+        },
+        "hasVRModel": true,
+        "hasVideos": false,
+        "hasIMX": true,
+        "hasApprovedThirdPartyVirtualTour": false,
+        "allPropertyPhotos": {
+          "highResolution": [
+            "https://photos.zillowstatic.com/fp/05cd4c14172d69cbae867cd19932d3a3-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/3e37357af01f2ce02b0caa0a20e6e56e-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/1cb827c6b54e307158f07a4c2cefeaaa-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/d8ad16ebd2f4e90ca5e175b9e2f78fc7-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/2974546250b93402d9991e31bd138ab4-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/fbacd7b69f931625d03d4556506898a3-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/d267608a7c3c09b1a623e89d6bddda93-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/e322c3e3eec760b082acc603a3c6225e-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/db711867a111ec483ad4312ceb2eeb3b-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/466dd7b79189d6309732f8f57ab44abd-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/497669d3783db0bdcef843a48115c164-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/acba592c7fb0882ed8f6657dfb0e4375-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/55a17e8c2dc8fab9d5605a6922e23f6f-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/c020a908b88744a0a421e4b48779ab1e-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/a7debe140b629fbfccc686292c29a20a-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/bc7a9246c4dda8ca7a06e7512edb8cd9-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/6f9f29ae43ffdfbb46bfd2da1243987a-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/3aa21bbebb2044c1d916c9c0cd638572-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/2cc4420c79c9bf62e167953cb7f4ad4e-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/6d3ac96c8974cd27b979a05344a1b91c-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/79bd16f0f23b48055a17d1109b62a174-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/6356d6f84040e3b013ff1b83d8c55059-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/1619a56a7535716475c1cf950bd201ac-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/fb0d2c262cfa1740e943c20e8b039931-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/2eaa614b8eb80da7b2a7868a5f5f8c3e-p_f.jpg"
+          ]
+        }
+      },
+      "isFeatured": false,
+      "isShowcaseListing": true,
+      "mapDotTag": {
+        "name": "showcase"
+      },
+      "rental": {
+        "areApplicationsAccepted": false,
+        "hasVirtualTour": false
+      },
+      "currency": "usd",
+      "country": "usa",
+      "listingDateTimeOnZillow": 1762819200000,
+      "bestGuessTimeZone": "America/New_York",
+      "isUnmappable": false,
+      "bathrooms": 2.0,
+      "bedrooms": 3,
+      "livingArea": 1580,
+      "yearBuilt": 1988,
+      "lotSizeWithUnit": {
+        "lotSize": 1760.0,
+        "lotSizeUnit": "squareFeet"
+      },
+      "propertyType": "singleFamily",
+      "listing": {
+        "listingStatus": "forSale",
+        "marketingStatus": "active",
+        "palsId": "12004_73453654",
+        "listingSubType": {
+          "isFSBA": true
+        }
+      },
+      "daysOnZillow": 6,
+      "isPreforeclosureAuction": false,
+      "price": {
+        "value": 599900,
+        "pricePerSquareFoot": 380
+      },
+      "estimates": {
+        "zestimate": 607900,
+        "rentZestimate": 3147
+      },
+      "zillowOwnedProperty": {
+        "isZillowOwned": false
+      },
+      "taxAssessment": {
+        "taxAssessedValue": 407200,
+        "taxAssessmentYear": "2024"
+      },
+      "hdpView": {
+        "listingStatus": "forSale",
+        "price": 599900,
+        "hdpUrl": "/homedetail/MobileAppHDPShopperPlatformServicePage.htm?fromApp=true&p=android&variant=SHOWCASE#zpid=59145002&homeDetailsVariant=SHOWCASE&webviewLayout=doubleScroll&showFactsAndFeatures=true&fromApp=true&gmaps=true&streetview=true"
+      },
+      "region": {},
+      "personalizedResult": {
+        "isViewed": false,
+        "userRecommendation": {
+          "isRecommendedForYou": false
+        }
+      },
+      "propertyDisplayRules": {
+        "canShowAddress": true,
+        "canShowOnMap": true,
+        "agent": {
+          "agentName": "Commonwealth Living Group"
+        },
+        "mls": {
+          "brokerName": "Real Broker MA, LLC"
+        },
+        "builder": {},
+        "soldByOffice": {},
+        "listingCategory": "category1"
+      },
+      "ssid": 12,
+      "hasFloorPlan": true,
+      "richMedia": [
+        {
+          "rmxData": [
+            {
+              "floorPlan": {
+                "heroImageUrl": "https://www.zillowstatic.com/floor_map/163b0262-5a0b-42e5-809d-2617abc9ca33/hero.png"
+              },
+              "virtualTour": {
+                "viewerUrl": "https://www.zillow.com/view-3d-home/af175bd5-53ff-43fd-8624-da996a0e71cc"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "zpid": 457487303,
+      "location": {
+        "latitude": 42.309036,
+        "longitude": -71.110825
+      },
+      "address": {
+        "streetAddress": "76 Elm St APT G05",
+        "zipcode": "02130",
+        "city": "Jamaica Plain",
+        "state": "MA",
+        "buildingId": 1005416087
+      },
+      "media": {
+        "propertyPhotoLinks": {
+          "highResolutionLink": "https://photos.zillowstatic.com/fp/078999414acfcf3abd9b8d31c4df7557-p_f.jpg"
+        },
+        "thirdPartyPhotoLinks": {
+          "streetViewLink": "https://maps.googleapis.com/maps/api/streetview?size=1600x240&location=42.30903625488281,-71.11082458496094&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=oENQP31XVD7JeTvv6qupztI94Ik=",
+          "satelliteLink": "https://maps.googleapis.com/maps/api/staticmap?mobile=false&sensor=true&maptype=satellite&size=1600x480&zoom=19&center=42.30903625488281,-71.11082458496094&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=qfIMfOSXYGCUbXngrb4OmludKjY=",
+          "streetViewMetadataLink": "https://maps.googleapis.com/maps/api/streetview/metadata?location=42.30903625488281,-71.11082458496094&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=oEKxZTcj3O9WQmcyjLU6zjX7Hx4="
+        },
+        "hasVRModel": false,
+        "hasVideos": false,
+        "hasIMX": false,
+        "hasApprovedThirdPartyVirtualTour": false,
+        "allPropertyPhotos": {
+          "highResolution": [
+            "https://photos.zillowstatic.com/fp/078999414acfcf3abd9b8d31c4df7557-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/1dd20c2bb12ecd0925109393c7d435d0-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/e32e229ef2764badc50a2c89a3732498-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/9e52b08da6adf4ea63d1177badeb2f3c-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/ad1733e77e753a54cb79c62bf5f0df05-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/26f19c3a1f066736d6e53a047f700848-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/aecbae7c28b9ae7c6ea91f9db75a3fc9-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/e4b3316311a9517b71f11705bb5c5241-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/b9f9c925b6a81456eb7bcfbb463a67a9-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/8cd98ad575ab99f2ac2c30d3eb15c91d-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/a88342ea51684376307d62cd2019a515-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/5b986de105af6f5f5e0f233f9ad02140-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/ba4494f59cc83685b9b4e4bbd17ee24a-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/b22f37147eed4d5c670f6cb2dd14e4d7-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/78300e0e992a7cc16ddbd4e4595851eb-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/ee3c6a0bc9f1760778481e9e046d8d40-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/468f0deceac1f09d557de8aaf37ccf8e-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/a48ca39cd26a7269f90a2c14e1d14f67-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/bbaf76761fdd52b3288d2677ae7edea5-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/e771456657003ecb23f90a073d296207-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/279c10a514fea41a2dc94e7b94bffced-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/ca660d982493387992b1e0eddca48110-p_f.jpg"
+          ]
+        }
+      },
+      "title": "Sumner Hill Condominiums",
+      "isFeatured": false,
+      "isShowcaseListing": false,
+      "rental": {
+        "areApplicationsAccepted": false,
+        "hasVirtualTour": false
+      },
+      "currency": "usd",
+      "country": "usa",
+      "listingDateTimeOnZillow": 1760659200000,
+      "bestGuessTimeZone": "America/New_York",
+      "isUnmappable": false,
+      "bathrooms": 1.0,
+      "bedrooms": 1,
+      "livingArea": 885,
+      "yearBuilt": 1926,
+      "propertyType": "condo",
+      "listing": {
+        "listingStatus": "forSale",
+        "marketingStatus": "active",
+        "palsId": "12004_73445023",
+        "listingSubType": {
+          "isFSBA": true
+        }
+      },
+      "daysOnZillow": 31,
+      "isPreforeclosureAuction": false,
+      "price": {
+        "value": 155000,
+        "pricePerSquareFoot": 175
+      },
+      "estimates": {},
+      "zillowOwnedProperty": {
+        "isZillowOwned": false
+      },
+      "hdpView": {
+        "listingStatus": "forSale",
+        "price": 155000,
+        "hdpUrl": "/homedetail/MobileAppHDPShopperPlatformServicePage.htm?fromApp=true&p=android&variant=FOR_SALE#zpid=457487303&homeDetailsVariant=FOR_SALE&webviewLayout=doubleScroll&showFactsAndFeatures=true&fromApp=true&gmaps=true&streetview=true"
+      },
+      "region": {},
+      "personalizedResult": {
+        "isViewed": false,
+        "userRecommendation": {
+          "isRecommendedForYou": false
+        }
+      },
+      "propertyDisplayRules": {
+        "canShowAddress": true,
+        "canShowOnMap": true,
+        "agent": {
+          "agentName": "Juan Murray"
+        },
+        "mls": {
+          "brokerName": "RE/MAX Real Estate Center"
+        },
+        "builder": {},
+        "soldByOffice": {},
+        "listingCategory": "category1"
+      },
+      "ssid": 12,
+      "hasFloorPlan": false
+    },
+    {
+      "zpid": 59161316,
+      "location": {
+        "latitude": 42.265804,
+        "longitude": -71.161156
+      },
+      "address": {
+        "streetAddress": "55 Cottage Rd",
+        "zipcode": "02132",
+        "city": "Boston",
+        "state": "MA"
+      },
+      "media": {
+        "propertyPhotoLinks": {
+          "highResolutionLink": "https://photos.zillowstatic.com/fp/b4c592645afb09c8f53b9d792c82a6a2-p_f.jpg"
+        },
+        "thirdPartyPhotoLinks": {
+          "streetViewLink": "https://maps.googleapis.com/maps/api/streetview?size=1600x240&location=42.265804290771484,-71.1611557006836&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=I8nnXXJ6SwkZdcNHQ0vdRI7rZTI=",
+          "satelliteLink": "https://maps.googleapis.com/maps/api/staticmap?mobile=false&sensor=true&maptype=satellite&size=1600x480&zoom=19&center=42.265804290771484,-71.1611557006836&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=gpfPHQJWCCp_nFpukWC2zS7LyiU=",
+          "streetViewMetadataLink": "https://maps.googleapis.com/maps/api/streetview/metadata?location=42.265804290771484,-71.1611557006836&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=hNygOK5Ur7ETJlKWKJbKN0LoMAE="
+        },
+        "hasVRModel": false,
+        "hasVideos": false,
+        "hasIMX": false,
+        "hasApprovedThirdPartyVirtualTour": false,
+        "allPropertyPhotos": {
+          "highResolution": [
+            "https://photos.zillowstatic.com/fp/b4c592645afb09c8f53b9d792c82a6a2-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/20e2e75e1a1da834786f5b30ef704cbf-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/4a361f4fce235015d5c7f2edcff4781c-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/934b6c9c570f876d052a880be88dc7a0-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/86b8906d760c4e7fed44c98a60936183-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/76b56faaff237e253553ffb1f74eb0a4-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/26241256adc74119f9e8b2bf46474879-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/e2744910114e8c30814feaf9282abebd-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/da8d01e7b6c9a02bfbfae04eb44220c5-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/3371a9d755215c7139292c350d93b3a2-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/bf4b2f320f03ba4143bfbeac10a1ee5f-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/7fd36d47543e455dc420afa0387373d9-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/0acc8270b631c62ee152018d9a589ff3-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/70f1728d32d6c048790e586f87fd61ce-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/3421f1bd83e3b8095efc22234e8c080b-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/a90b692acaf2321c57c02000cbaf3284-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/b93a0ca29f121a45834f0c0a666455b4-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/d708d766faf8a8bea6bf2410aabb8ee4-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/09db661895a337c51cb8402b51c99a83-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/fcc079b77ba7c41bcef7ba0dce03c30a-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/51d000abeecbed2418ef7ab02bbebfd0-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/e3f643e047f791ccb0bb23bd84be4430-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/be7ae9b423ccabe38748358d8a2b3e90-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/f0210817a15dbfa311b743c9d73aa9a4-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/0adc7e2bf2901d5f8bff0ec3dcd0829f-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/7156b071f1fb8b468350856705055e33-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/b71b1d0f404f7dbdaf03f4cb983323f6-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/69304c18a0338d6b95bdcbdbd4d9c3d5-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/9f6a92c924847ae90d5953d95e5d86ee-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/430c93360c09415da862055269d7c15e-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/dc548654b17fd9096116641011ea8c22-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/36a8c33f6eddaa2efb023c2b816e75cd-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/2060560fd2c9d4c8ac8221232a91d6fe-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/123a88849dd208272f719ddc991ac1ee-p_f.jpg"
+          ]
+        }
+      },
+      "isFeatured": false,
+      "isShowcaseListing": false,
+      "rental": {
+        "areApplicationsAccepted": false,
+        "hasVirtualTour": false
+      },
+      "currency": "usd",
+      "country": "usa",
+      "listingDateTimeOnZillow": 1758672000000,
+      "bestGuessTimeZone": "America/New_York",
+      "isUnmappable": false,
+      "bathrooms": 2.0,
+      "bedrooms": 3,
+      "livingArea": 1490,
+      "yearBuilt": 1904,
+      "lotSizeWithUnit": {
+        "lotSize": 4800.0,
+        "lotSizeUnit": "squareFeet"
+      },
+      "propertyType": "singleFamily",
+      "listing": {
+        "listingStatus": "forSale",
+        "marketingStatus": "active",
+        "palsId": "12004_73435370",
+        "listingSubType": {
+          "isFSBA": true
+        }
+      },
+      "daysOnZillow": 54,
+      "isPreforeclosureAuction": false,
+      "price": {
+        "value": 675000,
+        "changedDate": 1762405200000,
+        "priceChange": -24900,
+        "pricePerSquareFoot": 453
+      },
+      "estimates": {
+        "zestimate": 672600,
+        "rentZestimate": 3990
+      },
+      "zillowOwnedProperty": {
+        "isZillowOwned": false
+      },
+      "taxAssessment": {
+        "taxAssessedValue": 501300,
+        "taxAssessmentYear": "2024"
+      },
+      "hdpView": {
+        "listingStatus": "forSale",
+        "price": 675000,
+        "hdpUrl": "/homedetail/MobileAppHDPShopperPlatformServicePage.htm?fromApp=true&p=android&variant=FOR_SALE#zpid=59161316&homeDetailsVariant=FOR_SALE&webviewLayout=doubleScroll&showFactsAndFeatures=true&fromApp=true&gmaps=true&streetview=true"
+      },
+      "region": {},
+      "personalizedResult": {
+        "isViewed": false,
+        "userRecommendation": {
+          "isRecommendedForYou": false
+        }
+      },
+      "propertyDisplayRules": {
+        "canShowAddress": true,
+        "canShowOnMap": true,
+        "agent": {
+          "agentName": "Christopher Mehr"
+        },
+        "mls": {
+          "brokerName": "Full Circle Realty LLC"
+        },
+        "builder": {},
+        "soldByOffice": {},
+        "listingCategory": "category1"
+      },
+      "ssid": 12,
+      "hasFloorPlan": false
+    },
+    {
+      "zpid": 59160860,
+      "location": {
+        "latitude": 42.257805,
+        "longitude": -71.15662
+      },
+      "address": {
+        "streetAddress": "70 Birchwood St",
+        "zipcode": "02132",
+        "city": "West Roxbury",
+        "state": "MA"
+      },
+      "media": {
+        "propertyPhotoLinks": {
+          "highResolutionLink": "https://photos.zillowstatic.com/fp/26a3c4659d891e906da7f3660fb00977-p_f.jpg"
+        },
+        "thirdPartyPhotoLinks": {
+          "streetViewLink": "https://maps.googleapis.com/maps/api/streetview?size=1600x240&location=42.25780487060547,-71.1566162109375&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=rQe--tUrevIOyF3GdflC-ENIwOM=",
+          "satelliteLink": "https://maps.googleapis.com/maps/api/staticmap?mobile=false&sensor=true&maptype=satellite&size=1600x480&zoom=19&center=42.25780487060547,-71.1566162109375&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=oSTiETTH9r-GfC9300qhhCTje-s=",
+          "streetViewMetadataLink": "https://maps.googleapis.com/maps/api/streetview/metadata?location=42.25780487060547,-71.1566162109375&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=sk1-UbRPf0t_hYD5Ah-uwm8NKmg="
+        },
+        "hasVRModel": false,
+        "hasVideos": false,
+        "hasIMX": false,
+        "hasApprovedThirdPartyVirtualTour": false,
+        "allPropertyPhotos": {
+          "highResolution": [
+            "https://photos.zillowstatic.com/fp/26a3c4659d891e906da7f3660fb00977-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/42728b286d77a4aeafe6201bf0bbea42-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/6c6cbc8e647d044b809fdb6800bfb97f-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/4add4ca6edc47ae828d0a71a7147389d-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/0f5a1000d140aae3dc72db3db2b176ea-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/237a8f70a7d417910e46ef891268ef12-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/004516f8489595768ec2679aa13f1dbe-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/2bf66ce2c527e846553a00b0c97f3c05-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/a78297fa30e23703dbf490da71be9c08-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/a8c42344908f0c26aaf9338b2e63c1d0-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/b4eaadc00b0205294752cb68f0849f08-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/ea6aeaad253fd42ff74eb16f0e32e221-p_f.jpg"
+          ]
+        }
+      },
+      "isFeatured": false,
+      "isShowcaseListing": false,
+      "rental": {
+        "areApplicationsAccepted": false,
+        "hasVirtualTour": false
+      },
+      "currency": "usd",
+      "country": "usa",
+      "listingDateTimeOnZillow": 1763078400000,
+      "bestGuessTimeZone": "America/New_York",
+      "isUnmappable": false,
+      "bathrooms": 2.0,
+      "bedrooms": 3,
+      "livingArea": 1075,
+      "yearBuilt": 1950,
+      "lotSizeWithUnit": {
+        "lotSize": 3887.0,
+        "lotSizeUnit": "squareFeet"
+      },
+      "propertyType": "singleFamily",
+      "listing": {
+        "listingStatus": "forSale",
+        "marketingStatus": "active",
+        "palsId": "12004_73454554",
+        "listingSubType": {
+          "isFSBA": true
+        }
+      },
+      "daysOnZillow": 3,
+      "isPreforeclosureAuction": false,
+      "price": {
+        "value": 639900,
+        "pricePerSquareFoot": 595
+      },
+      "estimates": {
+        "zestimate": 644600,
+        "rentZestimate": 3463
+      },
+      "zillowOwnedProperty": {
+        "isZillowOwned": false
+      },
+      "taxAssessment": {
+        "taxAssessedValue": 491100,
+        "taxAssessmentYear": "2024"
+      },
+      "hdpView": {
+        "listingStatus": "forSale",
+        "price": 639900,
+        "hdpUrl": "/homedetail/MobileAppHDPShopperPlatformServicePage.htm?fromApp=true&p=android&variant=FOR_SALE#zpid=59160860&homeDetailsVariant=FOR_SALE&webviewLayout=doubleScroll&showFactsAndFeatures=true&fromApp=true&gmaps=true&streetview=true"
+      },
+      "region": {},
+      "personalizedResult": {
+        "isViewed": false,
+        "userRecommendation": {
+          "isRecommendedForYou": false
+        }
+      },
+      "propertyDisplayRules": {
+        "canShowAddress": true,
+        "canShowOnMap": true,
+        "agent": {
+          "agentName": "Ann Marie Minihan"
+        },
+        "mls": {
+          "brokerName": "Coldwell Banker Realty - Hingham"
+        },
+        "builder": {},
+        "soldByOffice": {},
+        "listingCategory": "category1"
+      },
+      "ssid": 12,
+      "hasFloorPlan": false
+    },
+    {
+      "zpid": 2073776159,
+      "location": {
+        "latitude": 42.363537,
+        "longitude": -71.05128
+      },
+      "address": {
+        "streetAddress": "1 Lewis Wharf",
+        "zipcode": "02110",
+        "city": "Boston",
+        "state": "MA"
+      },
+      "media": {
+        "propertyPhotoLinks": {
+          "highResolutionLink": "https://photos.zillowstatic.com/fp/ce1b4f875bc7bf572f9fe82d1211815b-p_f.jpg"
+        },
+        "thirdPartyPhotoLinks": {
+          "streetViewLink": "https://maps.googleapis.com/maps/api/streetview?size=1600x240&location=42.3635368347168,-71.05127716064453&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=GmDtX9Zr1F4ttPy5ZYOYGyWZ3KM=",
+          "satelliteLink": "https://maps.googleapis.com/maps/api/staticmap?mobile=false&sensor=true&maptype=satellite&size=1600x480&zoom=19&center=42.3635368347168,-71.05127716064453&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=vc9gxS0uyopVsZXOTC8utzwMXgc=",
+          "streetViewMetadataLink": "https://maps.googleapis.com/maps/api/streetview/metadata?location=42.3635368347168,-71.05127716064453&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=7p_-h9eAJB5Isq4vtvrnF6QATCY="
+        },
+        "hasVRModel": false,
+        "hasVideos": false,
+        "hasIMX": false,
+        "hasApprovedThirdPartyVirtualTour": false,
+        "allPropertyPhotos": {
+          "highResolution": [
+            "https://photos.zillowstatic.com/fp/ce1b4f875bc7bf572f9fe82d1211815b-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/41f21580f465c4e3bb5f96108392047c-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/0d81caf733a3caad6d71795bc9ae4142-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/d75429650593bece90d4abb2dd95168e-p_f.jpg"
+          ]
+        }
+      },
+      "isFeatured": false,
+      "isShowcaseListing": false,
+      "rental": {
+        "areApplicationsAccepted": false,
+        "hasVirtualTour": false
+      },
+      "currency": "usd",
+      "country": "usa",
+      "listingDateTimeOnZillow": 1760572800000,
+      "bestGuessTimeZone": "America/New_York",
+      "isUnmappable": false,
+      "bathrooms": 2.0,
+      "bedrooms": 2,
+      "livingArea": 700,
+      "yearBuilt": 2026,
+      "lotSizeWithUnit": {
+        "lotSize": 0.0,
+        "lotSizeUnit": "squareFeet"
+      },
+      "propertyType": "singleFamily",
+      "listing": {
+        "listingStatus": "forSale",
+        "marketingStatus": "active",
+        "palsId": "12004_73444380",
+        "listingSubType": {
+          "isFSBA": true
+        }
+      },
+      "daysOnZillow": 32,
+      "isPreforeclosureAuction": false,
+      "price": {
+        "value": 450000,
+        "pricePerSquareFoot": 643
+      },
+      "estimates": {
+        "rentZestimate": 4512
+      },
+      "zillowOwnedProperty": {
+        "isZillowOwned": false
+      },
+      "hdpView": {
+        "listingStatus": "forSale",
+        "price": 450000,
+        "hdpUrl": "/homedetail/MobileAppHDPShopperPlatformServicePage.htm?fromApp=true&p=android&variant=FOR_SALE#zpid=2073776159&homeDetailsVariant=FOR_SALE&webviewLayout=doubleScroll&showFactsAndFeatures=true&fromApp=true&gmaps=true&streetview=true"
+      },
+      "region": {},
+      "personalizedResult": {
+        "isViewed": false,
+        "userRecommendation": {
+          "isRecommendedForYou": false
+        }
+      },
+      "propertyDisplayRules": {
+        "canShowAddress": true,
+        "canShowOnMap": true,
+        "agent": {
+          "agentName": "Sarah Fillmann"
+        },
+        "mls": {
+          "brokerName": "Coldwell Banker Realty - Boston"
+        },
+        "builder": {},
+        "soldByOffice": {},
+        "listingCategory": "category1"
+      },
+      "ssid": 12,
+      "hasFloorPlan": false
+    },
+    {
+      "zpid": 59157124,
+      "location": {
+        "latitude": 42.284843,
+        "longitude": -71.16107
+      },
+      "address": {
+        "streetAddress": "76 Potomac St",
+        "zipcode": "02132",
+        "city": "West Roxbury",
+        "state": "MA"
+      },
+      "media": {
+        "propertyPhotoLinks": {
+          "highResolutionLink": "https://photos.zillowstatic.com/fp/1bee679c21cd7967c1fa467b0f65a726-p_f.jpg"
+        },
+        "thirdPartyPhotoLinks": {
+          "streetViewLink": "https://maps.googleapis.com/maps/api/streetview?size=1600x240&location=42.28484344482422,-71.16107177734375&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=CGehktTxoQVDGNVf99vP2t1_bZE=",
+          "satelliteLink": "https://maps.googleapis.com/maps/api/staticmap?mobile=false&sensor=true&maptype=satellite&size=1600x480&zoom=19&center=42.28484344482422,-71.16107177734375&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=NP91B0p2FygsKq7qdvQTDczO3Dk=",
+          "streetViewMetadataLink": "https://maps.googleapis.com/maps/api/streetview/metadata?location=42.28484344482422,-71.16107177734375&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=J8nXLjtVpR-SubJC30Bx20rlG9g="
+        },
+        "hasVRModel": false,
+        "hasVideos": false,
+        "hasIMX": false,
+        "hasApprovedThirdPartyVirtualTour": false,
+        "allPropertyPhotos": {
+          "highResolution": [
+            "https://photos.zillowstatic.com/fp/1bee679c21cd7967c1fa467b0f65a726-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/f026ebbba89e44cb3f65591194b65089-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/48effc5b14253409b53de748800d563a-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/3d0446a4a05f714397926ecb7d725859-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/50b7df2477cbd904197d4667401ef8c7-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/fba1495de2331eb617b9a7a5ee36aa62-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/fcad002525bddb06a050eadeb020974c-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/31e2bf598faf236f362dac84689bee54-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/e4b463852e79a4883cf1581b5952623c-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/b59969c3bb8e049138b3650e2c58d829-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/298f85a6aec04ad26cd39a299cac69db-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/00897d75ecc6f8f6328609d678ea28c3-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/a676ca23240ff5242d30b6b1aac8fae1-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/ce6ba488d3359bea0cc5694e9f510275-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/a4b7ee2617f7919b31d68b07bc801e01-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/86ee5ef504e86d269234fca503556809-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/f9ec409311ccefcf9de91047dba2cf06-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/59d6c2fc95b95195ad60859c6580394e-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/77d4e6c0c5af640a3f8f77e3a9ca29c8-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/fe6e2cc5dd04329993fe305dbdc69544-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/d4e4aa27055076c2f01642a40c5e0272-p_f.jpg"
+          ]
+        }
+      },
+      "isFeatured": false,
+      "isShowcaseListing": false,
+      "rental": {
+        "areApplicationsAccepted": false,
+        "hasVirtualTour": false
+      },
+      "currency": "usd",
+      "country": "usa",
+      "listingDateTimeOnZillow": 1762905600000,
+      "bestGuessTimeZone": "America/New_York",
+      "isUnmappable": false,
+      "bathrooms": 2.0,
+      "bedrooms": 2,
+      "livingArea": 1161,
+      "yearBuilt": 1950,
+      "lotSizeWithUnit": {
+        "lotSize": 3677.0,
+        "lotSizeUnit": "squareFeet"
+      },
+      "propertyType": "singleFamily",
+      "listing": {
+        "listingStatus": "forSale",
+        "marketingStatus": "active",
+        "palsId": "12004_73453842",
+        "listingSubType": {
+          "isFSBA": true
+        }
+      },
+      "daysOnZillow": 5,
+      "isPreforeclosureAuction": false,
+      "price": {
+        "value": 679000,
+        "pricePerSquareFoot": 585
+      },
+      "estimates": {
+        "zestimate": 685200,
+        "rentZestimate": 3165
+      },
+      "zillowOwnedProperty": {
+        "isZillowOwned": false
+      },
+      "taxAssessment": {
+        "taxAssessedValue": 594800,
+        "taxAssessmentYear": "2024"
+      },
+      "hdpView": {
+        "listingStatus": "forSale",
+        "price": 679000,
+        "hdpUrl": "/homedetail/MobileAppHDPShopperPlatformServicePage.htm?fromApp=true&p=android&variant=FOR_SALE#zpid=59157124&homeDetailsVariant=FOR_SALE&webviewLayout=doubleScroll&showFactsAndFeatures=true&fromApp=true&gmaps=true&streetview=true"
+      },
+      "region": {},
+      "personalizedResult": {
+        "isViewed": false,
+        "userRecommendation": {
+          "isRecommendedForYou": false
+        }
+      },
+      "propertyDisplayRules": {
+        "canShowAddress": true,
+        "canShowOnMap": true,
+        "agent": {
+          "agentName": "Lisa Sullivan"
+        },
+        "mls": {
+          "brokerName": "Insight Realty Group, Inc."
+        },
+        "builder": {},
+        "soldByOffice": {},
+        "listingCategory": "category1"
+      },
+      "ssid": 12,
+      "hasFloorPlan": false
+    },
+    {
+      "zpid": 452787987,
+      "location": {
+        "latitude": 42.350754,
+        "longitude": -71.04276
+      },
+      "address": {
+        "streetAddress": "150 Seaport Blvd #GPH",
+        "zipcode": "02210",
+        "city": "Boston",
+        "state": "MA",
+        "buildingId": 2001862463
+      },
+      "media": {
+        "propertyPhotoLinks": {
+          "highResolutionLink": "https://photos.zillowstatic.com/fp/c28b1921881016a90cf0ad4a69452c6f-p_f.jpg"
+        },
+        "thirdPartyPhotoLinks": {
+          "streetViewLink": "https://maps.googleapis.com/maps/api/streetview?size=1600x240&location=42.35075378417969,-71.04276275634766&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=u9jv3kSLBjbhGVXVNY82Qc9-8N0=",
+          "satelliteLink": "https://maps.googleapis.com/maps/api/staticmap?mobile=false&sensor=true&maptype=satellite&size=1600x480&zoom=19&center=42.35075378417969,-71.04276275634766&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=ZJPS8_pPKeVWUo374pcU-PzHmko=",
+          "streetViewMetadataLink": "https://maps.googleapis.com/maps/api/streetview/metadata?location=42.35075378417969,-71.04276275634766&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=8C6YQclifrCTqvw56XwQRBxdt-8="
+        },
+        "hasVRModel": false,
+        "hasVideos": false,
+        "hasIMX": false,
+        "hasApprovedThirdPartyVirtualTour": false,
+        "allPropertyPhotos": {
+          "highResolution": [
+            "https://photos.zillowstatic.com/fp/c28b1921881016a90cf0ad4a69452c6f-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/b86e6a008eca6bcd8af8db3589871fc7-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/4cb737eb920b86ed2a04696129d58656-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/6ac48fabab6803a3b2a58ec5c0c6a112-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/25bc45117e2978e30af061fd89c5fa01-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/67fb973978c7170a1fa79474f886565f-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/c23c7bf9d165adf308add5e320f08af9-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/904ab4cef7a36431ccee60eaa61c0332-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/666d493180c61c0bd4b9da1985a97649-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/3bb3127f53bb03c57f21425a4c989ebb-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/e0fa0dacd49c6fa347847d5fd8b5f556-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/805bb6911e9bb49fc5706c98fb275268-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/a6c6112a2d643cb83e736b3a78422689-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/0ce319c4745d11025152bf4c3254cdbe-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/f4e7c3d8e058d2e1eff90c6487346be3-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/39dce602c40f8f23b50b53c65765c204-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/be2ab66cc8d583ca4e028e39caa8bd82-p_f.jpg"
+          ]
+        }
+      },
+      "title": "St. Regis",
+      "isFeatured": false,
+      "isShowcaseListing": false,
+      "rental": {
+        "areApplicationsAccepted": false,
+        "hasVirtualTour": false
+      },
+      "currency": "usd",
+      "country": "usa",
+      "listingDateTimeOnZillow": 1748822400000,
+      "bestGuessTimeZone": "America/New_York",
+      "isUnmappable": false,
+      "bathrooms": 10.0,
+      "bedrooms": 6,
+      "livingArea": 10609,
+      "yearBuilt": 2022,
+      "propertyType": "condo",
+      "listing": {
+        "listingStatus": "forSale",
+        "marketingStatus": "active",
+        "palsId": "12004_73383587",
+        "listingSubType": {
+          "isFSBA": true
+        }
+      },
+      "daysOnZillow": 168,
+      "isPreforeclosureAuction": false,
+      "price": {
+        "value": 49500000,
+        "pricePerSquareFoot": 4666
+      },
+      "estimates": {
+        "zestimate": 43442600
+      },
+      "zillowOwnedProperty": {
+        "isZillowOwned": false
+      },
+      "hdpView": {
+        "listingStatus": "forSale",
+        "price": 49500000,
+        "hdpUrl": "/homedetail/MobileAppHDPShopperPlatformServicePage.htm?fromApp=true&p=android&variant=FOR_SALE#zpid=452787987&homeDetailsVariant=FOR_SALE&webviewLayout=doubleScroll&showFactsAndFeatures=true&fromApp=true&gmaps=true&streetview=true"
+      },
+      "region": {},
+      "personalizedResult": {
+        "isViewed": false,
+        "userRecommendation": {
+          "isRecommendedForYou": false
+        }
+      },
+      "propertyDisplayRules": {
+        "canShowAddress": true,
+        "canShowOnMap": true,
+        "agent": {
+          "agentName": "The Sarkis Team"
+        },
+        "mls": {
+          "brokerName": "Douglas Elliman Real Estate - The Sarkis Team"
+        },
+        "builder": {},
+        "soldByOffice": {},
+        "listingCategory": "category1"
+      },
+      "ssid": 12,
+      "hasFloorPlan": false
+    },
+    {
+      "zpid": 59126608,
+      "location": {
+        "latitude": 42.25642,
+        "longitude": -71.11072
+      },
+      "address": {
+        "streetAddress": "141 Beacon St",
+        "zipcode": "02136",
+        "city": "Boston",
+        "state": "MA"
+      },
+      "media": {
+        "propertyPhotoLinks": {
+          "highResolutionLink": "https://photos.zillowstatic.com/fp/17a1f3d61c4f4a61c14615ba3abcb982-p_f.jpg"
+        },
+        "thirdPartyPhotoLinks": {
+          "streetViewLink": "https://maps.googleapis.com/maps/api/streetview?size=1600x240&location=42.25642013549805,-71.1107177734375&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=VHAm_7QTehdS5IFtNJtRCl6xgt4=",
+          "satelliteLink": "https://maps.googleapis.com/maps/api/staticmap?mobile=false&sensor=true&maptype=satellite&size=1600x480&zoom=19&center=42.25642013549805,-71.1107177734375&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=ZbcHzWUH-bsEYtUOC1iWbbLDPkA=",
+          "streetViewMetadataLink": "https://maps.googleapis.com/maps/api/streetview/metadata?location=42.25642013549805,-71.1107177734375&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=whdWIOhBvMASpp58pEdFXQ5YoR4="
+        },
+        "hasVRModel": false,
+        "hasVideos": false,
+        "hasIMX": false,
+        "hasApprovedThirdPartyVirtualTour": false,
+        "allPropertyPhotos": {
+          "highResolution": [
+            "https://photos.zillowstatic.com/fp/17a1f3d61c4f4a61c14615ba3abcb982-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/348154576ae2e8868449a03c0f0865c5-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/c1c4e6e6d60309854bd393a80e4aa546-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/7b012cbf0b1e6cb34b4768919742a836-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/fa2b3cc2f8b13adb59f2affa123dad6e-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/9cc001546de4057b144264d7f73350ff-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/5bb7bdda9a7f44c0ab0eefd163ab9d24-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/44e9b0a25f31559b420df4201f779106-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/a984385ada83ca9e18e14b4197f7327a-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/97c4bef3e4434d8117a4b5566e039947-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/5236f987cc60b50665fae81156060282-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/1a1b946f0eb7168b00689899a2f0d503-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/6bedd14eb465f860e92aa27f678af810-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/07d2c5ed0845bc7bfd5d8159da55740f-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/5c567eb58fee18c1c82fc6f983947afb-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/028c937e061a74af2e0bb66bc024b839-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/e169c9ec21473718cb97672e0ca2db6e-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/5372560eaea3762fd4972394ffd22d67-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/3ba42d9b7556afdb4fb1506dee12a840-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/f9020148dc7e0bb852bde2938ee50e68-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/ed763426e238f97ca85336827f673e6c-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/b3c41fb78907a1a71f836fec0b370b97-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/6462e4a436aff09155b00e8a3942a803-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/0d98ad97ae0a9520e21b72b10ea521f9-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/5aae2547b61188a3303aaa68a4824ab0-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/ab709e6c3bf0648fa5e273526738fbb5-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/b4c3b95d741569015d7f509b087b9ad3-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/6ac9221c9cac818eff99132e961922a4-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/0a1871834665867016ef5981b34294fc-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/e3ad20f9a938f2ae1e2a8baca56d314b-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/ebb0558f041f968d34f36ffbf30614a3-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/9d97b3a17a48675dfbd11a6d42715b8a-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/d3a2ce6beea600a0d355e5f56730a6be-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/e849c7b71cb2aa3338d3f00dd644a389-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/437d03d4c02c385abb66a8f75945237f-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/e560911a511cf15db07366a355bade61-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/3ffa140e45abc2111b61e27526d748a2-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/4e802cb5405705405d34e467fa31797a-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/0a1e6536efff214dfc90064f822f8d0d-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/d561da458da3bab70584ba046c8229b1-p_f.jpg"
+          ]
+        }
+      },
+      "isFeatured": false,
+      "isShowcaseListing": false,
+      "rental": {
+        "areApplicationsAccepted": false,
+        "hasVirtualTour": false
+      },
+      "currency": "usd",
+      "country": "usa",
+      "listingDateTimeOnZillow": 1761091200000,
+      "bestGuessTimeZone": "America/New_York",
+      "isUnmappable": false,
+      "bathrooms": 3.0,
+      "bedrooms": 5,
+      "livingArea": 3507,
+      "yearBuilt": 1899,
+      "lotSizeWithUnit": {
+        "lotSize": 8260.0,
+        "lotSizeUnit": "squareFeet"
+      },
+      "propertyType": "singleFamily",
+      "listing": {
+        "listingStatus": "forSale",
+        "marketingStatus": "active",
+        "palsId": "12004_73446442",
+        "listingSubType": {
+          "isFSBA": true
+        }
+      },
+      "daysOnZillow": 26,
+      "isPreforeclosureAuction": false,
+      "price": {
+        "value": 1195000,
+        "changedDate": 1763010000000,
+        "priceChange": -35000,
+        "pricePerSquareFoot": 341
+      },
+      "estimates": {
+        "zestimate": 1250200,
+        "rentZestimate": 1814
+      },
+      "zillowOwnedProperty": {
+        "isZillowOwned": false
+      },
+      "taxAssessment": {
+        "taxAssessedValue": 781800,
+        "taxAssessmentYear": "2024"
+      },
+      "hdpView": {
+        "listingStatus": "forSale",
+        "price": 1195000,
+        "hdpUrl": "/homedetail/MobileAppHDPShopperPlatformServicePage.htm?fromApp=true&p=android&variant=FOR_SALE#zpid=59126608&homeDetailsVariant=FOR_SALE&webviewLayout=doubleScroll&showFactsAndFeatures=true&fromApp=true&gmaps=true&streetview=true"
+      },
+      "region": {},
+      "personalizedResult": {
+        "isViewed": false,
+        "userRecommendation": {
+          "isRecommendedForYou": false
+        }
+      },
+      "propertyDisplayRules": {
+        "canShowAddress": true,
+        "canShowOnMap": true,
+        "agent": {
+          "agentName": "Bill Patterson"
+        },
+        "mls": {
+          "brokerName": "Craft Realty"
+        },
+        "builder": {},
+        "soldByOffice": {},
+        "listingCategory": "category1"
+      },
+      "ssid": 12,
+      "hasFloorPlan": false
+    },
+    {
+      "zpid": 59170258,
+      "location": {
+        "latitude": 42.351997,
+        "longitude": -71.08271
+      },
+      "address": {
+        "streetAddress": "261 Marlborough St APT 1",
+        "zipcode": "02116",
+        "city": "Boston",
+        "state": "MA",
+        "buildingId": 1001443875
+      },
+      "media": {
+        "propertyPhotoLinks": {
+          "highResolutionLink": "https://photos.zillowstatic.com/fp/e61a2dd09928a34ec550fbcda8ebf19f-p_f.jpg"
+        },
+        "thirdPartyPhotoLinks": {
+          "streetViewLink": "https://maps.googleapis.com/maps/api/streetview?size=1600x240&location=42.35199737548828,-71.08271026611328&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=GasiHTrDkSTgL3_Be0srwtPGQFk=",
+          "satelliteLink": "https://maps.googleapis.com/maps/api/staticmap?mobile=false&sensor=true&maptype=satellite&size=1600x480&zoom=19&center=42.35199737548828,-71.08271026611328&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=q1d1g5ndIeuwILeKi9yi3B63d-4=",
+          "streetViewMetadataLink": "https://maps.googleapis.com/maps/api/streetview/metadata?location=42.35199737548828,-71.08271026611328&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=qC_giSK_JIZVqlRY89S_F9JzdEA="
+        },
+        "hasVRModel": false,
+        "hasVideos": false,
+        "hasIMX": false,
+        "hasApprovedThirdPartyVirtualTour": false,
+        "allPropertyPhotos": {
+          "highResolution": [
+            "https://photos.zillowstatic.com/fp/e61a2dd09928a34ec550fbcda8ebf19f-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/50e0d3f427ebb9523b5835b9112eaa6a-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/c54abf9217789a2e763c194d80d99822-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/c42848b06e93c084f3f26065db1f14b0-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/c3748b361130e5c30dbb935d311b62e3-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/2192d3fe1a16a9a6d2ec1b43a7337925-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/2792142fca0abbfe7e4ef7bd1fb73e6b-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/f7045eebb2252fa4b12302e1c89e2a4e-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/db2888b6678ead6147b8bba63877d370-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/cdeb881591a3d82e50987355750adc0c-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/602748efeed2f59630e8da6d07e68510-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/85faf89d271f4c71612e04ae3b3c7617-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/879b7d53e29758fa5e50bd786c6766cc-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/555a3c8c62dcc9515b6076af65ee02ba-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/fdfb0dacad36cfe53d90829a047cd176-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/26b4b83ab9992317cee885dc1dc36bd5-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/1b87b06446199c42e9c8e1006b5acff3-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/3692320748e2698256763186d0909f7d-p_f.jpg"
+          ]
+        }
+      },
+      "isFeatured": false,
+      "isShowcaseListing": false,
+      "rental": {
+        "areApplicationsAccepted": false,
+        "hasVirtualTour": true
+      },
+      "currency": "usd",
+      "country": "usa",
+      "listingDateTimeOnZillow": 1739318400000,
+      "bestGuessTimeZone": "America/New_York",
+      "isUnmappable": false,
+      "bathrooms": 1.0,
+      "bedrooms": 1,
+      "livingArea": 710,
+      "yearBuilt": 1930,
+      "propertyType": "condo",
+      "listing": {
+        "listingStatus": "forSale",
+        "marketingStatus": "active",
+        "palsId": "12004_73327073",
+        "listingSubType": {
+          "isFSBA": true
+        }
+      },
+      "daysOnZillow": 278,
+      "isPreforeclosureAuction": false,
+      "price": {
+        "value": 599900,
+        "changedDate": 1763010000000,
+        "priceChange": -150000,
+        "pricePerSquareFoot": 845
+      },
+      "estimates": {
+        "rentZestimate": 3409
+      },
+      "zillowOwnedProperty": {
+        "isZillowOwned": false
+      },
+      "taxAssessment": {
+        "taxAssessedValue": 508200,
+        "taxAssessmentYear": "2024"
+      },
+      "hdpView": {
+        "listingStatus": "forSale",
+        "price": 599900,
+        "hdpUrl": "/homedetail/MobileAppHDPShopperPlatformServicePage.htm?fromApp=true&p=android&variant=FOR_SALE#zpid=59170258&homeDetailsVariant=FOR_SALE&webviewLayout=doubleScroll&showFactsAndFeatures=true&fromApp=true&gmaps=true&streetview=true"
+      },
+      "region": {},
+      "personalizedResult": {
+        "isViewed": false,
+        "userRecommendation": {
+          "isRecommendedForYou": false
+        }
+      },
+      "propertyDisplayRules": {
+        "canShowAddress": true,
+        "canShowOnMap": true,
+        "agent": {
+          "agentName": "Danny Griffin"
+        },
+        "mls": {
+          "brokerName": "Griffin Realty Group"
+        },
+        "builder": {},
+        "soldByOffice": {},
+        "listingCategory": "category1"
+      },
+      "ssid": 12,
+      "hasFloorPlan": false
+    },
+    {
+      "zpid": 59108187,
+      "location": {
+        "latitude": 42.287506,
+        "longitude": -71.07453
+      },
+      "address": {
+        "streetAddress": "39 Chipman St",
+        "zipcode": "02124",
+        "city": "Dorchester",
+        "state": "MA"
+      },
+      "media": {
+        "propertyPhotoLinks": {
+          "highResolutionLink": "https://photos.zillowstatic.com/fp/dfc900625f1548dfa87dca1b82d9762e-p_f.jpg"
+        },
+        "thirdPartyPhotoLinks": {
+          "streetViewLink": "https://maps.googleapis.com/maps/api/streetview?size=1600x240&location=42.287506103515625,-71.07453155517578&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=4jbuk-PWM_OXTmSiOcJs426GvMQ=",
+          "satelliteLink": "https://maps.googleapis.com/maps/api/staticmap?mobile=false&sensor=true&maptype=satellite&size=1600x480&zoom=19&center=42.287506103515625,-71.07453155517578&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=JkJRE1iDmpZ6WXxu_ZDXsml-NuQ=",
+          "streetViewMetadataLink": "https://maps.googleapis.com/maps/api/streetview/metadata?location=42.287506103515625,-71.07453155517578&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=MyGNWafFTlEoheRciMw0E-L9Uj0="
+        },
+        "hasVRModel": false,
+        "hasVideos": false,
+        "hasIMX": false,
+        "hasApprovedThirdPartyVirtualTour": false,
+        "allPropertyPhotos": {
+          "highResolution": [
+            "https://photos.zillowstatic.com/fp/dfc900625f1548dfa87dca1b82d9762e-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/9b802a92201fe6ddfc352b258c5993b6-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/2acb8dfb98e4372a8ca2eebda42f8285-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/6373123b4c98555fecbd67abecfec291-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/4c9486fa52e8396bd7222aace70af0aa-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/545cc94e7139d89d6b76f8e9c61b0fc1-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/1d5b2f71ba4a7dcf423529d701368abd-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/a2f6f1bf0f314ba62ad084c1db908dde-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/eb0daed7df0283cd0bd2af49809ea55c-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/22787a657dec0225225bdd442b04f12c-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/9cf248b4069b4369b2860c0e388ce39f-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/366481ea83a19805298811e3d099bb99-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/7e42a3b18a991a9f9237830e72d52d86-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/7664a00a0e8de8133a4eb05ef1cc6697-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/5ce235d19d5255ec47a1207f049bd1e8-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/0630ebc630ace2a5128a19961c30603a-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/7963e1e392c72abd8256edc4cc82bce8-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/befefbbfca4414bcc2e77d8d62900efc-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/16309a70698a66e5dc37717deefdefb0-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/6c4517fca1d1c1497a2c39cd61695a79-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/f9d0c7ca06a0de38282e28c3ccac8eb5-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/dddfe6aa22e317017d17c3840f814db1-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/f893c0c25973390db32c2bc4d38a6637-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/c1a767402d35cd401f00895d64148bf0-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/f47bae655864d5df639b307172d1569e-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/c0d2fe8f1eae0eefda1a110743fa50b1-p_f.jpg"
+          ]
+        }
+      },
+      "isFeatured": false,
+      "isShowcaseListing": false,
+      "rental": {
+        "areApplicationsAccepted": false,
+        "hasVirtualTour": false
+      },
+      "currency": "usd",
+      "country": "usa",
+      "listingDateTimeOnZillow": 1762905600000,
+      "bestGuessTimeZone": "America/New_York",
+      "isUnmappable": false,
+      "bathrooms": 3.0,
+      "bedrooms": 4,
+      "livingArea": 1754,
+      "yearBuilt": 1900,
+      "lotSizeWithUnit": {
+        "lotSize": 5000.0,
+        "lotSizeUnit": "squareFeet"
+      },
+      "propertyType": "singleFamily",
+      "listing": {
+        "listingStatus": "forSale",
+        "marketingStatus": "active",
+        "palsId": "12004_73454328",
+        "listingSubType": {
+          "isFSBA": true
+        }
+      },
+      "daysOnZillow": 5,
+      "isPreforeclosureAuction": false,
+      "price": {
+        "value": 779900,
+        "pricePerSquareFoot": 445
+      },
+      "estimates": {
+        "zestimate": 783900,
+        "rentZestimate": 4102
+      },
+      "zillowOwnedProperty": {
+        "isZillowOwned": false
+      },
+      "taxAssessment": {
+        "taxAssessedValue": 589200,
+        "taxAssessmentYear": "2024"
+      },
+      "hdpView": {
+        "listingStatus": "forSale",
+        "price": 779900,
+        "hdpUrl": "/homedetail/MobileAppHDPShopperPlatformServicePage.htm?fromApp=true&p=android&variant=FOR_SALE#zpid=59108187&homeDetailsVariant=FOR_SALE&webviewLayout=doubleScroll&showFactsAndFeatures=true&fromApp=true&gmaps=true&streetview=true"
+      },
+      "region": {},
+      "personalizedResult": {
+        "isViewed": false,
+        "userRecommendation": {
+          "isRecommendedForYou": false
+        }
+      },
+      "propertyDisplayRules": {
+        "canShowAddress": true,
+        "canShowOnMap": true,
+        "agent": {
+          "agentName": "The Legacy Group"
+        },
+        "mls": {
+          "brokerName": "EVO Real Estate Group, LLC"
+        },
+        "builder": {},
+        "soldByOffice": {},
+        "listingCategory": "category1"
+      },
+      "ssid": 12,
+      "hasFloorPlan": false
+    },
+    {
+      "zpid": 59158792,
+      "location": {
+        "latitude": 42.281483,
+        "longitude": -71.16792
+      },
+      "address": {
+        "streetAddress": "28 Dow Rd",
+        "zipcode": "02132",
+        "city": "West Roxbury",
+        "state": "MA"
+      },
+      "media": {
+        "propertyPhotoLinks": {
+          "highResolutionLink": "https://photos.zillowstatic.com/fp/7db523f43b6a0c523d11903ff087630b-p_f.jpg"
+        },
+        "thirdPartyPhotoLinks": {
+          "streetViewLink": "https://maps.googleapis.com/maps/api/streetview?size=1600x240&location=42.2814826965332,-71.16792297363281&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=gWnxPA8ANlNyytGv3M48o70qOc8=",
+          "satelliteLink": "https://maps.googleapis.com/maps/api/staticmap?mobile=false&sensor=true&maptype=satellite&size=1600x480&zoom=19&center=42.2814826965332,-71.16792297363281&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=UVt7jFlvbmOubvt94hcIov1g9GU=",
+          "streetViewMetadataLink": "https://maps.googleapis.com/maps/api/streetview/metadata?location=42.2814826965332,-71.16792297363281&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=SPtf4AjX5uQvfEk_oK_kl_KvM9g="
+        },
+        "hasVRModel": false,
+        "hasVideos": false,
+        "hasIMX": false,
+        "hasApprovedThirdPartyVirtualTour": false,
+        "allPropertyPhotos": {
+          "highResolution": [
+            "https://photos.zillowstatic.com/fp/7db523f43b6a0c523d11903ff087630b-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/84147052f2c29abcefa196b012ef4ce3-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/ee77e95c0512def99f45117ac73be1b0-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/8afb9040616cabd4c33cc096dc76f5d5-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/a5ec8e50d4bfdec8dc8f4108499646ca-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/9c60ec44a5a81d40d7252c9c74cd1e55-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/8bdf31f865c73a20efb49954431bf4bb-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/b209d2cf3d1032bd72533d06ab4cab4c-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/c3c93967758d1bc3253679615b625d80-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/9bb6ccba075b8b73493da2e808e64c73-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/fa20b3faf80b9dde8f282261db53341d-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/b6f13471e051cb9b8560f79bc23d17de-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/d17d90d84359c31b9039c71e70c9fbf2-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/c74f2f63e4273b54f1469e64d3145f59-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/6e41bc539b4405a40716bf4b63413f46-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/11ce192ff01e5c44577526ceee699722-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/18626b4ea6eadc6e9f5e5de2b7e9fc9e-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/445f1083f903f66a53c9dbe152ae4980-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/d9d2a57373bc93f196dbeb3a3cc433f1-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/cc740f3f7a162e834726c626937d5c58-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/0d7b524aab3cf68ef0a7042df59b36a8-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/fcae4e01486fbd1cfd395854afeb444a-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/403d0744fc9084154ba6e9d9bbaf4276-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/7ba056fae5416b218054a0d4e0b5b3ce-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/d7702e49aeea89b0f9beebf88a87da92-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/f92ab057156604d3b97ebd6b8c507bae-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/cc6d1693bcd16ef5c6b9412ce9bf81e0-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/ef6b05796c090dd558c5bee4cf3f5f92-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/880cc8a1f93f64385df2227c043c464f-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/3735a6bdce0c1ef9bf57b38e566aeba8-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/720fa0b9717d62666fa0f6afa700a374-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/33c8b72960727d51af0ab7e7303e2cc4-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/01374a7457395c72bee5c9b993153693-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/2629ce310a008778420df45b94ce5cdc-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/faaee7f738270c275ff8df4f36f19539-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/94d748c259e8233e4d898224cfe210aa-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/6a829da6b99b62dca10d3c8028528d52-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/a4084f010bc770ee6acdba9a61eb4979-p_f.jpg"
+          ]
+        }
+      },
+      "isFeatured": false,
+      "isShowcaseListing": false,
+      "rental": {
+        "areApplicationsAccepted": false,
+        "hasVirtualTour": false
+      },
+      "currency": "usd",
+      "country": "usa",
+      "listingDateTimeOnZillow": 1762905600000,
+      "bestGuessTimeZone": "America/New_York",
+      "isUnmappable": false,
+      "bathrooms": 3.0,
+      "bedrooms": 5,
+      "livingArea": 2532,
+      "yearBuilt": 1983,
+      "lotSizeWithUnit": {
+        "lotSize": 10836.0,
+        "lotSizeUnit": "squareFeet"
+      },
+      "propertyType": "singleFamily",
+      "listing": {
+        "listingStatus": "forSale",
+        "marketingStatus": "active",
+        "palsId": "12004_73454055",
+        "listingSubType": {
+          "isFSBA": true
+        }
+      },
+      "daysOnZillow": 5,
+      "isPreforeclosureAuction": false,
+      "price": {
+        "value": 1100000,
+        "pricePerSquareFoot": 434
+      },
+      "estimates": {
+        "zestimate": 1092800,
+        "rentZestimate": 4877
+      },
+      "zillowOwnedProperty": {
+        "isZillowOwned": false
+      },
+      "taxAssessment": {
+        "taxAssessedValue": 919400,
+        "taxAssessmentYear": "2024"
+      },
+      "hdpView": {
+        "listingStatus": "forSale",
+        "price": 1100000,
+        "hdpUrl": "/homedetail/MobileAppHDPShopperPlatformServicePage.htm?fromApp=true&p=android&variant=FOR_SALE#zpid=59158792&homeDetailsVariant=FOR_SALE&webviewLayout=doubleScroll&showFactsAndFeatures=true&fromApp=true&gmaps=true&streetview=true"
+      },
+      "region": {},
+      "personalizedResult": {
+        "isViewed": false,
+        "userRecommendation": {
+          "isRecommendedForYou": false
+        }
+      },
+      "propertyDisplayRules": {
+        "canShowAddress": true,
+        "canShowOnMap": true,
+        "agent": {
+          "agentName": "The Collective"
+        },
+        "mls": {
+          "brokerName": "Compass"
+        },
+        "builder": {},
+        "soldByOffice": {},
+        "listingCategory": "category1"
+      },
+      "ssid": 12,
+      "hasFloorPlan": false
+    },
+    {
+      "zpid": 67096461,
+      "location": {
+        "latitude": 42.37647,
+        "longitude": -71.06363
+      },
+      "address": {
+        "streetAddress": "56 High St #3",
+        "zipcode": "02129",
+        "city": "Charlestown",
+        "state": "MA",
+        "buildingId": 2001537954
+      },
+      "media": {
+        "propertyPhotoLinks": {
+          "highResolutionLink": "https://photos.zillowstatic.com/fp/12f1f1f7cbbdda8b7c7678db16ef33c9-p_f.jpg"
+        },
+        "thirdPartyPhotoLinks": {
+          "streetViewLink": "https://maps.googleapis.com/maps/api/streetview?size=1600x240&location=42.376468658447266,-71.06362915039062&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=5ENAZ1ZO8MwcUQ879BDt8zLRZyM=",
+          "satelliteLink": "https://maps.googleapis.com/maps/api/staticmap?mobile=false&sensor=true&maptype=satellite&size=1600x480&zoom=19&center=42.376468658447266,-71.06362915039062&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=bgC_6z3h_2a_zYEubbipZIZd0Qs=",
+          "streetViewMetadataLink": "https://maps.googleapis.com/maps/api/streetview/metadata?location=42.376468658447266,-71.06362915039062&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=h--axheQ-XwHJgDjF52C6wSnwS8="
+        },
+        "hasVRModel": false,
+        "hasVideos": false,
+        "hasIMX": false,
+        "hasApprovedThirdPartyVirtualTour": false,
+        "allPropertyPhotos": {
+          "highResolution": [
+            "https://photos.zillowstatic.com/fp/12f1f1f7cbbdda8b7c7678db16ef33c9-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/f14b931e1602f376cadba878837a5616-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/391fea72ae2556a8a9e8fd529027310c-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/c978d9520c9fd6f1c63c703904a11637-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/e8e5f8fd9e234d4773e71dffa77bae4d-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/cc8ef7c5d4ad9e5774d8098679565853-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/039685c76c72c794de1f4aab023a2fef-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/0f2c1f88437f0ad9296e47b7b6394840-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/55acdf6d67bd91337f01e1a62312c0da-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/4f7fb321da355859d113696d857409e2-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/778ef1a1e21b455a817d3aee24656592-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/fba1f2cea926c5300f9cc95817587773-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/5cf7d591f0cd016978931e8b22f6d559-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/8126ebe309932f18a680b67ebbdbf97f-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/156d9fd0c6bb72d59d646131eeaf8dc3-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/824adf38fd83623ce3c623d42aef97ab-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/56c4420234af84fecb17281da42750d2-p_f.jpg"
+          ]
+        }
+      },
+      "isFeatured": false,
+      "isShowcaseListing": false,
+      "rental": {
+        "areApplicationsAccepted": false,
+        "hasVirtualTour": true
+      },
+      "currency": "usd",
+      "country": "usa",
+      "listingDateTimeOnZillow": 1758672000000,
+      "bestGuessTimeZone": "America/New_York",
+      "isUnmappable": false,
+      "bathrooms": 2.0,
+      "bedrooms": 2,
+      "livingArea": 1010,
+      "yearBuilt": 1880,
+      "propertyType": "condo",
+      "listing": {
+        "listingStatus": "forSale",
+        "marketingStatus": "active",
+        "palsId": "12004_73435247",
+        "listingSubType": {
+          "isFSBA": true
+        }
+      },
+      "daysOnZillow": 54,
+      "isPreforeclosureAuction": false,
+      "price": {
+        "value": 899000,
+        "changedDate": 1762923600000,
+        "priceChange": -50000,
+        "pricePerSquareFoot": 890
+      },
+      "estimates": {
+        "zestimate": 892300,
+        "rentZestimate": 3993
+      },
+      "zillowOwnedProperty": {
+        "isZillowOwned": false
+      },
+      "taxAssessment": {
+        "taxAssessedValue": 787300,
+        "taxAssessmentYear": "2024"
+      },
+      "hdpView": {
+        "listingStatus": "forSale",
+        "price": 899000,
+        "hdpUrl": "/homedetail/MobileAppHDPShopperPlatformServicePage.htm?fromApp=true&p=android&variant=FOR_SALE#zpid=67096461&homeDetailsVariant=FOR_SALE&webviewLayout=doubleScroll&showFactsAndFeatures=true&fromApp=true&gmaps=true&streetview=true"
+      },
+      "region": {},
+      "personalizedResult": {
+        "isViewed": false,
+        "userRecommendation": {
+          "isRecommendedForYou": false
+        }
+      },
+      "propertyDisplayRules": {
+        "canShowAddress": true,
+        "canShowOnMap": true,
+        "agent": {
+          "agentName": "Jane Reitz"
+        },
+        "mls": {
+          "brokerName": "Reitz Realty Group"
+        },
+        "builder": {},
+        "soldByOffice": {},
+        "listingCategory": "category1"
+      },
+      "ssid": 12,
+      "hasFloorPlan": false
+    },
+    {
+      "zpid": 458142465,
+      "location": {
+        "latitude": 42.35206,
+        "longitude": -71.08271
+      },
+      "address": {
+        "streetAddress": "261 Marlborough St #4R",
+        "zipcode": "02116",
+        "city": "Boston",
+        "state": "MA",
+        "buildingId": 1001443875
+      },
+      "media": {
+        "propertyPhotoLinks": {
+          "highResolutionLink": "https://photos.zillowstatic.com/fp/0824878d6a77e22cd517980af8443030-p_f.jpg"
+        },
+        "thirdPartyPhotoLinks": {
+          "streetViewLink": "https://maps.googleapis.com/maps/api/streetview?size=1600x240&location=42.35205841064453,-71.08271026611328&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=W-jLtl2SH2nKwGqHsIU3yuaRxv4=",
+          "satelliteLink": "https://maps.googleapis.com/maps/api/staticmap?mobile=false&sensor=true&maptype=satellite&size=1600x480&zoom=19&center=42.35205841064453,-71.08271026611328&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=vO2lLFW_Pq0VP0BwppA7IST_sKY=",
+          "streetViewMetadataLink": "https://maps.googleapis.com/maps/api/streetview/metadata?location=42.35205841064453,-71.08271026611328&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=rosWk4rasdjO2Bk41gSA3_ThfvY="
+        },
+        "hasVRModel": false,
+        "hasVideos": false,
+        "hasIMX": false,
+        "hasApprovedThirdPartyVirtualTour": false,
+        "allPropertyPhotos": {
+          "highResolution": [
+            "https://photos.zillowstatic.com/fp/0824878d6a77e22cd517980af8443030-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/b31e08a2ddc3dda6b6f1bb694f8d9bcf-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/9bff2ff0f47cada7924aeee2de55aa8c-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/d1074be18f787065a872d1118a17350d-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/847dda93ca3471a81b16924c4106cbac-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/949f64dc7023df55e071967b392f07b9-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/7fb1d93b74361045db967b6c668c8fff-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/68211d68b04dd3a22b09474c7031e8ae-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/24c0bf1358ff0c859b248868a902a4e9-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/e025e2708af76ce0123fd16ce538adce-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/c6eadb33009a7692371645ead2cbf08f-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/089ca88a3389dae84a22855d7c7aa7ec-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/960c602786ad14bbd41fbf3460b5143c-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/d5bfd388b000cb084a156943c0d0fd27-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/0a560b579b5860b721a83429f59f168e-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/1d1cbf36cda12a5b2ec8741ac79aebb4-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/dfe3d1123aaeb3d301fd1cbb219cf049-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/9764de25b925afea2d33b4a85e84aed6-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/2f814737afd55c77770dc6274bfa96c5-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/51361317f54cc69f86bdbaff1004e4d6-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/7a4bb2ef379cff60f7fdffe13020dea0-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/efcea5cfbdd9ee1d9ec5c3449e30cf24-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/4d7ea5b7dcd04ca53f3b4bcba935153c-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/f28f536986506de07ae9048e3c9bf403-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/afdffccadbf85c8ab0e382227d390322-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/44c2d20d2c5d53782355a180ea600a60-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/2de1ac6760b32b250954c91778f21690-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/4dc621b93ae194900476c4f511b284f3-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/57a30f0320142c5d497152eb728f8b75-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/4fe70f49821ad2a286b372ec42bad2ad-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/a7efe47f565e4c225c67302a0aab505f-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/0bc9122fd42fe875bf569840b7ed786c-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/db69ab9c85d78166252765d43c687dc3-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/aabe8b2116607ce9b1195f3c87fd8aec-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/f8d681fca216bb2f7b1bcbf7ca9e8fb1-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/3ca64fec60fe05e907c92d3b42592fe1-p_f.jpg"
+          ]
+        }
+      },
+      "isFeatured": false,
+      "isShowcaseListing": false,
+      "rental": {
+        "areApplicationsAccepted": false,
+        "hasVirtualTour": false
+      },
+      "currency": "usd",
+      "country": "usa",
+      "listingDateTimeOnZillow": 1762819200000,
+      "bestGuessTimeZone": "America/New_York",
+      "isUnmappable": false,
+      "bathrooms": 1.0,
+      "bedrooms": 0,
+      "livingArea": 640,
+      "yearBuilt": 1930,
+      "lotSizeWithUnit": {
+        "lotSize": 640.0,
+        "lotSizeUnit": "squareFeet"
+      },
+      "propertyType": "condo",
+      "listing": {
+        "listingStatus": "forSale",
+        "marketingStatus": "active",
+        "palsId": "12004_73453510",
+        "listingSubType": {
+          "isFSBA": true
+        }
+      },
+      "daysOnZillow": 6,
+      "isPreforeclosureAuction": false,
+      "price": {
+        "value": 799000,
+        "pricePerSquareFoot": 1248
+      },
+      "estimates": {},
+      "zillowOwnedProperty": {
+        "isZillowOwned": false
+      },
+      "hdpView": {
+        "listingStatus": "forSale",
+        "price": 799000,
+        "hdpUrl": "/homedetail/MobileAppHDPShopperPlatformServicePage.htm?fromApp=true&p=android&variant=FOR_SALE#zpid=458142465&homeDetailsVariant=FOR_SALE&webviewLayout=doubleScroll&showFactsAndFeatures=true&fromApp=true&gmaps=true&streetview=true"
+      },
+      "region": {},
+      "personalizedResult": {
+        "isViewed": false,
+        "userRecommendation": {
+          "isRecommendedForYou": false
+        }
+      },
+      "propertyDisplayRules": {
+        "canShowAddress": true,
+        "canShowOnMap": true,
+        "agent": {
+          "agentName": "Hans Nagrath"
+        },
+        "mls": {
+          "brokerName": "Compass"
+        },
+        "builder": {},
+        "soldByOffice": {},
+        "listingCategory": "category1"
+      },
+      "ssid": 12,
+      "hasFloorPlan": false
+    },
+    {
+      "zpid": 59182421,
+      "location": {
+        "latitude": 42.34317,
+        "longitude": -71.07134
+      },
+      "address": {
+        "streetAddress": "33 Union Park #4",
+        "zipcode": "02118",
+        "city": "Boston",
+        "state": "MA",
+        "buildingId": 2001448295
+      },
+      "media": {
+        "propertyPhotoLinks": {
+          "highResolutionLink": "https://photos.zillowstatic.com/fp/b96c739ebca89dfa000d94ab2116ecc6-p_f.jpg"
+        },
+        "thirdPartyPhotoLinks": {
+          "streetViewLink": "https://maps.googleapis.com/maps/api/streetview?size=1600x240&location=42.343170166015625,-71.07134246826172&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=EIoOKI5foOcsAMLm3DnmM3nsqi4=",
+          "satelliteLink": "https://maps.googleapis.com/maps/api/staticmap?mobile=false&sensor=true&maptype=satellite&size=1600x480&zoom=19&center=42.343170166015625,-71.07134246826172&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=ZenfD6UrcosOkicSNk-aabbMqzE=",
+          "streetViewMetadataLink": "https://maps.googleapis.com/maps/api/streetview/metadata?location=42.343170166015625,-71.07134246826172&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=5gCsCVW8ppMemZutJEnzFj6-58s="
+        },
+        "hasVRModel": false,
+        "hasVideos": false,
+        "hasIMX": false,
+        "hasApprovedThirdPartyVirtualTour": false,
+        "allPropertyPhotos": {
+          "highResolution": [
+            "https://photos.zillowstatic.com/fp/b96c739ebca89dfa000d94ab2116ecc6-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/2745e7e1a7221835f4e878ddcecead5b-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/cf7f20977f36f0ab9edc21273ef874cd-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/70d9cb2dc7112f76d5f369f72bf13acd-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/72e4b6ca17f3fee65bb0a5208152a4aa-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/e0b76cf263ecda5e356bcdbf2d9fa520-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/b57d7ad81ccdb6dea2a9d26814e11926-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/22cc92ce3aa7c450702c6b14ec86227f-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/3386fedd5569a34965ccfb348b07119b-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/4c8cf1e7b799a19632f67080ac57c10a-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/6aaf86d0b49bbb4df20b960d1b99b560-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/dce77bebfc845faec80674cf1caee3e5-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/1da5173cf712f870d9dd71444384f65d-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/a84deb3debc8f70374cdfabdfe6ad723-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/524639b6bc3e12833d764b919542d8b8-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/4c156699f352de7d8fc0981ae2170728-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/f338c2f9ab9178a00f30bbc07834c16f-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/a2ee89579cff209e9de867dc0ab026d1-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/2939ac62ad63160c35b4aa4cfbd36237-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/7d3a6008848b9663cdb29e80f9aa751f-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/c7618952e83717bb673cc04c4eff0e5a-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/34d1cfbfdd13bd369db25f33c36c3046-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/1c1f9f3240b1d77dadcdfabeebd41bae-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/bb9e3030bff794164ac2f743bb0ee86e-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/742b5bc5cb64eda9504b4fe6fa2f2959-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/5750e7935431450b100ff5a89275d365-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/1d5408d7c51285fcd7a7c17dbde361e6-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/dfa22fb98661080ea1e03df21b8aa191-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/2f8215d8b0325fd62e03e7b77ef3855c-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/e7e2703395245c984fa08de0731489d1-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/05f00cf27390184deab13f1c57e6e490-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/45c181fc618a7406a58a519529ceefd5-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/52f37cbbcfbda53c5ba127c34b37db16-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/48c226465b6ea3b80074e816e1028ab5-p_f.jpg"
+          ]
+        }
+      },
+      "isFeatured": false,
+      "isShowcaseListing": false,
+      "rental": {
+        "areApplicationsAccepted": false,
+        "hasVirtualTour": false
+      },
+      "currency": "usd",
+      "country": "usa",
+      "listingDateTimeOnZillow": 1762473600000,
+      "bestGuessTimeZone": "America/New_York",
+      "isUnmappable": false,
+      "bathrooms": 1.0,
+      "bedrooms": 2,
+      "livingArea": 1139,
+      "yearBuilt": 1850,
+      "lotSizeWithUnit": {
+        "lotSize": 1139.0,
+        "lotSizeUnit": "squareFeet"
+      },
+      "propertyType": "condo",
+      "listing": {
+        "listingStatus": "forSale",
+        "marketingStatus": "active",
+        "palsId": "12004_73452583",
+        "listingSubType": {
+          "isFSBA": true
+        }
+      },
+      "daysOnZillow": 10,
+      "isPreforeclosureAuction": false,
+      "price": {
+        "value": 1495000,
+        "pricePerSquareFoot": 1313
+      },
+      "estimates": {
+        "zestimate": 1456100,
+        "rentZestimate": 3660
+      },
+      "zillowOwnedProperty": {
+        "isZillowOwned": false
+      },
+      "taxAssessment": {
+        "taxAssessedValue": 1000100,
+        "taxAssessmentYear": "2024"
+      },
+      "hdpView": {
+        "listingStatus": "forSale",
+        "price": 1495000,
+        "hdpUrl": "/homedetail/MobileAppHDPShopperPlatformServicePage.htm?fromApp=true&p=android&variant=FOR_SALE#zpid=59182421&homeDetailsVariant=FOR_SALE&webviewLayout=doubleScroll&showFactsAndFeatures=true&fromApp=true&gmaps=true&streetview=true"
+      },
+      "region": {},
+      "personalizedResult": {
+        "isViewed": false,
+        "userRecommendation": {
+          "isRecommendedForYou": false
+        }
+      },
+      "propertyDisplayRules": {
+        "canShowAddress": true,
+        "canShowOnMap": true,
+        "agent": {
+          "agentName": "Steven Cohen Team"
+        },
+        "mls": {
+          "brokerName": "Keller Williams Realty Boston-Metro | Back Bay"
+        },
+        "builder": {},
+        "soldByOffice": {},
+        "listingCategory": "category1"
+      },
+      "ssid": 12,
+      "hasFloorPlan": false
+    },
+    {
+      "zpid": 67709640,
+      "location": {
+        "latitude": 42.34876,
+        "longitude": -71.06297
+      },
+      "address": {
+        "streetAddress": "1 Nassau St UNIT 1103",
+        "zipcode": "02111",
+        "city": "Boston",
+        "state": "MA",
+        "buildingId": 1001440878
+      },
+      "media": {
+        "propertyPhotoLinks": {
+          "highResolutionLink": "https://photos.zillowstatic.com/fp/b9a9102d8ec56af244f709fb1f34be3a-p_f.jpg"
+        },
+        "thirdPartyPhotoLinks": {
+          "streetViewLink": "https://maps.googleapis.com/maps/api/streetview?size=1600x240&location=42.348758697509766,-71.06297302246094&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=aHTVKGFvTrWaAUdUqlnAWMZGPU8=",
+          "satelliteLink": "https://maps.googleapis.com/maps/api/staticmap?mobile=false&sensor=true&maptype=satellite&size=1600x480&zoom=19&center=42.348758697509766,-71.06297302246094&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=9DWuG6h9Xpjr67AuHBNRCjuiQeg=",
+          "streetViewMetadataLink": "https://maps.googleapis.com/maps/api/streetview/metadata?location=42.348758697509766,-71.06297302246094&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=TW-62KRGUFvbS7XiVqUEWFzgxvQ="
+        },
+        "hasVRModel": false,
+        "hasVideos": false,
+        "hasIMX": false,
+        "hasApprovedThirdPartyVirtualTour": false,
+        "allPropertyPhotos": {
+          "highResolution": [
+            "https://photos.zillowstatic.com/fp/b9a9102d8ec56af244f709fb1f34be3a-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/581094055370ec81153d07e262cc660f-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/c9eeb9c5e75c4a6d1440762d883e3310-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/4204167587a712e8182369b05aa51265-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/978325169e031a3b441799cc29a72adf-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/fda68f961907a9ad69014ab62ec2f645-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/f37e0e5d70b68610db632ab3cf8b17a0-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/9d733a7d2b46fe5710933b6cf4036e26-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/239fda5b46ebd48ebb66d990d41e05c5-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/0ede957f10e7275f02e3942d302a419f-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/8fbb8d80d5d04b88557caa0592e2e9fc-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/9f53aae5918eca94e5e9f6821e0956cb-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/a75a939a7ef676ae3c7dcfac93c5e10b-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/f6c51b09205836858031fc5e1af1228f-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/4ee1e539b733957d2323f8362f7b469b-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/a6ba86b46e1268bb43d58fc6ddf5d923-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/7bd4291a107422f621ac80cde7f01c1a-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/9026ce03e810d872c76cd81aef39798a-p_f.jpg"
+          ]
+        },
+        "video": {
+          "url": "http://vimeo.com/1121117846?share=copy",
+          "provider": "vimeo",
+          "id": "1121117846"
+        }
+      },
+      "title": "The Metropolitan",
+      "isFeatured": false,
+      "isShowcaseListing": false,
+      "rental": {
+        "areApplicationsAccepted": false,
+        "hasVirtualTour": true
+      },
+      "currency": "usd",
+      "country": "usa",
+      "listingDateTimeOnZillow": 1758672000000,
+      "bestGuessTimeZone": "America/New_York",
+      "isUnmappable": false,
+      "bathrooms": 2.0,
+      "bedrooms": 2,
+      "livingArea": 819,
+      "yearBuilt": 2004,
+      "lotSizeWithUnit": {
+        "lotSize": 819.0,
+        "lotSizeUnit": "squareFeet"
+      },
+      "propertyType": "condo",
+      "listing": {
+        "listingStatus": "forSale",
+        "marketingStatus": "active",
+        "palsId": "12004_73434755",
+        "listingSubType": {
+          "isFSBA": true
+        }
+      },
+      "daysOnZillow": 54,
+      "isPreforeclosureAuction": false,
+      "price": {
+        "value": 489000,
+        "changedDate": 1761710400000,
+        "priceChange": -20000,
+        "pricePerSquareFoot": 597
+      },
+      "estimates": {
+        "zestimate": 485600,
+        "rentZestimate": 4276
+      },
+      "zillowOwnedProperty": {
+        "isZillowOwned": false
+      },
+      "taxAssessment": {
+        "taxAssessedValue": 427700,
+        "taxAssessmentYear": "2024"
+      },
+      "hdpView": {
+        "listingStatus": "forSale",
+        "price": 489000,
+        "hdpUrl": "/homedetail/MobileAppHDPShopperPlatformServicePage.htm?fromApp=true&p=android&variant=FOR_SALE#zpid=67709640&homeDetailsVariant=FOR_SALE&webviewLayout=doubleScroll&showFactsAndFeatures=true&fromApp=true&gmaps=true&streetview=true"
+      },
+      "region": {},
+      "personalizedResult": {
+        "isViewed": false,
+        "userRecommendation": {
+          "isRecommendedForYou": false
+        }
+      },
+      "propertyDisplayRules": {
+        "canShowAddress": true,
+        "canShowOnMap": true,
+        "agent": {
+          "agentName": "Richard Hornblower"
+        },
+        "mls": {
+          "brokerName": "Coldwell Banker Realty - Boston"
+        },
+        "builder": {},
+        "soldByOffice": {},
+        "listingCategory": "category1"
+      },
+      "ssid": 12,
+      "hasFloorPlan": false
+    },
+    {
+      "zpid": 59135511,
+      "location": {
+        "latitude": 42.30354,
+        "longitude": -71.12992
+      },
+      "address": {
+        "streetAddress": "83 Whitcomb Ave",
+        "zipcode": "02130",
+        "city": "Boston",
+        "state": "MA"
+      },
+      "media": {
+        "propertyPhotoLinks": {
+          "highResolutionLink": "https://photos.zillowstatic.com/fp/8d6328d6a44e9d3ea2fba55869c80d0c-p_f.jpg"
+        },
+        "thirdPartyPhotoLinks": {
+          "streetViewLink": "https://maps.googleapis.com/maps/api/streetview?size=1600x240&location=42.30353927612305,-71.12992095947266&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=Tf80yL81Fk8LHw8Wy0Ble1xgxtg=",
+          "satelliteLink": "https://maps.googleapis.com/maps/api/staticmap?mobile=false&sensor=true&maptype=satellite&size=1600x480&zoom=19&center=42.30353927612305,-71.12992095947266&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=gr4RQrZti91llOn1umbRuZHupnE=",
+          "streetViewMetadataLink": "https://maps.googleapis.com/maps/api/streetview/metadata?location=42.30353927612305,-71.12992095947266&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=l1GSKeAcvlMUHVmnQUUwDVKOE1A="
+        },
+        "hasVRModel": false,
+        "hasVideos": false,
+        "hasIMX": false,
+        "hasApprovedThirdPartyVirtualTour": false,
+        "allPropertyPhotos": {
+          "highResolution": [
+            "https://photos.zillowstatic.com/fp/8d6328d6a44e9d3ea2fba55869c80d0c-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/f783a6cb7b18aee9971cd24d05158769-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/6149adc36b072863b1b678084a663a41-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/15e97061549164f817a6a30f5e6ff678-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/42530427a51df8f03eba14e8b08df4dd-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/be992561c288f34d2a2b97fc3162efe6-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/24b45290bd33aeaa902c3378aba336f6-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/356c01837413b3541e08fa8846b3297a-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/83d5ea4c0810124a9251292c318c5947-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/b1922850f6cee3000040e51a9ac6d54e-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/dab3e155e7c96670ad5c35f3c5b66862-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/615dea0deb0e50ebc23e9989395d6c99-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/037bb337f98df362d1d932f65a98fe5d-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/3848b1e861530a76b76b73000e31bda1-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/775944e3445c2729a97cfc759b8aa0d3-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/269a7070244ffa5767b78399c6cf1171-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/bda1dc95894614031239578fae9b809e-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/b8d6fb2b2f2c8296418ad76ae2f3e683-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/f1899249a30a03409ef568396115ff1f-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/f14774f5c22ff06f9bc843a04ce22c73-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/777b1d305c423fc7d4b6dc6da0b4099a-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/9f406e06403a8246cf9f34c256140a3d-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/5e492661835e24bb96d7be0d1110348c-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/14ab466b099684b0c2ea5de25cca2123-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/bd0c3e04713e962b22e817551d623971-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/ad52cb030c41882ad7ad758c33f3e31c-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/7d5c22805b6f02649616050215ab4c74-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/655dfb6825e5d78b5f3fe8b3ed925f1f-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/bd50ffa82e25497e90efb9ae91d5e1c6-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/55f05b067b660aca1e51aefa583fc2fd-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/7904ffe00b661ce3da3b1e99f940a267-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/38992e87f3d89df539e6f8df2e52b44b-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/a1d4e68b19be44c246a7e689996052e1-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/8f211fa174c5aa1698723b4742afd428-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/cd60c956b32731472d95d6a75f17020d-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/a13d4b537cbad8944a9c6240c32e731e-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/73070597f9651fef8767cf05673012ae-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/584058673c715a2d42a1e5c7f26b40ea-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/7aed9c0c42d1adf69f157e5eff8399f7-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/e1a8a60a109c9888602d55c5a3775535-p_f.jpg"
+          ]
+        }
+      },
+      "isFeatured": false,
+      "isShowcaseListing": false,
+      "rental": {
+        "areApplicationsAccepted": false,
+        "hasVirtualTour": false
+      },
+      "currency": "usd",
+      "country": "usa",
+      "listingDateTimeOnZillow": 1761609600000,
+      "bestGuessTimeZone": "America/New_York",
+      "isUnmappable": false,
+      "bathrooms": 2.0,
+      "bedrooms": 3,
+      "livingArea": 1688,
+      "yearBuilt": 1932,
+      "lotSizeWithUnit": {
+        "lotSize": 0.3068181818181818,
+        "lotSizeUnit": "acres"
+      },
+      "propertyType": "singleFamily",
+      "listing": {
+        "listingStatus": "forSale",
+        "marketingStatus": "active",
+        "palsId": "12004_73448420",
+        "listingSubType": {
+          "isFSBA": true
+        }
+      },
+      "daysOnZillow": 20,
+      "isPreforeclosureAuction": false,
+      "price": {
+        "value": 1195000,
+        "pricePerSquareFoot": 708
+      },
+      "estimates": {
+        "zestimate": 1223000,
+        "rentZestimate": 4809
+      },
+      "zillowOwnedProperty": {
+        "isZillowOwned": false
+      },
+      "taxAssessment": {
+        "taxAssessedValue": 1128700,
+        "taxAssessmentYear": "2024"
+      },
+      "hdpView": {
+        "listingStatus": "forSale",
+        "price": 1195000,
+        "hdpUrl": "/homedetail/MobileAppHDPShopperPlatformServicePage.htm?fromApp=true&p=android&variant=FOR_SALE#zpid=59135511&homeDetailsVariant=FOR_SALE&webviewLayout=doubleScroll&showFactsAndFeatures=true&fromApp=true&gmaps=true&streetview=true"
+      },
+      "region": {},
+      "personalizedResult": {
+        "isViewed": false,
+        "userRecommendation": {
+          "isRecommendedForYou": false
+        }
+      },
+      "propertyDisplayRules": {
+        "canShowAddress": true,
+        "canShowOnMap": true,
+        "agent": {
+          "agentName": "Bunny Cecchetto"
+        },
+        "mls": {
+          "brokerName": "Focus Real Estate"
+        },
+        "builder": {},
+        "soldByOffice": {},
+        "listingCategory": "category1"
+      },
+      "ssid": 12,
+      "hasFloorPlan": false
+    },
+    {
+      "zpid": 59106924,
+      "location": {
+        "latitude": 42.32071,
+        "longitude": -71.07632
+      },
+      "address": {
+        "streetAddress": "79 W Cottage St",
+        "zipcode": "02125",
+        "city": "Boston",
+        "state": "MA"
+      },
+      "media": {
+        "propertyPhotoLinks": {
+          "highResolutionLink": "https://photos.zillowstatic.com/fp/38c1dc237d8bb53e32c77a7ca030c6c3-p_f.jpg"
+        },
+        "thirdPartyPhotoLinks": {
+          "streetViewLink": "https://maps.googleapis.com/maps/api/streetview?size=1600x240&location=42.320709228515625,-71.0763168334961&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=DmWn8Ynb0XuRr0EysAIZ9YXw9hE=",
+          "satelliteLink": "https://maps.googleapis.com/maps/api/staticmap?mobile=false&sensor=true&maptype=satellite&size=1600x480&zoom=19&center=42.320709228515625,-71.0763168334961&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=wzVDSOaoFcE1uPTEjc5MJYCi7WA=",
+          "streetViewMetadataLink": "https://maps.googleapis.com/maps/api/streetview/metadata?location=42.320709228515625,-71.0763168334961&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=HBySKG450kbqmaOewgS7zqiQ_DA="
+        },
+        "hasVRModel": true,
+        "hasVideos": false,
+        "hasIMX": true,
+        "hasApprovedThirdPartyVirtualTour": false,
+        "allPropertyPhotos": {
+          "highResolution": [
+            "https://photos.zillowstatic.com/fp/38c1dc237d8bb53e32c77a7ca030c6c3-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/e22a58013b19097ca10b6c046c9dbeef-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/c7db5e280b674286ecebac2389432561-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/57ddc379e63dfa852e9147edb4a0030b-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/e8116e13ee4f88a2001096f3d23e9c21-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/268e736676d6f523d6e435772b26d066-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/68c723a2f230afc8bc3e324a1ddfaadc-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/14923af7f6e7343833b42eb627de1205-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/66a2728c5ee8733f17a556a6a0dd5e08-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/5462a4164da57a5fbfab4ea8f61d425c-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/a621dbd583cb93a3dd4432f8e59505fe-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/3fdfb9325fb584b94637358eb015aaff-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/60a9fc242b1f06407bd1e3043d052c43-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/ffa4039d08806efc3a5b0e2ac15e89b2-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/e5c8b2834a21b2811469e87cb95669ff-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/1d3b5af2f280826eb8597ef6b0794586-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/3f9a4a81960e3001acc54ed039609d49-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/c0efdf53f8bd1eddc08e760b7cac7297-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/960b54564da981e6c2c4eeae135739d9-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/f91073caac585955cb35a704e907d825-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/f1f5c8c8df2bd352f7a7895ea12bf374-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/c89711458f442c155ccf9fd2558710bd-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/26224ca1e473a0fe938d0a03da734235-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/4f766b1f4f6740c876996e7e192c31d2-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/012df8d55d026a7d0e35167333e4b24f-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/6c47a0e3d52ca6fa357a98fe57a05b58-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/33eaf6eca098869c195badc2b5fe508f-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/04ec8c15fc706bbed7131d1cd807b561-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/7037cd6693e5ffe0b8f537c789a97d94-p_f.jpg"
+          ]
+        },
+        "video": {
+          "url": "https://youtu.be/B5ee_NLV46o",
+          "provider": "youtube",
+          "id": "B5ee_NLV46o"
+        }
+      },
+      "isFeatured": false,
+      "isShowcaseListing": false,
+      "rental": {
+        "areApplicationsAccepted": false,
+        "hasVirtualTour": true
+      },
+      "currency": "usd",
+      "country": "usa",
+      "listingDateTimeOnZillow": 1762905600000,
+      "bestGuessTimeZone": "America/New_York",
+      "isUnmappable": false,
+      "bathrooms": 3.0,
+      "bedrooms": 6,
+      "livingArea": 2609,
+      "yearBuilt": 1885,
+      "lotSizeWithUnit": {
+        "lotSize": 6450.0,
+        "lotSizeUnit": "squareFeet"
+      },
+      "propertyType": "multiFamily",
+      "listing": {
+        "listingStatus": "forSale",
+        "marketingStatus": "active",
+        "palsId": "12005_73453925",
+        "listingSubType": {
+          "isFSBA": true
+        }
+      },
+      "daysOnZillow": 5,
+      "isPreforeclosureAuction": false,
+      "price": {
+        "value": 1024900,
+        "pricePerSquareFoot": 393
+      },
+      "estimates": {
+        "zestimate": 1006800,
+        "rentZestimate": 3673
+      },
+      "zillowOwnedProperty": {
+        "isZillowOwned": false
+      },
+      "taxAssessment": {
+        "taxAssessedValue": 887500,
+        "taxAssessmentYear": "2024"
+      },
+      "hdpView": {
+        "listingStatus": "forSale",
+        "price": 1024900,
+        "hdpUrl": "/homedetail/MobileAppHDPShopperPlatformServicePage.htm?fromApp=true&p=android&variant=FOR_SALE#zpid=59106924&homeDetailsVariant=FOR_SALE&webviewLayout=doubleScroll&showFactsAndFeatures=true&fromApp=true&gmaps=true&streetview=true"
+      },
+      "region": {},
+      "personalizedResult": {
+        "isViewed": false,
+        "userRecommendation": {
+          "isRecommendedForYou": false
+        }
+      },
+      "propertyDisplayRules": {
+        "canShowAddress": true,
+        "canShowOnMap": true,
+        "agent": {
+          "agentName": "Team Lillian Montalto"
+        },
+        "mls": {
+          "brokerName": "Lillian Montalto Signature Properties"
+        },
+        "builder": {},
+        "soldByOffice": {},
+        "listingCategory": "category1"
+      },
+      "ssid": 12,
+      "hasFloorPlan": true,
+      "richMedia": [
+        {
+          "rmxData": [
+            {
+              "floorPlan": {
+                "heroImageUrl": "https://www.zillowstatic.com/floor_map/aab5b66a-3da3-4efb-9acd-15642d554235/hero.png"
+              },
+              "virtualTour": {
+                "viewerUrl": "https://www.zillow.com/view-3d-home/ac2a1e21-780b-4676-a2c2-41aa75d54451"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "zpid": 458214343,
+      "location": {
+        "latitude": 42.32073,
+        "longitude": -71.11497
+      },
+      "address": {
+        "streetAddress": "65-67 Halifax St",
+        "zipcode": "02130",
+        "city": "Jamaica Plain",
+        "state": "MA"
+      },
+      "media": {
+        "propertyPhotoLinks": {
+          "highResolutionLink": "https://photos.zillowstatic.com/fp/069d488bed2222cce087a4cb174f4b40-p_f.jpg"
+        },
+        "thirdPartyPhotoLinks": {
+          "streetViewLink": "https://maps.googleapis.com/maps/api/streetview?size=1600x240&location=42.32072830200195,-71.1149673461914&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=yww7bKSqhNAH_1WadxJS7fMyJ3w=",
+          "satelliteLink": "https://maps.googleapis.com/maps/api/staticmap?mobile=false&sensor=true&maptype=satellite&size=1600x480&zoom=19&center=42.32072830200195,-71.1149673461914&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=r8TJYtR1hP-7cQkNEfUqeT_9Iqg=",
+          "streetViewMetadataLink": "https://maps.googleapis.com/maps/api/streetview/metadata?location=42.32072830200195,-71.1149673461914&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=7gCcP6C8tNfh2c9Jq8fTm2H--G8="
+        },
+        "hasVRModel": false,
+        "hasVideos": false,
+        "hasIMX": false,
+        "hasApprovedThirdPartyVirtualTour": false,
+        "allPropertyPhotos": {
+          "highResolution": [
+            "https://photos.zillowstatic.com/fp/069d488bed2222cce087a4cb174f4b40-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/178e175d4ab49e6c971fa2ae037ad38b-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/6efb4322cf1a053a97157a8fe860c799-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/b25f87a6d6b36418f56b52e45d055902-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/a81325a4b8dda21e65bfb93a428a1eaa-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/effc16c9652be66696923f03f2a2cfbe-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/b387d73e1eb3f87a5b40c435ffd37c2c-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/5ec9aa883109dd984ba359d3204612d3-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/8e2aca14c533bb2129d7a9eb5303dd76-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/cffdb217148119df97549abfcda21cea-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/14dbfddd6ef7b2db110c05e635ad5bc0-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/1c30960b0dc69f7da4aecf473ba924d4-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/4b7efdf8618573b5520994a6c0275589-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/db0ff65e517437502f993f42dceaf3e7-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/a0f74a0aeb709403976ba8da59d1d836-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/298be2138c8b4835af2345cd9e244bfc-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/361e416f7b243d51decf85c79395c1be-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/d8be4d488accb643d85c889cb5a6f66a-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/0065179fcecb7101a6a2e9bef994f4e7-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/ad1f414c136f47765ef2982230a1c93c-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/c0373caf463b0e8aa440eeb755ceed5d-p_f.jpg"
+          ]
+        }
+      },
+      "isFeatured": false,
+      "isShowcaseListing": false,
+      "rental": {
+        "areApplicationsAccepted": false,
+        "hasVirtualTour": false
+      },
+      "currency": "usd",
+      "country": "usa",
+      "listingDateTimeOnZillow": 1762992000000,
+      "bestGuessTimeZone": "America/New_York",
+      "isUnmappable": false,
+      "bathrooms": 3.0,
+      "bedrooms": 7,
+      "livingArea": 4460,
+      "yearBuilt": 1910,
+      "lotSizeWithUnit": {
+        "lotSize": 4642.0,
+        "lotSizeUnit": "squareFeet"
+      },
+      "propertyType": "multiFamily",
+      "listing": {
+        "listingStatus": "forSale",
+        "marketingStatus": "active",
+        "palsId": "12005_73454553",
+        "listingSubType": {
+          "isFSBA": true
+        }
+      },
+      "daysOnZillow": 4,
+      "isPreforeclosureAuction": false,
+      "price": {
+        "value": 1849000,
+        "pricePerSquareFoot": 415
+      },
+      "estimates": {},
+      "zillowOwnedProperty": {
+        "isZillowOwned": false
+      },
+      "hdpView": {
+        "listingStatus": "forSale",
+        "price": 1849000,
+        "hdpUrl": "/homedetail/MobileAppHDPShopperPlatformServicePage.htm?fromApp=true&p=android&variant=FOR_SALE#zpid=458214343&homeDetailsVariant=FOR_SALE&webviewLayout=doubleScroll&showFactsAndFeatures=true&fromApp=true&gmaps=true&streetview=true"
+      },
+      "region": {},
+      "personalizedResult": {
+        "isViewed": false,
+        "userRecommendation": {
+          "isRecommendedForYou": false
+        }
+      },
+      "propertyDisplayRules": {
+        "canShowAddress": true,
+        "canShowOnMap": true,
+        "agent": {
+          "agentName": "Kevin Caulfield"
+        },
+        "mls": {
+          "brokerName": "Compass"
+        },
+        "builder": {},
+        "soldByOffice": {},
+        "listingCategory": "category1"
+      },
+      "ssid": 12,
+      "hasFloorPlan": false
+    },
+    {
+      "zpid": 59108024,
+      "location": {
+        "latitude": 42.314945,
+        "longitude": -71.06664
+      },
+      "address": {
+        "streetAddress": "5 Wheelock Ave",
+        "zipcode": "02125",
+        "city": "Dorchester",
+        "state": "MA"
+      },
+      "media": {
+        "propertyPhotoLinks": {
+          "highResolutionLink": "https://photos.zillowstatic.com/fp/ca26ad526db6d7db5f52a6e747151183-p_f.jpg"
+        },
+        "thirdPartyPhotoLinks": {
+          "streetViewLink": "https://maps.googleapis.com/maps/api/streetview?size=1600x240&location=42.314945220947266,-71.06664276123047&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=o0O63HhieNgZptF5mACYWOIXMZk=",
+          "satelliteLink": "https://maps.googleapis.com/maps/api/staticmap?mobile=false&sensor=true&maptype=satellite&size=1600x480&zoom=19&center=42.314945220947266,-71.06664276123047&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=lUECbSoGWzkKvDdqc5tEkNnb2FE=",
+          "streetViewMetadataLink": "https://maps.googleapis.com/maps/api/streetview/metadata?location=42.314945220947266,-71.06664276123047&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=AQAFD1K-P5F5q8k1Ampuhg7GCUk="
+        },
+        "hasVRModel": false,
+        "hasVideos": false,
+        "hasIMX": false,
+        "hasApprovedThirdPartyVirtualTour": false,
+        "allPropertyPhotos": {
+          "highResolution": [
+            "https://photos.zillowstatic.com/fp/ca26ad526db6d7db5f52a6e747151183-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/a973b2dc9263dd83918fe7475528b44d-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/b48816f5922856aa2cf226bc464a8461-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/bc79730c7ca1c7765032415b2acfdaed-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/f6946c76468b603251e000da1a50b8c8-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/8ce86d07f8063ce8827eb2d5cffcf0f4-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/f9aa2c0b3645eb1aac2dabb740b37f5d-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/5c2211ee4946af95d05273782d835fd4-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/8a036e5db0e98d7c8205d980a4b07208-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/f43c9d698f563d687495bf27acce7c4c-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/a88b0db13615f94ab03e779f21286701-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/a9d5a69ab904a121476f9d893e30d6b9-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/485e0ef035ad2f8b28c96eecbd15c269-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/93c3ebd1f9cb58cf39694fd2ce0f088a-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/9fc95a1cc675c9ff48a377f987f1c1c2-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/537e21e281e2dd71d990501acc741328-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/67a5029e656a5c6487bc5c75d17675b8-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/ba225d61d7cde49e5b21cb849f912bca-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/a073ad4778c0fc10211c381162fc5e6b-p_f.jpg"
+          ]
+        }
+      },
+      "isFeatured": false,
+      "isShowcaseListing": false,
+      "rental": {
+        "areApplicationsAccepted": false,
+        "hasVirtualTour": false
+      },
+      "currency": "usd",
+      "country": "usa",
+      "listingDateTimeOnZillow": 1761696000000,
+      "bestGuessTimeZone": "America/New_York",
+      "isUnmappable": false,
+      "bathrooms": 2.0,
+      "bedrooms": 3,
+      "livingArea": 1388,
+      "yearBuilt": 1890,
+      "lotSizeWithUnit": {
+        "lotSize": 2281.0,
+        "lotSizeUnit": "squareFeet"
+      },
+      "propertyType": "singleFamily",
+      "listing": {
+        "listingStatus": "forSale",
+        "marketingStatus": "active",
+        "palsId": "12004_73449119",
+        "listingSubType": {
+          "isFSBA": true
+        }
+      },
+      "daysOnZillow": 19,
+      "isPreforeclosureAuction": false,
+      "price": {
+        "value": 569000,
+        "pricePerSquareFoot": 410
+      },
+      "estimates": {
+        "zestimate": 570800,
+        "rentZestimate": 3605
+      },
+      "zillowOwnedProperty": {
+        "isZillowOwned": false
+      },
+      "taxAssessment": {
+        "taxAssessedValue": 586000,
+        "taxAssessmentYear": "2024"
+      },
+      "hdpView": {
+        "listingStatus": "forSale",
+        "price": 569000,
+        "hdpUrl": "/homedetail/MobileAppHDPShopperPlatformServicePage.htm?fromApp=true&p=android&variant=FOR_SALE#zpid=59108024&homeDetailsVariant=FOR_SALE&webviewLayout=doubleScroll&showFactsAndFeatures=true&fromApp=true&gmaps=true&streetview=true"
+      },
+      "region": {},
+      "personalizedResult": {
+        "isViewed": false,
+        "userRecommendation": {
+          "isRecommendedForYou": false
+        }
+      },
+      "propertyDisplayRules": {
+        "canShowAddress": true,
+        "canShowOnMap": true,
+        "agent": {
+          "agentName": "Jeffrey Hamilton"
+        },
+        "mls": {
+          "brokerName": "Columbus and Over Group, LLC"
+        },
+        "builder": {},
+        "soldByOffice": {},
+        "listingCategory": "category1"
+      },
+      "ssid": 12,
+      "hasFloorPlan": false
+    },
+    {
+      "zpid": 295461122,
+      "location": {
+        "latitude": 42.341125,
+        "longitude": -71.072655
+      },
+      "address": {
+        "streetAddress": "379 Shawmut Ave",
+        "zipcode": "02118",
+        "city": "Boston",
+        "state": "MA"
+      },
+      "media": {
+        "propertyPhotoLinks": {
+          "highResolutionLink": "https://photos.zillowstatic.com/fp/cb3f7303211cad14721872a4897ff45a-p_f.jpg"
+        },
+        "thirdPartyPhotoLinks": {
+          "streetViewLink": "https://maps.googleapis.com/maps/api/streetview?size=1600x240&location=42.34112548828125,-71.0726547241211&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=d9KYMqtALAVYqZKSPGwh49h-Ayw=",
+          "satelliteLink": "https://maps.googleapis.com/maps/api/staticmap?mobile=false&sensor=true&maptype=satellite&size=1600x480&zoom=19&center=42.34112548828125,-71.0726547241211&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=sX8jfrJFwMKGvlFJP8YK9qSOnP0=",
+          "streetViewMetadataLink": "https://maps.googleapis.com/maps/api/streetview/metadata?location=42.34112548828125,-71.0726547241211&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=zQcAWT8hJXv88fb0o0AIfytmBHo="
+        },
+        "hasVRModel": false,
+        "hasVideos": false,
+        "hasIMX": false,
+        "hasApprovedThirdPartyVirtualTour": false,
+        "allPropertyPhotos": {
+          "highResolution": [
+            "https://photos.zillowstatic.com/fp/cb3f7303211cad14721872a4897ff45a-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/315167148df1b633843053f474373471-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/76cd3ef9122cddc9ea7deef50cdbb562-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/cd417799d4c9f4b8edc229f38787f7f3-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/a8b671a11f3b34724d4d5b756107e27b-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/c0a03340ff5fc04f2d0795042083ecdf-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/6f03c8a2baeb522f18e8c704a63f9377-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/1028558ed876dcd9218d1cd5846155e6-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/ecd1fb0da7efed3f5b004f34f22bc98d-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/4c7dca48820a1056cd8e66a734d7c5eb-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/a8df3b11c3fe68d640ca0d07c4bba422-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/78b09b296c0ec59598c6c80cd54d9545-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/52702c37205982b3e0ab79e6fbb90fdc-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/b616c5305e04ffa85e7ffb35e65d94dc-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/89c5b1af94047a497c2cc583eaf42ced-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/5f81198edd323a4b613a824e78c30dc6-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/1adcf3db06cf2598aa5a7419ff45e0b1-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/17a165bef9e4bd894a119e2ad6d5421f-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/a5337634922889a4a8f638c159d01e65-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/16a979737699d5c4439a9bc9712520a2-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/d67717203107e2895d1b887a7ddea035-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/d11fb2dc147a28a4c98ca4d856d7b3ef-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/94827d641680dcd2af5ad15bee445238-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/7268e2ad46d9475605fe8127e45e008b-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/a7795cee30a294a1ef81be434fcca921-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/0b2b1f70f9430acafe6054a774b26553-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/1851344a324c3f9a962cd0d7bfa60bc5-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/f9a67e682a07bf96b32e87cfe6a43636-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/31adfd323dcb85d30d41609a93f9661f-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/9830b5a662826b6f6a7742a020031163-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/cae3561d3cf54bda9feb59cfc0a2a620-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/fc8cfee2b643fb872a428de95c1150b0-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/a08c760784b3a35c13ebc073b7c55b96-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/86ad56f40f672ad7c2e80bb7e3344ec1-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/dac8fd812355d1491067362d33423e33-p_f.jpg"
+          ]
+        }
+      },
+      "isFeatured": false,
+      "isShowcaseListing": false,
+      "rental": {
+        "areApplicationsAccepted": false,
+        "hasVirtualTour": false
+      },
+      "currency": "usd",
+      "country": "usa",
+      "listingDateTimeOnZillow": 1752105600000,
+      "bestGuessTimeZone": "America/New_York",
+      "isUnmappable": false,
+      "bathrooms": 2.0,
+      "bedrooms": 5,
+      "livingArea": 1590,
+      "yearBuilt": 1840,
+      "lotSizeWithUnit": {
+        "lotSize": 950.0,
+        "lotSizeUnit": "squareFeet"
+      },
+      "propertyType": "singleFamily",
+      "listing": {
+        "listingStatus": "forSale",
+        "marketingStatus": "active",
+        "palsId": "12004_73402426",
+        "listingSubType": {
+          "isFSBA": true
+        }
+      },
+      "daysOnZillow": 130,
+      "isPreforeclosureAuction": false,
+      "price": {
+        "value": 1195000,
+        "changedDate": 1760414400000,
+        "priceChange": -100000,
+        "pricePerSquareFoot": 752
+      },
+      "estimates": {
+        "zestimate": 1212600,
+        "rentZestimate": 6924
+      },
+      "zillowOwnedProperty": {
+        "isZillowOwned": false
+      },
+      "taxAssessment": {
+        "taxAssessedValue": 1535200,
+        "taxAssessmentYear": "2024"
+      },
+      "hdpView": {
+        "listingStatus": "forSale",
+        "price": 1195000,
+        "hdpUrl": "/homedetail/MobileAppHDPShopperPlatformServicePage.htm?fromApp=true&p=android&variant=FOR_SALE#zpid=295461122&homeDetailsVariant=FOR_SALE&webviewLayout=doubleScroll&showFactsAndFeatures=true&fromApp=true&gmaps=true&streetview=true"
+      },
+      "region": {},
+      "personalizedResult": {
+        "isViewed": false,
+        "userRecommendation": {
+          "isRecommendedForYou": false
+        }
+      },
+      "propertyDisplayRules": {
+        "canShowAddress": true,
+        "canShowOnMap": true,
+        "agent": {
+          "agentName": "Danny Griffin"
+        },
+        "mls": {
+          "brokerName": "Griffin Realty Group"
+        },
+        "builder": {},
+        "soldByOffice": {},
+        "listingCategory": "category1"
+      },
+      "ssid": 12,
+      "hasFloorPlan": false
+    },
+    {
+      "zpid": 452719260,
+      "location": {
+        "latitude": 42.344173,
+        "longitude": -71.08034
+      },
+      "address": {
+        "streetAddress": "230-230 W Newton St #232",
+        "zipcode": "02116",
+        "city": "Boston",
+        "state": "MA",
+        "buildingId": 2584031699
+      },
+      "media": {
+        "propertyPhotoLinks": {
+          "highResolutionLink": "https://photos.zillowstatic.com/fp/0de30e45306eb81f3b5f7c2c2fbe7598-p_f.jpg"
+        },
+        "thirdPartyPhotoLinks": {
+          "streetViewLink": "https://maps.googleapis.com/maps/api/streetview?size=1600x240&location=42.344173431396484,-71.08033752441406&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=j_MpbbBcFC6JNfXMqWplMZY1dkI=",
+          "satelliteLink": "https://maps.googleapis.com/maps/api/staticmap?mobile=false&sensor=true&maptype=satellite&size=1600x480&zoom=19&center=42.344173431396484,-71.08033752441406&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=2AbQ8hjBEXxHIfy35ePCLbNNzV8=",
+          "streetViewMetadataLink": "https://maps.googleapis.com/maps/api/streetview/metadata?location=42.344173431396484,-71.08033752441406&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=Cjile08nRLjw9ylB2pBtQIDxILM="
+        },
+        "hasVRModel": false,
+        "hasVideos": false,
+        "hasIMX": false,
+        "hasApprovedThirdPartyVirtualTour": false,
+        "allPropertyPhotos": {
+          "highResolution": [
+            "https://photos.zillowstatic.com/fp/0de30e45306eb81f3b5f7c2c2fbe7598-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/81f79915e44809f81bc5cf69cd91272d-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/ed38ff79dd878e8b145a7b5182ec9a6b-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/319dbacc60a17b4be01c673b6d2627d4-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/c912ef178dadfe33c46333c0faf74cfd-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/1096ae400d529dd690705e98db4f4f01-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/6edc6757ecb6594270dc86be2e5ec277-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/9570a521622abee6113ffb9ed0b92e5f-p_f.jpg"
+          ]
+        }
+      },
+      "isFeatured": false,
+      "isShowcaseListing": false,
+      "rental": {
+        "areApplicationsAccepted": false,
+        "hasVirtualTour": false
+      },
+      "currency": "usd",
+      "country": "usa",
+      "listingDateTimeOnZillow": 1763078400000,
+      "bestGuessTimeZone": "America/New_York",
+      "isUnmappable": false,
+      "bathrooms": 2.0,
+      "bedrooms": 3,
+      "livingArea": 1400,
+      "yearBuilt": 1899,
+      "propertyType": "condo",
+      "listing": {
+        "listingStatus": "forSale",
+        "marketingStatus": "active",
+        "palsId": "12004_73454849",
+        "listingSubType": {
+          "isFSBA": true
+        }
+      },
+      "daysOnZillow": 3,
+      "isPreforeclosureAuction": false,
+      "price": {
+        "value": 999000,
+        "pricePerSquareFoot": 714
+      },
+      "estimates": {},
+      "zillowOwnedProperty": {
+        "isZillowOwned": false
+      },
+      "hdpView": {
+        "listingStatus": "forSale",
+        "price": 999000,
+        "hdpUrl": "/homedetail/MobileAppHDPShopperPlatformServicePage.htm?fromApp=true&p=android&variant=FOR_SALE#zpid=452719260&homeDetailsVariant=FOR_SALE&webviewLayout=doubleScroll&showFactsAndFeatures=true&fromApp=true&gmaps=true&streetview=true"
+      },
+      "region": {},
+      "personalizedResult": {
+        "isViewed": false,
+        "userRecommendation": {
+          "isRecommendedForYou": false
+        }
+      },
+      "propertyDisplayRules": {
+        "canShowAddress": true,
+        "canShowOnMap": true,
+        "agent": {
+          "agentName": "Aranson Maguire Group"
+        },
+        "mls": {
+          "brokerName": "Compass"
+        },
+        "builder": {},
+        "soldByOffice": {},
+        "listingCategory": "category1"
+      },
+      "ssid": 12,
+      "hasFloorPlan": false
+    },
+    {
+      "zpid": 59100894,
+      "location": {
+        "latitude": 42.37843,
+        "longitude": -71.06141
+      },
+      "address": {
+        "streetAddress": "172 Bunker Hill St #1",
+        "zipcode": "02129",
+        "city": "Charlestown",
+        "state": "MA",
+        "buildingId": 1018814134
+      },
+      "media": {
+        "propertyPhotoLinks": {
+          "highResolutionLink": "https://photos.zillowstatic.com/fp/1b7acfee1b1ee314cb9f5baf7944ce6b-p_f.jpg"
+        },
+        "thirdPartyPhotoLinks": {
+          "streetViewLink": "https://maps.googleapis.com/maps/api/streetview?size=1600x240&location=42.3784294128418,-71.06140899658203&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=M4uImuxiU8gURwUMi_i5eibmgIU=",
+          "satelliteLink": "https://maps.googleapis.com/maps/api/staticmap?mobile=false&sensor=true&maptype=satellite&size=1600x480&zoom=19&center=42.3784294128418,-71.06140899658203&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=Ht7F381_SVpo1-q8Dsby93heDxo=",
+          "streetViewMetadataLink": "https://maps.googleapis.com/maps/api/streetview/metadata?location=42.3784294128418,-71.06140899658203&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=g51H4bojnlffdgab9NmqzfA5Yys="
+        },
+        "hasVRModel": false,
+        "hasVideos": false,
+        "hasIMX": false,
+        "hasApprovedThirdPartyVirtualTour": false,
+        "allPropertyPhotos": {
+          "highResolution": [
+            "https://photos.zillowstatic.com/fp/1b7acfee1b1ee314cb9f5baf7944ce6b-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/b57fd594fbd27aa213719dc6b949fadb-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/be3ed2eceb7a0e844f6ca6da602f2261-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/bcf6e55a764cc6b5955a1c211c7cbd75-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/9b28de87439199e64879cfa6db795e49-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/9fa60f64fdb7e8d3b8242f26e70bded5-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/d35fbe1bc46006d017acaa5ba3783355-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/f93ab5e951c254c2f589da212bf38a12-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/4b20b18fc42441ee04fbf1c92569dddf-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/c5f9da0eacfff6f5001826b5b66c75e8-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/1d13a07aeacb2d4e5ef63e7f833c5c6d-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/f9eed43ae8373c7698ae4bbf8414fcc8-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/4cc67f0b63e4bd4a7be767059cc12125-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/5b73bc59845375ce47fdc05bd0a24204-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/18f578fd95a5322c1985354b7b579f3c-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/89a975eec7e0a3fac280ccc3244f1ab0-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/346487082516ec1b9b0753d08ea41ed7-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/80539fd5ede44ab67d46a69f8426344a-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/9042105e9c8e335af57e64ab68aa6818-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/7acb70cbaba668e56a15859b26a14cf3-p_f.jpg"
+          ]
+        }
+      },
+      "isFeatured": false,
+      "isShowcaseListing": false,
+      "rental": {
+        "areApplicationsAccepted": false,
+        "hasVirtualTour": false
+      },
+      "currency": "usd",
+      "country": "usa",
+      "listingDateTimeOnZillow": 1762905600000,
+      "bestGuessTimeZone": "America/New_York",
+      "isUnmappable": false,
+      "bathrooms": 1.0,
+      "bedrooms": 1,
+      "livingArea": 709,
+      "yearBuilt": 1920,
+      "propertyType": "townhome",
+      "listing": {
+        "listingStatus": "forSale",
+        "marketingStatus": "active",
+        "palsId": "12004_73453984",
+        "listingSubType": {
+          "isFSBA": true
+        }
+      },
+      "daysOnZillow": 5,
+      "isPreforeclosureAuction": false,
+      "price": {
+        "value": 585000,
+        "pricePerSquareFoot": 825
+      },
+      "estimates": {
+        "zestimate": 580900,
+        "rentZestimate": 2987
+      },
+      "zillowOwnedProperty": {
+        "isZillowOwned": false
+      },
+      "taxAssessment": {
+        "taxAssessedValue": 518100,
+        "taxAssessmentYear": "2024"
+      },
+      "hdpView": {
+        "listingStatus": "forSale",
+        "price": 585000,
+        "hdpUrl": "/homedetail/MobileAppHDPShopperPlatformServicePage.htm?fromApp=true&p=android&variant=FOR_SALE#zpid=59100894&homeDetailsVariant=FOR_SALE&webviewLayout=doubleScroll&showFactsAndFeatures=true&fromApp=true&gmaps=true&streetview=true"
+      },
+      "region": {},
+      "personalizedResult": {
+        "isViewed": false,
+        "userRecommendation": {
+          "isRecommendedForYou": false
+        }
+      },
+      "propertyDisplayRules": {
+        "canShowAddress": true,
+        "canShowOnMap": true,
+        "agent": {
+          "agentName": "Marley Kanda"
+        },
+        "mls": {
+          "brokerName": "Coldwell Banker Realty - Boston"
+        },
+        "builder": {},
+        "soldByOffice": {},
+        "listingCategory": "category1"
+      },
+      "ssid": 12,
+      "hasFloorPlan": false
+    },
+    {
+      "zpid": 81380167,
+      "location": {
+        "latitude": 42.3721,
+        "longitude": -71.035385
+      },
+      "address": {
+        "streetAddress": "144 Bremen St #2",
+        "zipcode": "02128",
+        "city": "East Boston",
+        "state": "MA",
+        "buildingId": 1082793757
+      },
+      "media": {
+        "propertyPhotoLinks": {
+          "highResolutionLink": "https://photos.zillowstatic.com/fp/70798ede4d14fa2d952e463e9e78d5ce-p_f.jpg"
+        },
+        "thirdPartyPhotoLinks": {
+          "streetViewLink": "https://maps.googleapis.com/maps/api/streetview?size=1600x240&location=42.372100830078125,-71.03538513183594&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=0O1rS_LEwkSWd03-mCAEg3STvqc=",
+          "satelliteLink": "https://maps.googleapis.com/maps/api/staticmap?mobile=false&sensor=true&maptype=satellite&size=1600x480&zoom=19&center=42.372100830078125,-71.03538513183594&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=zS03Mau738E13QtVvLx8Dpkg0Gc=",
+          "streetViewMetadataLink": "https://maps.googleapis.com/maps/api/streetview/metadata?location=42.372100830078125,-71.03538513183594&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=tpcC_tptq3awM7Z07I2I1h3V5Gg="
+        },
+        "hasVRModel": false,
+        "hasVideos": false,
+        "hasIMX": false,
+        "hasApprovedThirdPartyVirtualTour": false,
+        "allPropertyPhotos": {
+          "highResolution": [
+            "https://photos.zillowstatic.com/fp/70798ede4d14fa2d952e463e9e78d5ce-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/4fee40557022b79c881c49f047471676-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/9da5e225c8458309b19277ecc1c0d435-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/057648838c162f3f7b9b4f5ec026aaa4-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/4862306d0748fdbd5a8d526add9d1786-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/1314786734736b9f1c81c862ffb31195-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/582482da12d9a6596a4f16ac5d65b6c2-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/7afc6f0f866d7fa7c8270981420d304a-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/5f276bd5f28ea2f82508936bcc2207a2-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/e38e6bfff2c620b504cf30da87503ba0-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/1e2c3c41470a288a64584fa08c8c18ee-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/da2832107ee7172dc5c0c58424900d2d-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/91789963b2303f9bb5f6bb604e433f66-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/aefeaf72ca7f755f83aea567e522da48-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/05ff78726d635184b70bec4188d6d302-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/2b95960a254855da9a395b8b8e12b66b-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/90b5650c4bbdf852b8d30ba37a7a15f4-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/2aeed0de6b432a207213a9e31eba6a28-p_f.jpg"
+          ]
+        }
+      },
+      "isFeatured": false,
+      "isShowcaseListing": false,
+      "rental": {
+        "areApplicationsAccepted": false,
+        "hasVirtualTour": false
+      },
+      "currency": "usd",
+      "country": "usa",
+      "listingDateTimeOnZillow": 1757635200000,
+      "bestGuessTimeZone": "America/New_York",
+      "isUnmappable": false,
+      "bathrooms": 1.0,
+      "bedrooms": 2,
+      "livingArea": 560,
+      "yearBuilt": 1910,
+      "lotSizeWithUnit": {
+        "lotSize": 560.0,
+        "lotSizeUnit": "squareFeet"
+      },
+      "propertyType": "condo",
+      "listing": {
+        "listingStatus": "forSale",
+        "marketingStatus": "active",
+        "palsId": "12004_73430321",
+        "listingSubType": {
+          "isFSBA": true
+        }
+      },
+      "daysOnZillow": 66,
+      "isPreforeclosureAuction": false,
+      "price": {
+        "value": 375000,
+        "pricePerSquareFoot": 670
+      },
+      "estimates": {
+        "zestimate": 362300,
+        "rentZestimate": 2475
+      },
+      "zillowOwnedProperty": {
+        "isZillowOwned": false
+      },
+      "taxAssessment": {
+        "taxAssessedValue": 334800,
+        "taxAssessmentYear": "2024"
+      },
+      "hdpView": {
+        "listingStatus": "forSale",
+        "price": 375000,
+        "hdpUrl": "/homedetail/MobileAppHDPShopperPlatformServicePage.htm?fromApp=true&p=android&variant=FOR_SALE#zpid=81380167&homeDetailsVariant=FOR_SALE&webviewLayout=doubleScroll&showFactsAndFeatures=true&fromApp=true&gmaps=true&streetview=true"
+      },
+      "region": {},
+      "personalizedResult": {
+        "isViewed": false,
+        "userRecommendation": {
+          "isRecommendedForYou": false
+        }
+      },
+      "propertyDisplayRules": {
+        "canShowAddress": true,
+        "canShowOnMap": true,
+        "agent": {
+          "agentName": "Steven Cohen Team"
+        },
+        "mls": {
+          "brokerName": "Keller Williams Realty Boston-Metro | Back Bay"
+        },
+        "builder": {},
+        "soldByOffice": {},
+        "listingCategory": "category1"
+      },
+      "ssid": 12,
+      "hasFloorPlan": false
+    },
+    {
+      "zpid": 81859722,
+      "location": {
+        "latitude": 42.295006,
+        "longitude": -71.116585
+      },
+      "address": {
+        "streetAddress": "178 Hyde Park Ave #3",
+        "zipcode": "02130",
+        "city": "Boston",
+        "state": "MA",
+        "buildingId": 1002807270
+      },
+      "media": {
+        "propertyPhotoLinks": {
+          "highResolutionLink": "https://photos.zillowstatic.com/fp/9922b2f21ccd5ed15524b5524156d3ce-p_f.jpg"
+        },
+        "thirdPartyPhotoLinks": {
+          "streetViewLink": "https://maps.googleapis.com/maps/api/streetview?size=1600x240&location=42.295005798339844,-71.11658477783203&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=RXySStUWTaeQHiVInTDuWE3vnYI=",
+          "satelliteLink": "https://maps.googleapis.com/maps/api/staticmap?mobile=false&sensor=true&maptype=satellite&size=1600x480&zoom=19&center=42.295005798339844,-71.11658477783203&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=jFrjK6ixvRkpkLJnKN724hNUdEQ=",
+          "streetViewMetadataLink": "https://maps.googleapis.com/maps/api/streetview/metadata?location=42.295005798339844,-71.11658477783203&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=ifZHHY5hdG9yq6rcQi_UntVwSBw="
+        },
+        "hasVRModel": false,
+        "hasVideos": false,
+        "hasIMX": false,
+        "hasApprovedThirdPartyVirtualTour": false,
+        "allPropertyPhotos": {
+          "highResolution": [
+            "https://photos.zillowstatic.com/fp/9922b2f21ccd5ed15524b5524156d3ce-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/18eb2f2db98700835047b47fdeb4b4bd-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/12f15fa4f2720152ce8effacf6e30bfe-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/43ca56e255a86a9a3e586d8a993b16fb-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/82b17fbdafe1324983803fddd853a378-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/ee59c51c81d4743f20425e1a30e1b910-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/98e89d65150e7f0c208ceab7e71c8ba4-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/7bda09ec2d8aa0cffeacae5ea9729840-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/6ad734493fdb62c7ed4f90e24ba26e6b-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/28387bb0b4a6bbf5450360769b59c551-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/3b48105fcb61c4dda7e15a8113e2445b-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/3ed06636edf8bf498f36741ee63fe655-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/0fd448a1d2c777a6b75e5f2a43bbf1a3-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/70fb5685dc38a9b6d39e54dd40ab7b35-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/ae9f01373be87e488a15a4096ac94038-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/8e5c25b2158bcbeb9764ed815fc15128-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/65df70e540e2942ddc795c889da96fa1-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/75054576e375740073c104aa4cfa5761-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/4a26b97aa91e8fed1a2d59c3edce7847-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/8fd82bbe4c8175af74ec2cbac5230a2a-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/35bd052385ff65d2bc05e413a3bb0938-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/c6d42661b933c7ff2c05d7cf5f4347f4-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/792572131dd211d5c32ec474f6efe5d2-p_f.jpg"
+          ]
+        }
+      },
+      "isFeatured": false,
+      "isShowcaseListing": false,
+      "rental": {
+        "areApplicationsAccepted": false,
+        "hasVirtualTour": false
+      },
+      "currency": "usd",
+      "country": "usa",
+      "listingDateTimeOnZillow": 1760054400000,
+      "bestGuessTimeZone": "America/New_York",
+      "isUnmappable": false,
+      "bathrooms": 2.0,
+      "bedrooms": 3,
+      "livingArea": 1653,
+      "yearBuilt": 1899,
+      "propertyType": "condo",
+      "listing": {
+        "listingStatus": "forSale",
+        "marketingStatus": "active",
+        "palsId": "12004_73442386",
+        "listingSubType": {
+          "isFSBA": true
+        }
+      },
+      "daysOnZillow": 38,
+      "isPreforeclosureAuction": false,
+      "price": {
+        "value": 499900,
+        "pricePerSquareFoot": 302
+      },
+      "estimates": {
+        "rentZestimate": 3830
+      },
+      "zillowOwnedProperty": {
+        "isZillowOwned": false
+      },
+      "taxAssessment": {
+        "taxAssessedValue": 491600,
+        "taxAssessmentYear": "2024"
+      },
+      "hdpView": {
+        "listingStatus": "forSale",
+        "price": 499900,
+        "hdpUrl": "/homedetail/MobileAppHDPShopperPlatformServicePage.htm?fromApp=true&p=android&variant=FOR_SALE#zpid=81859722&homeDetailsVariant=FOR_SALE&webviewLayout=doubleScroll&showFactsAndFeatures=true&fromApp=true&gmaps=true&streetview=true"
+      },
+      "region": {},
+      "personalizedResult": {
+        "isViewed": false,
+        "userRecommendation": {
+          "isRecommendedForYou": false
+        }
+      },
+      "propertyDisplayRules": {
+        "canShowAddress": true,
+        "canShowOnMap": true,
+        "agent": {
+          "agentName": "Meg Beers"
+        },
+        "mls": {
+          "brokerName": "Compass"
+        },
+        "builder": {},
+        "soldByOffice": {},
+        "listingCategory": "category1"
+      },
+      "ssid": 12,
+      "hasFloorPlan": false
+    },
+    {
+      "zpid": 59159899,
+      "location": {
+        "latitude": 42.279755,
+        "longitude": -71.162674
+      },
+      "address": {
+        "streetAddress": "150 Grove St",
+        "zipcode": "02132",
+        "city": "West Roxbury",
+        "state": "MA"
+      },
+      "media": {
+        "propertyPhotoLinks": {
+          "highResolutionLink": "https://photos.zillowstatic.com/fp/77e65dbe3b097bab68690516a10cce35-p_f.jpg"
+        },
+        "thirdPartyPhotoLinks": {
+          "streetViewLink": "https://maps.googleapis.com/maps/api/streetview?size=1600x240&location=42.279754638671875,-71.16267395019531&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=32Sv3LhzL097jszTyhmtrv1YZ7U=",
+          "satelliteLink": "https://maps.googleapis.com/maps/api/staticmap?mobile=false&sensor=true&maptype=satellite&size=1600x480&zoom=19&center=42.279754638671875,-71.16267395019531&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=SfurRYhw1c6XZytr4hq8pjJ__Rs=",
+          "streetViewMetadataLink": "https://maps.googleapis.com/maps/api/streetview/metadata?location=42.279754638671875,-71.16267395019531&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=MmjbuskW28P67VxOTxHZTMXNPVo="
+        },
+        "hasVRModel": false,
+        "hasVideos": false,
+        "hasIMX": false,
+        "hasApprovedThirdPartyVirtualTour": false,
+        "allPropertyPhotos": {
+          "highResolution": [
+            "https://photos.zillowstatic.com/fp/77e65dbe3b097bab68690516a10cce35-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/2a4bb292c201b188f2fddd4a5c195fb3-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/e6de6f2bb56938ce01b8de38e22b26c9-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/a2643468c212549dfaa517a81b209acf-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/aa01f88486fc13715cf6d0c2f70c8ef0-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/522b9a78a282b30bda0d5fff7518a871-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/2100b4f3b22ea16a514bd32a39218493-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/f71685e5026b8bf657226a8e4bd664db-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/5eb9a52ba3b3cbd3cf69065e9fc40aa1-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/a25f5c4464f4ca65900035a701175f0e-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/4f88194838d203a73f0578310addd8d1-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/f3920637b9594641a59f4151688d4f03-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/b5dcd8be99c1de56e1a1aa5938e25a4d-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/fe6f6390d852bab9abb3f316f3ea86bf-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/3e390c24cacadc82ac5200fb2cc44b96-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/77f997e0a0631f4b09b3c4fad697a1f7-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/6f584f31b60dbdc42eee1ba90d803fbf-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/7c632af6393fff71cf3618fd4278f4f6-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/5974604f2eb70d6e78228b7dadc2f2f0-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/e464a8783c199e6043dacd0d29a177eb-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/001d638e54136e20b2fe3ab0279caaae-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/55e764d28382d333e32fc4daed7848f1-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/d6c6516c8c84aca0efbe426fe6ad1b64-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/9c9a36f781037e789875f0ef43274748-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/ed0d01861013a59e92b745e59dca15b9-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/be0b7cb0165ef3f0dda2cf03c597e3de-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/d9479971b30745061f857ccf9ce5eb76-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/0d85db717f7b0e4633190fed75362c42-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/193d8b508cb9711d9421532c8308bb4a-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/2d4dcb57d817ebed3bba615381812bc2-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/79a55feda3af2a8c83d63f80b1a7b0d2-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/eedb2951588079aa9b33ab9efbdbcfaf-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/60a1a8cb54f3669998ce176bfa45faa5-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/159ab265cbe5981dad22d6251b920ac4-p_f.jpg",
+            "https://photos.zillowstatic.com/fp/38e9cd84082ade174ea687aaf2ff3e32-p_f.jpg"
+          ]
+        }
+      },
+      "isFeatured": false,
+      "isShowcaseListing": false,
+      "rental": {
+        "areApplicationsAccepted": false,
+        "hasVirtualTour": false
+      },
+      "currency": "usd",
+      "country": "usa",
+      "listingDateTimeOnZillow": 1761004800000,
+      "bestGuessTimeZone": "America/New_York",
+      "isUnmappable": false,
+      "bathrooms": 2.0,
+      "bedrooms": 5,
+      "livingArea": 2080,
+      "yearBuilt": 1973,
+      "lotSizeWithUnit": {
+        "lotSize": 8276.0,
+        "lotSizeUnit": "squareFeet"
+      },
+      "propertyType": "multiFamily",
+      "listing": {
+        "listingStatus": "forSale",
+        "marketingStatus": "active",
+        "palsId": "12005_73444269",
+        "listingSubType": {
+          "isFSBA": true
+        }
+      },
+      "daysOnZillow": 27,
+      "isPreforeclosureAuction": false,
+      "price": {
+        "value": 829000,
+        "pricePerSquareFoot": 399
+      },
+      "estimates": {
+        "zestimate": 836400,
+        "rentZestimate": 3921
+      },
+      "zillowOwnedProperty": {
+        "isZillowOwned": false
+      },
+      "taxAssessment": {
+        "taxAssessedValue": 619200,
+        "taxAssessmentYear": "2024"
+      },
+      "hdpView": {
+        "listingStatus": "forSale",
+        "price": 829000,
+        "hdpUrl": "/homedetail/MobileAppHDPShopperPlatformServicePage.htm?fromApp=true&p=android&variant=FOR_SALE#zpid=59159899&homeDetailsVariant=FOR_SALE&webviewLayout=doubleScroll&showFactsAndFeatures=true&fromApp=true&gmaps=true&streetview=true"
+      },
+      "region": {},
+      "personalizedResult": {
+        "isViewed": false,
+        "userRecommendation": {
+          "isRecommendedForYou": false
+        }
+      },
+      "propertyDisplayRules": {
+        "canShowAddress": true,
+        "canShowOnMap": true,
+        "agent": {
+          "agentName": "Radhy Pena"
+        },
+        "mls": {
+          "brokerName": "Pondside Realty"
+        },
+        "builder": {},
+        "soldByOffice": {},
+        "listingCategory": "category1"
+      },
+      "ssid": 12,
+      "hasFloorPlan": false
+    }
+  ],
+  "meta": {
+    "currentPage": 1,
+    "limit": 25,
+    "totalRecords": 1686,
+    "totalPage": 68
+  },
+  "status": true,
+  "message": "Successful"
+}

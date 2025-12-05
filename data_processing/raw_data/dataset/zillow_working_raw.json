@@ -1,0 +1,15 @@
+{
+  "message": "200",
+  "source": "9vrc_ws_cch",
+  "resultsCount": {
+    "totalMatchingCount": 0,
+    "ungroupedResultCount": 0,
+    "scrapeable_count": 0
+  },
+  "pagesInfo": {
+    "totalPages": 0,
+    "currentPage": 1,
+    "resultsPerPage": 200
+  },
+  "searchResults": []
+}

@@ -1,0 +1,190 @@
+{
+  "zillow_working_boston_zipcollector_20251127_191843.csv": {
+    "status": "success",
+    "original_rows": 2000,
+    "original_cols": 97,
+    "cleaned_rows": 2000,
+    "cleaned_cols": 98,
+    "rows_removed": 0
+  },
+  "boston_crime_2020_2025_complete_20251126.csv": {
+    "status": "success",
+    "original_rows": 316467,
+    "original_cols": 18,
+    "cleaned_rows": 316467,
+    "cleaned_cols": 18,
+    "rows_removed": 0
+  },
+  "synthetic_amenities_20251128_061253.csv": {
+    "status": "success",
+    "original_rows": 2265,
+    "original_cols": 28,
+    "cleaned_rows": 2265,
+    "cleaned_cols": 30,
+    "rows_removed": 0
+  },
+  "properties_master.csv": {
+    "status": "success",
+    "original_rows": 183445,
+    "original_cols": 77,
+    "cleaned_rows": 183445,
+    "cleaned_cols": 74,
+    "rows_removed": 0
+  },
+  "yelp_businesses_20251024_185237.csv": {
+    "status": "success",
+    "original_rows": 2055,
+    "original_cols": 19,
+    "cleaned_rows": 2055,
+    "cleaned_cols": 21,
+    "rows_removed": 0
+  },
+  "park_features.csv": {
+    "status": "success",
+    "original_rows": 976,
+    "original_cols": 13,
+    "cleaned_rows": 976,
+    "cleaned_cols": 15,
+    "rows_removed": 0
+  },
+  "boston_crime_data_2020.csv": {
+    "status": "success",
+    "original_rows": 70894,
+    "original_cols": 17,
+    "cleaned_rows": 70894,
+    "cleaned_cols": 17,
+    "rows_removed": 0
+  },
+  "boston_crime_data_2021.csv": {
+    "status": "success",
+    "original_rows": 71721,
+    "original_cols": 17,
+    "cleaned_rows": 71721,
+    "cleaned_cols": 17,
+    "rows_removed": 0
+  },
+  "boston_neighborhood_boundaries.csv": {
+    "status": "success",
+    "original_rows": 26,
+    "original_cols": 7,
+    "cleaned_rows": 26,
+    "cleaned_cols": 8,
+    "rows_removed": 0
+  },
+  "open_space.csv": {
+    "status": "success",
+    "original_rows": 570,
+    "original_cols": 27,
+    "cleaned_rows": 570,
+    "cleaned_cols": 27,
+    "rows_removed": 0
+  },
+  "public_schools.csv": {
+    "status": "success",
+    "original_rows": 134,
+    "original_cols": 15,
+    "cleaned_rows": 134,
+    "cleaned_cols": 17,
+    "rows_removed": 0
+  },
+  "non_public_schools.csv": {
+    "status": "success",
+    "original_rows": 87,
+    "original_cols": 16,
+    "cleaned_rows": 87,
+    "cleaned_cols": 17,
+    "rows_removed": 0
+  },
+  "boston_properties_20251024_185711.csv": {
+    "status": "success",
+    "original_rows": 29978,
+    "original_cols": 69,
+    "cleaned_rows": 29978,
+    "cleaned_cols": 71,
+    "rows_removed": 0
+  },
+  "colleges_and_universities.csv": {
+    "status": "success",
+    "original_rows": 60,
+    "original_cols": 30,
+    "cleaned_rows": 60,
+    "cleaned_cols": 31,
+    "rows_removed": 0
+  },
+  "boston_neighborhood_boundaries_approximated_by_2020_census_tracts.csv": {
+    "status": "success",
+    "original_rows": 24,
+    "original_cols": 4,
+    "cleaned_rows": 24,
+    "cleaned_cols": 5,
+    "rows_removed": 0
+  },
+  "boston_demographics_20251024_180101.csv": {
+    "status": "success",
+    "original_rows": 31,
+    "original_cols": 11,
+    "cleaned_rows": 31,
+    "cleaned_cols": 13,
+    "rows_removed": 0
+  },
+  "boston_property_assessment.csv": {
+    "status": "success",
+    "original_rows": 183445,
+    "original_cols": 66,
+    "cleaned_rows": 183445,
+    "cleaned_cols": 68,
+    "rows_removed": 0
+  },
+  "boston_crime_2023_2025_api_20251024_232735.csv": {
+    "status": "success",
+    "original_rows": 100000,
+    "original_cols": 18,
+    "cleaned_rows": 100000,
+    "cleaned_cols": 18,
+    "rows_removed": 0
+  },
+  "zillow_working_boston_listings_20251127_174724_flat.csv": {
+    "status": "success",
+    "original_rows": 800,
+    "original_cols": 97,
+    "cleaned_rows": 800,
+    "cleaned_cols": 99,
+    "rows_removed": 0
+  },
+  "boston_crime_2022.csv": {
+    "status": "success",
+    "original_rows": 73852,
+    "original_cols": 17,
+    "cleaned_rows": 73852,
+    "cleaned_cols": 17,
+    "rows_removed": 0
+  },
+  "zillow_working_boston_all_max_20251127_181854.csv": {
+    "status": "success",
+    "original_rows": 2265,
+    "original_cols": 96,
+    "cleaned_rows": 2265,
+    "cleaned_cols": 98,
+    "rows_removed": 0
+  },
+  "hospital-locations.csv": {
+    "status": "success",
+    "original_rows": 26,
+    "original_cols": 7,
+    "cleaned_rows": 26,
+    "cleaned_cols": 9,
+    "rows_removed": 0
+  },
+  "mbta_stations_20251024_181839.csv": {
+    "status": "success",
+    "original_rows": 4753,
+    "original_cols": 8,
+    "cleaned_rows": 4753,
+    "cleaned_cols": 10,
+    "rows_removed": 0
+  },
+  "zillow_boston_allprops_flat_20251127_005854.csv": {
+    "status": "failed",
+    "error": "No columns to parse from file"
+  }
+}

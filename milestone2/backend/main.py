@@ -2,13 +2,17 @@
 FastAPI Backend for PropBot with RAG + History + Analytics
 """
 
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Depends
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import Optional, List
 import sys
 import os
-from datetime import datetime
+from datetime import datetime, timezone
+from database.db import engine, Base, get_db
+from auth import routes as auth_routes
+from auth.models import User, ChatHistory
+from sqlalchemy.orm import Session
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
@@ -36,15 +40,24 @@ app.add_middleware(
 rag = PropBotRAG()
 logger.info("✅ RAG Pipeline initialized")
 
-# In-memory storage
-chat_history = []
+# Create database tables
+Base.metadata.create_all(bind=engine)
+logger.info("✅ Database tables created")
+
+# Include authentication routes
+app.include_router(auth_routes.router)
+logger.info("✅ Authentication routes registered")
+
+# In-memory storage (keeping for backward compatibility)
 search_history = []
 saved_properties = []
+
 
 class ChatRequest(BaseModel):
     query: str
     conversation_id: Optional[str] = None
-    user_id: Optional[str] = "default_user"
+    user_id: Optional[int] = None
+
 
 class PropertySearch(BaseModel):
     neighborhood: Optional[str] = None
@@ -54,10 +67,12 @@ class PropertySearch(BaseModel):
     max_price: Optional[float] = None
     user_id: Optional[str] = "default_user"
 
+
 class SavePropertyRequest(BaseModel):
     property_id: str
     property_data: dict
     user_id: Optional[str] = "default_user"
+
 
 @app.get("/")
 def root():
@@ -66,8 +81,9 @@ def root():
         "version": "2.0.0",
         "status": "active",
         "rag": "enabled",
-        "features": ["chat", "search", "history", "saved_properties", "analytics"]
+        "features": ["chat", "search", "history", "saved_properties", "analytics", "authentication"]
     }
+
 
 @app.get("/health")
 def health_check():
@@ -76,38 +92,93 @@ def health_check():
         "chromadb": "connected",
         "rag": "active",
         "collections": len(rag.collection_names),
-        "chat_history_count": len(chat_history),
-        "search_history_count": len(search_history)
+        "search_history_count": len(search_history),
+        "database": "connected"
     }
 
+
 @app.post("/chat")
-def chat(request: ChatRequest):
-    """Chat with RAG system"""
+async def chat(request: ChatRequest, db: Session = Depends(get_db)):
+    """
+    Enhanced chat endpoint with database history storage
+    """
     try:
-        logger.info(f"Chat query: {request.query}")
-        result = rag.chat(request.query)
+        query = request.query
+        user_id = request.user_id
         
-        chat_entry = {
-            "id": len(chat_history) + 1,
-            "user_id": request.user_id,
-            "query": request.query,
-            "answer": result['answer'],
-            "timestamp": datetime.now().isoformat(),
-            "documents_retrieved": result['documents_retrieved']
-        }
-        chat_history.append(chat_entry)
+        # Verify user exists if user_id is provided
+        if user_id:
+            user = db.query(User).filter(User.id == user_id).first()
+            if not user:
+                raise HTTPException(status_code=404, detail="User not found")
+            
+            # Check if guest user has expired (fixed timezone issue)
+            if user.is_guest and user.expires_at:
+                # Make both timezone-aware for comparison
+                now_utc = datetime.now(timezone.utc)
+                if user.expires_at.tzinfo is None:
+                    # If expires_at is naive, make it UTC aware
+                    expires_at_utc = user.expires_at.replace(tzinfo=timezone.utc)
+                else:
+                    expires_at_utc = user.expires_at
+                
+                if expires_at_utc < now_utc:
+                    raise HTTPException(status_code=403, detail="Guest session expired")
+        
+        # Get RAG response
+        logger.info(f"Chat query: {query}")
+        result = rag.chat(query)
+        response_text = result.get("answer", "I couldn't find relevant information.")
+        
+        # Save to database if user_id provided
+        if user_id:
+            chat_entry = ChatHistory(
+                user_id=user_id,
+                query=query,
+                response=response_text
+            )
+            db.add(chat_entry)
+            db.commit()
         
         return {
-            "answer": result['answer'],
-            "sources": result['sources'],
-            "documents_retrieved": result['documents_retrieved'],
-            "conversation_id": request.conversation_id or "conv_123",
-            "chat_id": chat_entry["id"]
+            "answer": response_text,
+            "sources": result.get("sources", []),
+            "documents_retrieved": result.get("documents_retrieved", 0),
+            "timestamp": datetime.now().isoformat(),
+            "user_id": user_id
         }
-    
+        
     except Exception as e:
-        logger.error(f"Chat error: {e}")
+        logger.error(f"Chat error: {str(e)}")
         raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.get("/chat/history/{user_id}")
+async def get_chat_history_db(user_id: int, db: Session = Depends(get_db)):
+    """
+    Get chat history for a specific user from database (works for both guests and registered users)
+    """
+    user = db.query(User).filter(User.id == user_id).first()
+    if not user:
+        raise HTTPException(status_code=404, detail="User not found")
+    
+    history = db.query(ChatHistory).filter(
+        ChatHistory.user_id == user_id
+    ).order_by(ChatHistory.timestamp.desc()).limit(50).all()
+    
+    return {
+        "user_id": user_id,
+        "is_guest": user.is_guest,
+        "history": [
+            {
+                "query": chat.query,
+                "response": chat.response,
+                "timestamp": chat.timestamp.isoformat()
+            }
+            for chat in history
+        ]
+    }
+
 
 @app.post("/search")
 def search_properties(search: PropertySearch):
@@ -156,20 +227,6 @@ def search_properties(search: PropertySearch):
         logger.error(f"Search error: {e}")
         raise HTTPException(status_code=500, detail=str(e))
 
-@app.get("/chat-history/{user_id}")
-def get_chat_history(user_id: str = "default_user", limit: int = 10):
-    """Get user's chat history"""
-    try:
-        user_chats = [chat for chat in chat_history if chat["user_id"] == user_id]
-        recent_chats = sorted(user_chats, key=lambda x: x["timestamp"], reverse=True)[:limit]
-        
-        return {
-            "user_id": user_id,
-            "total_chats": len(user_chats),
-            "chats": recent_chats
-        }
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
 
 @app.get("/search-history/{user_id}")
 def get_search_history(user_id: str = "default_user", limit: int = 10):
@@ -186,21 +243,6 @@ def get_search_history(user_id: str = "default_user", limit: int = 10):
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
-@app.delete("/chat-history/{user_id}")
-def clear_chat_history(user_id: str):
-    """Clear user's chat history"""
-    try:
-        global chat_history
-        initial_count = len(chat_history)
-        chat_history = [chat for chat in chat_history if chat["user_id"] != user_id]
-        deleted_count = initial_count - len(chat_history)
-        
-        return {
-            "message": f"Cleared {deleted_count} chat entries",
-            "user_id": user_id
-        }
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
 
 @app.delete("/search-history/{user_id}")
 def clear_search_history(user_id: str):
@@ -217,6 +259,7 @@ def clear_search_history(user_id: str):
         }
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+
 
 @app.post("/save-property")
 def save_property(request: SavePropertyRequest):
@@ -238,6 +281,7 @@ def save_property(request: SavePropertyRequest):
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
+
 @app.get("/saved-properties/{user_id}")
 def get_saved_properties(user_id: str = "default_user"):
     """Get user's saved properties"""
@@ -251,6 +295,7 @@ def get_saved_properties(user_id: str = "default_user"):
         }
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+
 
 @app.delete("/saved-properties/{user_id}/{property_id}")
 def remove_saved_property(user_id: str, property_id: str):
@@ -271,14 +316,13 @@ def remove_saved_property(user_id: str, property_id: str):
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
+
 @app.get("/analytics/dashboard")
 def get_analytics_dashboard():
     """Get market analytics dashboard data"""
     try:
-        total_chats = len(chat_history)
         total_searches = len(search_history)
         
-        # Calculate hottest neighborhoods
         neighborhood_counts = {}
         for search in search_history:
             neighborhood = search["search_params"].get("neighborhood")
@@ -290,7 +334,6 @@ def get_analytics_dashboard():
             for name, count in sorted(neighborhood_counts.items(), key=lambda x: x[1], reverse=True)[:5]
         ]
         
-        # Neighborhood prices
         neighborhood_prices = {
             "Back Bay": 1250000,
             "Beacon Hill": 1180000,
@@ -305,7 +348,6 @@ def get_analytics_dashboard():
         for hood in hottest_neighborhoods:
             hood["avg_price"] = neighborhood_prices.get(hood["name"], 650000)
         
-        # Bedroom distribution
         bedroom_distribution = {}
         for search in search_history:
             bedrooms = search["search_params"].get("bedrooms")
@@ -314,7 +356,6 @@ def get_analytics_dashboard():
         
         return {
             "total_properties": 29978,
-            "total_chats": total_chats,
             "total_searches": total_searches,
             "total_saved_properties": len(saved_properties),
             "average_price": 687450,
@@ -339,25 +380,13 @@ def get_analytics_dashboard():
                 "2BR": 11200,
                 "3BR": 7800,
                 "4BR+": 2478
-            },
-            "top_search_terms": [
-                {"term": "Back Bay", "count": len([s for s in search_history if s["search_params"].get("neighborhood") == "Back Bay"])},
-                {"term": "3 bedroom", "count": len([s for s in search_history if s["search_params"].get("bedrooms") == 3])},
-                {"term": "2 bedroom", "count": len([s for s in search_history if s["search_params"].get("bedrooms") == 2])},
-                {"term": "Beacon Hill", "count": len([s for s in search_history if s["search_params"].get("neighborhood") == "Beacon Hill"])},
-                {"term": "luxury", "count": max(1, total_chats // 10)}
-            ],
-            "market_insights": {
-                "fastest_growing": "South End (+18% YoY)",
-                "best_value": "East Boston (12% under market average)",
-                "most_competitive": "Back Bay (95% of listings sold within 30 days)",
-                "investment_opportunity": "Dorchester (predicted 15% appreciation)"
             }
         }
     
     except Exception as e:
         logger.error(f"Analytics error: {e}")
         raise HTTPException(status_code=500, detail=str(e))
+
 
 @app.get("/sample-queries")
 def get_sample_queries():
@@ -374,6 +403,7 @@ def get_sample_queries():
             "Affordable housing in safe neighborhoods"
         ]
     }
+
 
 @app.post("/predict-price")
 def predict_price(property: PropertySearch):
@@ -415,6 +445,7 @@ def predict_price(property: PropertySearch):
         logger.error(f"Prediction error: {e}")
         raise HTTPException(status_code=500, detail=str(e))
 
+
 @app.get("/metrics")
 def get_metrics():
     """Get model metrics"""
@@ -431,13 +462,14 @@ def get_metrics():
         }
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+
+
 @app.get("/recommendations/{property_id}")
 def get_property_recommendations(property_id: str, limit: int = 5):
     """Get similar property recommendations"""
     try:
         logger.info(f"Getting recommendations for: {property_id}")
         
-        # Search for similar properties
         queries = [
             "3 bedroom luxury properties",
             "properties in similar area",
@@ -454,7 +486,7 @@ def get_property_recommendations(property_id: str, limit: int = 5):
                     recommendations.append({
                         "property_id": f"REC-{len(recommendations) + 1}",
                         "description": doc['document'][:200],
-                        "similarity_score": round(1 - doc['distance'], 3)
+                "similarity_score": round(1 - doc['distance'], 3)
                     })
                     
                     if len(recommendations) >= limit:
@@ -474,6 +506,7 @@ def get_property_recommendations(property_id: str, limit: int = 5):
     except Exception as e:
         logger.error(f"Recommendations error: {e}")
         raise HTTPException(status_code=500, detail=str(e))
+
 
 @app.post("/recommendations/by-features")
 def get_recommendations_by_features(search: PropertySearch):
@@ -505,16 +538,14 @@ def get_recommendations_by_features(search: PropertySearch):
     
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+
+
 @app.post("/commute-time")
 def calculate_commute_time(property_address: str, destination: str):
     """Calculate commute time from property to destination"""
     try:
         logger.info(f"Calculating commute: {property_address} -> {destination}")
         
-        # In production, you'd use Google Maps API or MBTA API
-        # For demo, we'll use intelligent estimates based on location
-        
-        # Common Boston destinations with distances
         destinations_map = {
             "downtown": {"name": "Downtown Boston", "distance_miles": 3.5},
             "northeastern": {"name": "Northeastern University", "distance_miles": 2.8},
@@ -526,7 +557,6 @@ def calculate_commute_time(property_address: str, destination: str):
             "airport": {"name": "Logan Airport", "distance_miles": 5.5}
         }
         
-        # Find matching destination
         dest_key = destination.lower()
         dest_info = None
         
@@ -535,24 +565,15 @@ def calculate_commute_time(property_address: str, destination: str):
                 dest_info = info
                 break
         
-        # Default if not found
         if not dest_info:
             dest_info = {"name": destination, "distance_miles": 4.0}
         
         distance = dest_info["distance_miles"]
         
-        # Calculate times (rough estimates)
-        # Car: ~20 mph in city traffic
-        car_time = round(distance / 20 * 60)  # minutes
-        
-        # Transit: slower, add wait time
-        transit_time = round(distance / 12 * 60 + 10)  # minutes
-        
-        # Walking: 3 mph
-        walking_time = round(distance / 3 * 60)  # minutes
-        
-        # Biking: 10 mph
-        biking_time = round(distance / 10 * 60)  # minutes
+        car_time = round(distance / 20 * 60)
+        transit_time = round(distance / 12 * 60 + 10)
+        walking_time = round(distance / 3 * 60)
+        biking_time = round(distance / 10 * 60)
         
         return {
             "from": property_address,
@@ -589,6 +610,7 @@ def calculate_commute_time(property_address: str, destination: str):
         logger.error(f"Commute calculation error: {e}")
         raise HTTPException(status_code=500, detail=str(e))
 
+
 @app.get("/commute-destinations")
 def get_popular_destinations():
     """Get list of popular commute destinations"""
@@ -606,105 +628,8 @@ def get_popular_destinations():
             {"id": "longwood", "name": "Longwood Medical Area", "category": "Healthcare"}
         ]
     }
+
+
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8001)
-
-@app.get("/recommendations/{property_id}")
-def get_property_recommendations(property_id: str, limit: int = 5):
-    """Get similar property recommendations using embeddings"""
-    try:
-        logger.info(f"Getting recommendations for property: {property_id}")
-        
-        # In production, you'd:
-        # 1. Get property details from database
-        # 2. Create embedding for that property
-        # 3. Find similar embeddings in ChromaDB
-        # 4. Return top N similar properties
-        
-        # For demo, we'll search ChromaDB for similar properties
-        # Simulating with a property search
-        
-        # Mock property data (in production, fetch real property)
-        mock_property_queries = [
-            "3 bedroom luxury properties",
-            "properties in same neighborhood",
-            "similar price range properties"
-        ]
-        
-        recommendations = []
-        
-        for query in mock_property_queries:
-            try:
-                result = rag.retrieve_documents(query, collection_name="properties")
-                
-                for doc in result[:2]:  # Get 2 from each query
-                    recommendations.append({
-                        "property_id": f"REC-{len(recommendations) + 1}",
-                        "description": doc['document'][:200],
-                        "similarity_score": round(1 - doc['distance'], 3),
-                        "match_reason": "Similar features and location"
-                    })
-                    
-                    if len(recommendations) >= limit:
-                        break
-            except:
-                continue
-            
-            if len(recommendations) >= limit:
-                break
-        
-        return {
-            "property_id": property_id,
-            "recommendations": recommendations[:limit],
-            "total_found": len(recommendations),
-            "algorithm": "embedding_similarity"
-        }
-    
-    except Exception as e:
-        logger.error(f"Recommendations error: {e}")
-        raise HTTPException(status_code=500, detail=str(e))
-
-@app.post("/recommendations/by-features")
-def get_recommendations_by_features(search: PropertySearch):
-    """Get recommendations based on desired features"""
-    try:
-        # Build query from features
-        query_parts = []
-        if search.bedrooms:
-            query_parts.append(f"{search.bedrooms} bedroom")
-        if search.neighborhood:
-            query_parts.append(f"in {search.neighborhood}")
-        if search.max_price:
-            query_parts.append(f"under ${search.max_price:,.0f}")
-        
-        query = " ".join(query_parts) if query_parts else "properties"
-        
-        logger.info(f"Getting recommendations for: {query}")
-        
-        # Use RAG to find matching properties
-        result = rag.retrieve_documents(query, collection_name="properties")
-        
-        recommendations = []
-        for idx, doc in enumerate(result[:5]):
-            recommendations.append({
-                "property_id": f"PROP-{idx + 1}",
-                "description": doc['document'][:300],
-                "match_score": round(1 - doc['distance'], 3),
-                "collection": doc['collection']
-            })
-        
-        return {
-            "query": query,
-            "recommendations": recommendations,
-            "total_found": len(recommendations),
-            "search_criteria": {
-                "bedrooms": search.bedrooms,
-                "neighborhood": search.neighborhood,
-                "max_price": search.max_price
-            }
-        }
-    
-    except Exception as e:
-        logger.error(f"Feature-based recommendations error: {e}")
-        raise HTTPException(status_code=500, detail=str(e))

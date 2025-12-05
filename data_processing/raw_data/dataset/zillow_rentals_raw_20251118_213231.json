@@ -1,0 +1,519 @@
+[
+  {
+    "zpid": 2059247552,
+    "location": {
+      "latitude": 42.333855,
+      "longitude": -71.100815
+    },
+    "address": {
+      "streetAddress": "95 Saint Alphonsus St #10475598",
+      "zipcode": "02120",
+      "city": "Roxbury Crossing",
+      "state": "MA",
+      "buildingId": 2750780472
+    },
+    "media": {
+      "propertyPhotoLinks": {
+        "highResolutionLink": "https://photos.zillowstatic.com/fp/d29e122b674d37a05db2b15347caff0a-p_f.jpg"
+      },
+      "thirdPartyPhotoLinks": {
+        "streetViewLink": "https://maps.googleapis.com/maps/api/streetview?size=1600x240&location=42.33385467529297,-71.10081481933594&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=_c7wAfiD0hNgPs_oNOjPBtqFLfc=",
+        "satelliteLink": "https://maps.googleapis.com/maps/api/staticmap?mobile=false&sensor=true&maptype=satellite&size=1600x480&zoom=19&center=42.33385467529297,-71.10081481933594&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=kAOycK7vN7sVllrk9lfActLK8Q8=",
+        "streetViewMetadataLink": "https://maps.googleapis.com/maps/api/streetview/metadata?location=42.33385467529297,-71.10081481933594&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=gJBkDJuqXTWeLXi_UAFsAkWYAaw="
+      },
+      "hasVRModel": false,
+      "hasVideos": false,
+      "hasIMX": false,
+      "hasApprovedThirdPartyVirtualTour": false,
+      "allPropertyPhotos": {
+        "highResolution": [
+          "https://photos.zillowstatic.com/fp/d29e122b674d37a05db2b15347caff0a-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/76f49496aacfd101b44cafc8354aa770-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/b5c79eb9e807f31929ff9bb2ae60a2d8-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/444385149b5149a9c5f31a449798a144-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/3e5f9e1245adb3298a078e6e7d40a9cd-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/7fba516e05f8d9d21a021467026e83a7-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/86f816efca1c7521e65fd144a2d1aef9-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/c0d307261113216f15c8ca5209914b0a-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/729727d5f1987907d0078ca0bcd19bb5-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/d65ac7a64e5bd43662928508f9496699-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/be61d514fda16bcc9431ef22282488e6-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/89a1ef8765b9d51bdc71f24e9c8fe0e2-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/e771fa1a4176a2b15985927938fd7b8f-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/cb48902a016811a4158f2de12d9c8ea6-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/ec51a91051cff9e974cee9cb2d7d1cc6-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/a003226babe7eae4ed96d7a27a339a9c-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/7691493a0715b8465914628f20e3cebb-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/b2aa19a533927c1aeb7ef72652608529-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/9eba37939a3b4481e3d5cf81a9d0e005-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/01d5c82ccd7c752aae4b6fbe048cc8b4-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/032c6622a6ec0465ec920aa5531fef10-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/4c1e1657dc0630be2aca18b780e9e8e7-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/28582e2fac83edf46e27b7b2af8963eb-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/d41ffc38adad6d03a133586d6d756946-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/74c135325dc8c00835a6a1f61b22f17b-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/29f77d24aabc810a42cfdc6a5af3d554-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/1721b6c7704d57098ccc4c6c7d144c73-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/91520a5bfded587240209e08ae269f91-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/ab901f657cbc0a9ed4fb29fbbcc48b35-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/ef7afc664d9e0f5c70576c838ebf5e98-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/cba0accf24a3ee462702a28fdd2acec4-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/5b2163134a0f842138647e7b433d4e17-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/2e24fc018f6d926d97c3bb61085246cd-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/bfad2a47a948528507fd174ef54c8fdc-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/ae36e5f9e096679d3970a95fe2382253-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/56e23801be8af39cbcbf93c8711ea4ac-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/2c485b273bb88a50c02664f363d72a5b-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/1d8d772494cf54904c35df1ad431bb0c-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/c553ab6124a9877af9f3892db43d4fa2-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/d0f143df0d8288e9f718850f898e40dc-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/8600876fcecd0d7ec7837e7c1b0c73c4-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/7a07dafc916324eed5fcd1d6c3e661fc-p_f.jpg"
+        ]
+      }
+    },
+    "title": "95 Saint, 1B-1 1X1.5 Den",
+    "isFeatured": true,
+    "isShowcaseListing": false,
+    "rental": {
+      "areApplicationsAccepted": false,
+      "isRoomForRent": false,
+      "isBuildToRent": false,
+      "isRentByBed": false,
+      "marketingTreatments": [
+        "trustedListing",
+        "paid",
+        "multiFamilySalesListing",
+        "paidOrUnpaidMultifamily",
+        "paidMultifamily",
+        "multifamilyPinnaclePackage"
+      ],
+      "listPriceIncludesRequiredMonthlyFees": true,
+      "baseRent": 4919.0,
+      "hasVirtualTour": false
+    },
+    "currency": "usd",
+    "country": "usa",
+    "groupType": "apartmentComplex",
+    "listingDateTimeOnZillow": 1741040061034,
+    "bestGuessTimeZone": "America/New_York",
+    "isUnmappable": false,
+    "bathrooms": 3.0,
+    "bedrooms": 1,
+    "livingArea": 801,
+    "yearBuilt": 2021,
+    "propertyType": "apartment",
+    "listing": {
+      "listingStatus": "forRent",
+      "marketingStatus": "active",
+      "palsId": "100066001_8f8f80c99a990f090f6da07a82a6239a87622b3e40ebc896e77e0d5b8331df12",
+      "providerListingID": "1p5whpp6f10sr",
+      "listingSubType": {}
+    },
+    "daysOnZillow": 259,
+    "isPreforeclosureAuction": false,
+    "price": {
+      "value": 4919,
+      "changedDate": 1756353600000,
+      "suffix": "+",
+      "priceChange": 800,
+      "pricePerSquareFoot": 6
+    },
+    "estimates": {
+      "rentZestimate": 4480
+    },
+    "zillowOwnedProperty": {
+      "isZillowOwned": false
+    },
+    "hdpView": {
+      "listingStatus": "forRent",
+      "price": 4919,
+      "hdpUrl": "/homedetail/MobileAppHDPShopperPlatformServicePage.htm?fromApp=true&p=android&variant=FOR_RENT#zpid=2059247552&homeDetailsVariant=FOR_RENT&webviewLayout=doubleScroll&showFactsAndFeatures=true&fromApp=true&gmaps=true&streetview=true"
+    },
+    "region": {},
+    "personalizedResult": {
+      "isViewed": false,
+      "userRecommendation": {
+        "isRecommendedForYou": false
+      }
+    },
+    "propertyDisplayRules": {
+      "canShowAddress": true,
+      "canShowOnMap": true,
+      "agent": {},
+      "mls": {},
+      "builder": {},
+      "soldByOffice": {},
+      "listingCategory": "category2"
+    },
+    "ssid": 100066,
+    "hasFloorPlan": false
+  },
+  {
+    "zpid": 448217551,
+    "location": {
+      "latitude": 42.33176,
+      "longitude": -71.09868
+    },
+    "address": {
+      "streetAddress": "1482 Tremont St #301",
+      "zipcode": "02120",
+      "city": "Roxbury Crossing",
+      "state": "MA",
+      "buildingId": 1151016819
+    },
+    "media": {
+      "propertyPhotoLinks": {
+        "highResolutionLink": "https://photos.zillowstatic.com/fp/ac703baf5a6b91dc599377565792c688-p_f.jpg"
+      },
+      "thirdPartyPhotoLinks": {
+        "streetViewLink": "https://maps.googleapis.com/maps/api/streetview?size=1600x240&location=42.33176040649414,-71.09867858886719&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=HgTLaKCLiffqeSN0N65A2mm38vk=",
+        "satelliteLink": "https://maps.googleapis.com/maps/api/staticmap?mobile=false&sensor=true&maptype=satellite&size=1600x480&zoom=19&center=42.33176040649414,-71.09867858886719&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=XnfeAYYULl0YTytGIlqqBgerA3Y=",
+        "streetViewMetadataLink": "https://maps.googleapis.com/maps/api/streetview/metadata?location=42.33176040649414,-71.09867858886719&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=12grwe7iYPGoopzq2rcmkI9UQ-E="
+      },
+      "hasVRModel": false,
+      "hasVideos": false,
+      "hasIMX": false,
+      "hasApprovedThirdPartyVirtualTour": false,
+      "allPropertyPhotos": {
+        "highResolution": [
+          "https://photos.zillowstatic.com/fp/ac703baf5a6b91dc599377565792c688-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/c2359620f41cf10274045d21129a450f-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/d5fca7e3afe1a22adb4cc9a2eb5e6221-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/156acf4ab965f48709fb75f42060c3cd-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/af2c3b9a746b2a102363c3a3f8e45dce-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/aa70e4b2ba9ff31b3fecec67369271af-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/3300d48a6e42a14bed4342e6d54b1c76-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/1eb6d55586cf05a05a1b5dfc3d32e417-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/1eb6d55586cf05a05a1b5dfc3d32e417-p_f.jpg"
+        ]
+      }
+    },
+    "title": "The Tremont, 2 Bed 2.5 Bath",
+    "isFeatured": true,
+    "isShowcaseListing": false,
+    "rental": {
+      "areApplicationsAccepted": false,
+      "isRoomForRent": false,
+      "isBuildToRent": false,
+      "isRentByBed": false,
+      "marketingTreatments": [
+        "trustedListing",
+        "paid",
+        "multiFamilySalesListing",
+        "paidOrUnpaidMultifamily",
+        "paidMultifamily",
+        "multifamilyEnhancedPackage"
+      ],
+      "listPriceIncludesRequiredMonthlyFees": true,
+      "baseRent": 5065.0,
+      "hasVirtualTour": false
+    },
+    "currency": "usd",
+    "country": "usa",
+    "groupType": "apartmentComplex",
+    "listingDateTimeOnZillow": 1758651808008,
+    "bestGuessTimeZone": "America/New_York",
+    "isUnmappable": false,
+    "bathrooms": 3.0,
+    "bedrooms": 2,
+    "livingArea": 1294,
+    "propertyType": "apartment",
+    "listing": {
+      "listingStatus": "forRent",
+      "marketingStatus": "active",
+      "palsId": "100066001_0a71ff8a04436938dff57ebcf88d2707d5d12b9c79cc5b4df41869b6e89d68f8",
+      "providerListingID": "349umwfuscbmt",
+      "listingSubType": {}
+    },
+    "daysOnZillow": 56,
+    "isPreforeclosureAuction": false,
+    "price": {
+      "value": 5065,
+      "pricePerSquareFoot": 4
+    },
+    "estimates": {},
+    "zillowOwnedProperty": {
+      "isZillowOwned": false
+    },
+    "hdpView": {
+      "listingStatus": "forRent",
+      "price": 5065,
+      "hdpUrl": "/homedetail/MobileAppHDPShopperPlatformServicePage.htm?fromApp=true&p=android&variant=FOR_RENT#zpid=448217551&homeDetailsVariant=FOR_RENT&webviewLayout=doubleScroll&showFactsAndFeatures=true&fromApp=true&gmaps=true&streetview=true"
+    },
+    "region": {},
+    "personalizedResult": {
+      "isViewed": false,
+      "userRecommendation": {
+        "isRecommendedForYou": false,
+        "homeInsight": "Stainless appliances"
+      }
+    },
+    "propertyDisplayRules": {
+      "canShowAddress": true,
+      "canShowOnMap": true,
+      "agent": {},
+      "mls": {},
+      "builder": {},
+      "soldByOffice": {},
+      "listingCategory": "category2"
+    },
+    "ssid": 100066,
+    "hasFloorPlan": false
+  },
+  {
+    "zpid": 2079722311,
+    "location": {
+      "latitude": 42.355736,
+      "longitude": -71.14392
+    },
+    "address": {
+      "streetAddress": "26 Hichborn St UNIT 5",
+      "zipcode": "02135",
+      "city": "Brighton",
+      "state": "MA",
+      "buildingId": 2763808469
+    },
+    "media": {
+      "propertyPhotoLinks": {
+        "highResolutionLink": "https://photos.zillowstatic.com/fp/b9bc76c646dd342fc6168d0ca2bf7aec-p_f.jpg"
+      },
+      "thirdPartyPhotoLinks": {
+        "streetViewLink": "https://maps.googleapis.com/maps/api/streetview?size=1600x240&location=42.355735778808594,-71.1439208984375&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=1wQploLC4L4aI-KwDwunbusCcVM=",
+        "satelliteLink": "https://maps.googleapis.com/maps/api/staticmap?mobile=false&sensor=true&maptype=satellite&size=1600x480&zoom=19&center=42.355735778808594,-71.1439208984375&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=waVYrfb0l91kK0S0o6YNDlH7HyA=",
+        "streetViewMetadataLink": "https://maps.googleapis.com/maps/api/streetview/metadata?location=42.355735778808594,-71.1439208984375&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=ODGuqRAAxqW4iEzUm4mDpXRU3-o="
+      },
+      "hasVRModel": false,
+      "hasVideos": false,
+      "hasIMX": false,
+      "hasApprovedThirdPartyVirtualTour": false,
+      "allPropertyPhotos": {
+        "highResolution": [
+          "https://photos.zillowstatic.com/fp/b9bc76c646dd342fc6168d0ca2bf7aec-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/2236a602529e31b870ca70e01a5c0477-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/32bb2aca442c0c6a4fc3005594fe6916-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/61946406a825f219dab1fef24bf46e0b-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/1722292472ed98250e2ea76d21915261-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/46ee6a05a17206105cb28cd6fcc96ab6-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/2ea1445a3dfff7d219a7087e957e32ac-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/5df90a5666546737ac08a1514e3d471f-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/35bc044a4dd75492c3dc79ccfb7af980-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/48efe6ba8841e76b7c0dc791bf26d898-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/0f2f739b88df23f510a06d06ead9d8b2-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/bfed1f8a553590e603afb9087d181c3f-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/422159e2043602b7b8eecdc2c2c7763f-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/1f3b3c802aa699cca28aed26d11b4d6f-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/0772715311d6ea5023c63711bc41928e-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/1fb1e53fb440697e1ae915a20fd3502e-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/d0a3800a7ce9ca43ed6458733c4861ec-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/e95f16ab7b6d3f772feac9c2129a2877-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/9ca9e261726cd2651d7a4a42f7449733-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/5abd7cf882ce47b6a391213d7594ddb6-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/9ef0e3c3dad34a4c3a9f05e2060a328a-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/5223fe5d8d1762973dbc36bd38b1cbfc-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/48c9316cf19d9018f5d6dacf9cf5acd0-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/f6091dbbeca8fb0c49c246e76322810e-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/e82cea915c9f6cb1f6a517ba36668e9b-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/3278457afc661aa4a58223a2461caa5b-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/afa9a660e44bd8db5ce338d82e3df9eb-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/f7be652c4ab2e14d981cd080286e8d36-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/a58a360ee08929205ab62ae21fe33007-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/14b969d141e81d438b5a0db51a2bc0f0-p_f.jpg"
+        ]
+      }
+    },
+    "title": "26 Hichborn Brighton, 5",
+    "isFeatured": true,
+    "isShowcaseListing": false,
+    "rental": {
+      "areApplicationsAccepted": false,
+      "isRoomForRent": false,
+      "isBuildToRent": false,
+      "isRentByBed": false,
+      "marketingTreatments": [
+        "trustedListing",
+        "paid",
+        "multiFamilySalesListing",
+        "paidOrUnpaidMultifamily",
+        "paidMultifamily",
+        "multifamilyPremium"
+      ],
+      "listPriceIncludesRequiredMonthlyFees": false,
+      "baseRent": 4300.0,
+      "hasVirtualTour": false
+    },
+    "currency": "usd",
+    "country": "usa",
+    "groupType": "apartmentComplex",
+    "listingDateTimeOnZillow": 1747221141786,
+    "bestGuessTimeZone": "America/New_York",
+    "isUnmappable": false,
+    "bathrooms": 2.0,
+    "bedrooms": 3,
+    "livingArea": 1134,
+    "propertyType": "apartment",
+    "listing": {
+      "listingStatus": "forRent",
+      "marketingStatus": "active",
+      "palsId": "100066001_67447402fea936cfda0f278b68559c118d8c5cd5654499ded73bc2df6868bc26",
+      "providerListingID": "1mvh0umtynvb",
+      "listingSubType": {}
+    },
+    "daysOnZillow": 188,
+    "isPreforeclosureAuction": false,
+    "price": {
+      "value": 4300,
+      "changedDate": 1755835200000,
+      "priceChange": -200,
+      "pricePerSquareFoot": 4
+    },
+    "estimates": {
+      "rentZestimate": 3826
+    },
+    "zillowOwnedProperty": {
+      "isZillowOwned": false
+    },
+    "hdpView": {
+      "listingStatus": "forRent",
+      "price": 4300,
+      "hdpUrl": "/homedetail/MobileAppHDPShopperPlatformServicePage.htm?fromApp=true&p=android&variant=FOR_RENT#zpid=2079722311&homeDetailsVariant=FOR_RENT&webviewLayout=doubleScroll&showFactsAndFeatures=true&fromApp=true&gmaps=true&streetview=true"
+    },
+    "region": {},
+    "personalizedResult": {
+      "isViewed": false,
+      "userRecommendation": {
+        "isRecommendedForYou": false,
+        "homeInsight": "Condominium quality finishes"
+      }
+    },
+    "propertyDisplayRules": {
+      "canShowAddress": true,
+      "canShowOnMap": true,
+      "agent": {},
+      "mls": {},
+      "builder": {},
+      "soldByOffice": {},
+      "listingCategory": "category2"
+    },
+    "ssid": 100066,
+    "hasFloorPlan": false
+  },
+  {
+    "zpid": 2066430555,
+    "location": {
+      "latitude": 42.339977,
+      "longitude": -71.14453
+    },
+    "address": {
+      "streetAddress": "71-75 Kilsyth Rd #71-01",
+      "zipcode": "02135",
+      "city": "Brighton",
+      "state": "MA",
+      "buildingId": 2737783634
+    },
+    "media": {
+      "propertyPhotoLinks": {
+        "highResolutionLink": "https://photos.zillowstatic.com/fp/9299e43fc0a3e79e1650e454fa0d2186-p_f.jpg"
+      },
+      "thirdPartyPhotoLinks": {
+        "streetViewLink": "https://maps.googleapis.com/maps/api/streetview?size=1600x240&location=42.3399772644043,-71.14453125&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=6HwwcUp7AcalSm0PZN5gZSCXIBo=",
+        "satelliteLink": "https://maps.googleapis.com/maps/api/staticmap?mobile=false&sensor=true&maptype=satellite&size=1600x480&zoom=19&center=42.3399772644043,-71.14453125&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=8Cw0U3LnCFjicmdCaIAaB3mzEYc=",
+        "streetViewMetadataLink": "https://maps.googleapis.com/maps/api/streetview/metadata?location=42.3399772644043,-71.14453125&key=AIzaSyBWYJWCA8FNMQvSe_k3LKfDGJaEgdKwsco&signature=m0seKHGVmrclPCYFIJGq9sJBlQQ="
+      },
+      "hasVRModel": false,
+      "hasVideos": false,
+      "hasIMX": false,
+      "hasApprovedThirdPartyVirtualTour": false,
+      "allPropertyPhotos": {
+        "highResolution": [
+          "https://photos.zillowstatic.com/fp/9299e43fc0a3e79e1650e454fa0d2186-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/1120f12489ade573e17a918bf2432823-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/60db7d77034f7098452c175aad57e495-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/18139d60c09a16e393efdeff7897e834-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/b5584e9bbea999cbd6dbeb1ee29bf316-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/56b336c6509460bf12ff6861ff313aa8-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/cb5517240bb9b67add2522a7f0bdc9e2-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/afe6170e21fce0062a32c6b1969f0726-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/975ecc9dc0e3428e75a0cf9a3c4d1ab9-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/6bc6b4dad30fec0e32bf5ac678264def-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/87fb8db069ea51676b5388b2ee2564ba-p_f.jpg",
+          "https://photos.zillowstatic.com/fp/b9dc71c0283fcb8fd9544116377221fb-p_f.jpg"
+        ]
+      }
+    },
+    "title": "Kilsyth Court Apartments, 2 Bed/1 Bath",
+    "isFeatured": true,
+    "isShowcaseListing": false,
+    "rental": {
+      "areApplicationsAccepted": false,
+      "isRoomForRent": false,
+      "isBuildToRent": false,
+      "isRentByBed": false,
+      "marketingTreatments": [
+        "trustedListing",
+        "paid",
+        "multiFamilySalesListing",
+        "paidOrUnpaidMultifamily",
+        "paidMultifamily"
+      ],
+      "listPriceIncludesRequiredMonthlyFees": false,
+      "baseRent": 3095.0,
+      "hasVirtualTour": false
+    },
+    "currency": "usd",
+    "country": "usa",
+    "groupType": "apartmentComplex",
+    "listingDateTimeOnZillow": 1749901573709,
+    "bestGuessTimeZone": "America/New_York",
+    "isUnmappable": false,
+    "bathrooms": 1.0,
+    "bedrooms": 2,
+    "livingArea": 836,
+    "propertyType": "apartment",
+    "listing": {
+      "listingStatus": "forRent",
+      "marketingStatus": "active",
+      "palsId": "100066001_d79fb1e4c0f88eb176512e0a6493a5340b4973c6a0643f760fb2ff07d883eb81",
+      "providerListingID": "46m6ygzfhckpf",
+      "listingSubType": {}
+    },
+    "daysOnZillow": 157,
+    "isPreforeclosureAuction": false,
+    "price": {
+      "value": 3095,
+      "changedDate": 1755662400000,
+      "priceChange": -200,
+      "pricePerSquareFoot": 4
+    },
+    "estimates": {
+      "rentZestimate": 2968
+    },
+    "zillowOwnedProperty": {
+      "isZillowOwned": false
+    },
+    "hdpView": {
+      "listingStatus": "forRent",
+      "price": 3095,
+      "hdpUrl": "/homedetail/MobileAppHDPShopperPlatformServicePage.htm?fromApp=true&p=android&variant=FOR_RENT#zpid=2066430555&homeDetailsVariant=FOR_RENT&webviewLayout=doubleScroll&showFactsAndFeatures=true&fromApp=true&gmaps=true&streetview=true"
+    },
+    "region": {},
+    "personalizedResult": {
+      "isViewed": false,
+      "userRecommendation": {
+        "isRecommendedForYou": false,
+        "homeInsight": "Classic architecture"
+      }
+    },
+    "propertyDisplayRules": {
+      "canShowAddress": true,
+      "canShowOnMap": true,
+      "agent": {},
+      "mls": {},
+      "builder": {},
+      "soldByOffice": {},
+      "listingCategory": "category2"
+    },
+    "ssid": 100066,
+    "hasFloorPlan": false
+  }
+]

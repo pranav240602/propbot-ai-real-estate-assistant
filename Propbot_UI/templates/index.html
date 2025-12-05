@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>PropBot - Real Estate AI</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+<!-- CSS_PLACEHOLDER -->
+</head>
+
+<body>
+
+<!-- LOGIN PAGE -->
+<div class="login-page" id="loginPage">
+    <div class="login-container">
+        <div class="login-header">
+            <h1 class="login-title">Welcome to PropBot</h1>
+            <p class="login-subtitle">Your AI-powered real estate companion</p>
+        </div>
+        
+        <div class="error-message" id="errorMessage"></div>
+        
+        <form class="login-form" onsubmit="handleLogin(event)">
+            <div class="form-field">
+                <label for="loginEmail">Email or Username</label>
+                <input type="text" id="loginEmail" placeholder="Enter your email" required>
+            </div>
+            
+            <div class="form-field">
+                <label for="loginPassword">Password</label>
+                <input type="password" id="loginPassword" placeholder="Enter your password" required>
+            </div>
+            
+            <div class="login-options">
+                <label class="remember-me">
+                    <input type="checkbox" id="rememberMe">
+                    <span>Remember me</span>
+                </label>
+                <a href="#" class="forgot-password">Forgot password?</a>
+            </div>
+            
+            <button type="submit" class="login-btn">Log in</button>
+            <button type="button" class="guest-btn" onclick="loginAsGuest()">Continue as Guest</button>
+        </form>
+    </div>
+</div>
+
+<!-- MAIN WEBSITE -->
+<div class="main-website" id="mainWebsite">
+    <div class="top-nav">
+        <div class="logo">🏠 PropBot Real Estate</div>
+        <div class="nav-links">
+            <a class="nav-link active" data-mode="buy" onclick="selectNav('buy')">Buy</a>
+            <a class="nav-link" data-mode="rent" onclick="selectNav('rent')">Rent</a>
+            <a class="nav-link" data-mode="sell" onclick="selectNav('sell')">Sell</a>
+            <div class="user-profile">
+                <div class="user-avatar" id="userAvatar">👤</div>
+                <span id="userName">User</span>
+            </div>
+            <button class="logout-btn" onclick="handleLogout()">Logout</button>
+        </div>
+    </div>
+
+    <div class="hero-section">
+        <h1 class="hero-title">Find Your Dream Home</h1>
+        <p class="hero-subtitle">Discover the perfect property in Boston with PropBot AI.</p>
+        <div class="search-container">
+            <input type="text" class="search-input" id="heroInput"
+                   placeholder="Search homes to buy in Boston (e.g., 3 BR in Back Bay under $1M)">
+            <button class="search-btn" id="heroSearchBtn">🔍 Search</button>
+        </div>
+        <div class="hero-result" id="heroResult">
+            <div class="hero-result-title">AI Property Insight</div>
+            <div class="hero-result-body" id="heroResultBody"></div>
+        </div>
+    </div>
+
+    <div class="properties-section">
+        <h2 class="section-title">Featured Properties</h2>
+        <div class="properties-grid" id="featuredProperties">
+            <div class="loading" style="text-align:center;padding:40px;color:white;">
+                Loading properties from PropBot AI...
+            </div>
+        </div>
+    </div>
+</div>
+
+<button class="menu-button" onclick="toggleMenu()">⋮</button>
+
+<div id="dropdownMenu" class="dropdown-menu">
+    <div>
+        PropBot Menu
+    </div>
+    <div>
+        <div class="menu-item" onclick="showDash()">
+            <span>📊</span> Market Analytics
+        </div>
+        <div class="menu-item" onclick="showCalc()">
+            <span>🧮</span> Commute Calculator
+        </div>
+        <div class="menu-item" onclick="showHist()">
+            <span>💬</span> Chat History
+        </div>
+
+        <div id="dashSection" style="display:none;margin-top:12px;"></div>
+
+        <div id="calcSection" style="display:none;margin-top:12px;padding:20px;background:rgba(102,126,234,0.08);border-radius:12px;">
+            <input type="text" id="propAddr" placeholder="Property address"
+                   style="width:100%;padding:12px;margin-bottom:12px;border:1px solid #e2e8f0;border-radius:8px;">
+            <select id="destSelect"
+                    style="width:100%;padding:12px;margin-bottom:12px;border:1px solid #e2e8f0;border-radius:8px;">
+                <option value="">Select destination</option>
+            </select>
+            <button onclick="calcCommute()"
+                    style="width:100%;padding:12px;background:linear-gradient(135deg,#667eea,#764ba2);color:white;border:none;border-radius:8px;font-weight:600;cursor:pointer;">
+                Calculate
+            </button>
+            <div id="commuteResult" style="display:none;margin-top:12px;padding:12px;background:white;border-radius:8px;"></div>
+        </div>
+
+        <div id="histSection" style="display:none;margin-top:12px;"></div>
+    </div>
+</div>
+
+<button class="propbot-button" onclick="openCopilot()">💬</button>
+
+<div class="copilot-overlay" id="copilotOverlay">
+  <div class="copilot-window">
+    <div class="copilot-container">
+      <div class="propbot-section">
+        <div class="chat-header">
+          <div class="chat-header-left">
+            <div class="chat-avatar">🤖</div>
+            <div class="chat-info">
+              <div class="chat-name">PropBot Copilot</div>
+              <div class="online-status"><span class="online-dot"></span>Online · Boston real estate</div>
+            </div>
+          </div>
+          <div>
+            <button class="header-btn" onclick="showHome()">⌂</button>
+            <button class="header-btn" onclick="closeCopilot()">✕</button>
+          </div>
+        </div>
+
+        <div class="chat-messages" id="chatMessages"></div>
+
+        <div class="search-form" id="searchForm">
+            <div class="form-group">
+                <label class="form-label">Neighborhood</label>
+                <select id="searchNeighborhood" class="form-select">
+                    <option value="">Select neighborhood</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label class="form-label">Bedrooms</label>
+                <select id="searchBedrooms" class="form-select">
+                    <option value="">Any</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4+</option>
+                </select>
+            </div>
+            <button class="form-submit" onclick="submitSearch()">🔍 Search Properties</button>
+        </div>
+
+        <div class="predict-form" id="predictForm">
+            <div class="form-group">
+                <label class="form-label">Neighborhood</label>
+                <select id="predictNeighborhood" class="form-select">
+                    <option value="">Select neighborhood</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label class="form-label">Bedrooms</label>
+                <select id="predictBedrooms" class="form-select">
+                    <option value="">Select</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4+</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label class="form-label">Bathrooms</label>
+                <select id="predictBathrooms" class="form-select">
+                    <option value="">Select</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4+</option>
+                </select>
+            </div>
+            <button class="form-submit" onclick="submitPredict()">💰 Predict Price</button>
+        </div>
+
+        <div class="quick-replies" id="quickReplies"></div>
+
+        <div class="chat-nav-bar">
+            <button class="nav-icon-btn active" id="homeBtn" onclick="showHome()">🏠<span>Chat</span></button>
+            <button class="nav-icon-btn" id="searchBtn" onclick="showSearch()">🔍<span>Search</span></button>
+            <button class="nav-icon-btn" id="predictBtn" onclick="showPredict()">💰<span>Predict</span></button>
+        </div>
+
+        <div class="chat-input-area" id="chatInputArea">
+          <div class="input-wrapper">
+            <input type="text" class="message-input" id="msgInput" placeholder="Ask me anything about Boston real estate..."
+                   onkeypress="handleKey(event)">
+            <button class="send-btn" onclick="sendMsg()">➤</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="listings-section" id="listingsSection">
+        <div class="listings-header">
+          <div class="listings-title">Property Listings</div>
+          <div class="listings-count" id="listingsCount">Loading recommendations...</div>
+        </div>
+        <div id="propertyListings"><div class="loading">Loading properties from PropBot...</div></div>
+      </div>
+
+      <div class="map-section">
+        <div class="map-header">
+          <div class="map-title">🗺️ Property Map</div>
+        </div>
+        <div id="mapView"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- JS_PLACEHOLDER -->
+</body>
+</html>
