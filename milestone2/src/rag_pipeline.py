@@ -4,13 +4,13 @@ Features: Conversation Memory, Follow-ups, Personality
 """
 
 import os
-import chromadb
+from chromadb import HttpClient
 from sentence_transformers import SentenceTransformer
 from openai import OpenAI
 from dotenv import load_dotenv
 import logging
 from typing import List, Dict, Optional
-from pyspellchecker import SpellChecker
+from spellchecker import SpellChecker
 import re
 
 logging.basicConfig(level=logging.INFO)
@@ -29,7 +29,7 @@ class PropBotRAG:
         self.openai_client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
         logger.info("✅ Connected to OpenAI")
         
-        self.chroma_client = chromadb.HttpClient(
+        self.chroma_client = HttpClient(
             host='localhost',
             port=8000
         )
