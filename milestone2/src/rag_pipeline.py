@@ -1,6 +1,5 @@
 """
 Enhanced RAG Pipeline - Interactive & User-Friendly
-Features: Conversation Memory, Follow-ups, Personality
 """
 
 import os
@@ -36,11 +35,6 @@ class PropBotRAG:
         logger.info("✅ Connected to ChromaDB")
         
         self.spell = SpellChecker()
-        self.spell.word_frequency.load_words([
-            'back', 'bay', 'beacon', 'hill', 'south', 'end', 'dorchester',
-            'roxbury', 'jamaica', 'plain', 'charlestown', 'allston', 'brighton',
-            'fenway', 'seaport', 'bedroom', 'bathroom', 'condo', 'townhouse'
-        ])
         
         try:
             collections = self.chroma_client.list_collections()
@@ -52,13 +46,6 @@ class PropBotRAG:
         
         self.top_k = 5
         self.temperature = 0.7
-        
-        self.boston_neighborhoods = [
-            'back bay', 'beacon hill', 'south end', 'north end', 'dorchester',
-            'roxbury', 'jamaica plain', 'charlestown', 'east boston', 'allston',
-            'brighton', 'fenway', 'south boston', 'seaport', 'west end'
-        ]
-        
         self.conversation_context = {}
     
     def retrieve_documents(self, query: str, collection_name: str = None, k: int = 5) -> List[Dict]:
@@ -95,13 +82,11 @@ class PropBotRAG:
         return all_results[:k]
     
     def chat(self, query: str, conversation_id: str = None) -> dict:
-        """
-        Enhanced chat with greeting detection and OpenAI responses
-        """
+        """Enhanced chat with greeting detection and data extraction"""
         try:
             logger.info(f"Processing query: {query}")
             
-            # STEP 1: Detect greetings and introductions
+            # STEP 1: Detect greetings
             query_lower = query.lower().strip()
             greeting_words = ['hi', 'hello', 'hey', 'good morning', 'good afternoon', 'good evening', 'greetings', 'sup', 'yo', 'hii', 'hiii']
             intro_patterns = ['my name is', 'i am', "i'm", 'this is', 'im', 'i m']
@@ -109,35 +94,31 @@ class PropBotRAG:
             is_greeting = any(query_lower.startswith(word) for word in greeting_words)
             is_intro = any(pattern in query_lower for pattern in intro_patterns)
             
-            # Check if it's ONLY a greeting (not a property question)
             property_keywords = ['property', 'properties', 'home', 'house', 'apartment', 'condo', 'bedroom', 'bathroom', 
                                'rent', 'rental', 'lease', 'buy', 'purchase', 'price', 'neighborhood', 'area', 'location',
                                'show', 'find', 'search', 'looking']
             has_property_intent = any(keyword in query_lower for keyword in property_keywords)
             
-            # If it's just a greeting/intro without property questions
+            # Greeting response
             if (is_greeting or is_intro) and not has_property_intent and len(query.split()) < 20:
-                # Extract name if provided
                 name = None
                 for pattern in intro_patterns:
                     if pattern in query_lower:
                         parts = query_lower.split(pattern)
                         if len(parts) > 1:
                             name_part = parts[1].strip()
-                            # Remove punctuation and get first word
                             name_part = re.sub(r'[^\w\s]', '', name_part)
                             name = name_part.split()[0] if name_part else None
                             if name:
                                 name = name.capitalize()
                             break
                 
-                # Simple, friendly greeting response
                 if name:
                     greeting_response = f"Hi {name}! 👋 How can I help you today?"
                 else:
                     greeting_response = "Hi there! 👋 How can I help you today?"
                 
-                logger.info(f"✅ Greeting detected, responding without property search")
+                logger.info(f"✅ Greeting detected")
                 
                 return {
                     "answer": greeting_response,
@@ -145,8 +126,8 @@ class PropBotRAG:
                     "documents_retrieved": 0
                 }
             
-            # STEP 2: If not just a greeting, search for properties
-            logger.info("🔍 Property question detected, searching ChromaDB...")
+            # STEP 2: Search for properties
+            logger.info("🔍 Property question detected")
             
             all_results = []
             for collection in self.collection_names[:5]:
@@ -160,34 +141,72 @@ class PropBotRAG:
             all_results.sort(key=lambda x: x['distance'])
             top_results = all_results[:10]
             
-            # Build context
-            context = "\n\n".join([
-                f"Source {i+1} ({doc['collection']}):\n{doc['document'][:500]}"
-                for i, doc in enumerate(top_results)
-            ])
+            # STEP 3: Parse property data from CSV format
+            parsed_properties = []
+            for doc in top_results:
+                raw_text = doc['document']
+                
+                # Extract fields from CSV-like string
+                price_match = re.search(r'property\.price\.value,(\d+\.?\d*)', raw_text)
+                bedrooms_match = re.search(r'property\.bedrooms,(\d+\.?\d*)', raw_text)
+                bathrooms_match = re.search(r'property\.bathrooms,(\d+\.?\d*)', raw_text)
+                address_match = re.search(r'property\.address\.streetAddress,([^,]+)', raw_text)
+                city_match = re.search(r'property\.address\.city,([^,]+)', raw_text)
+                sqft_match = re.search(r'property\.livingArea,(\d+\.?\d*)', raw_text)
+                
+                parsed_prop = {
+                    'raw': raw_text[:500],
+                    'price': float(price_match.group(1)) if price_match else None,
+                    'bedrooms': int(float(bedrooms_match.group(1))) if bedrooms_match else None,
+                    'bathrooms': float(bathrooms_match.group(1)) if bathrooms_match else None,
+                    'address': address_match.group(1).strip() if address_match else 'Address not available',
+                    'city': city_match.group(1).strip() if city_match else '',
+                    'sqft': int(float(sqft_match.group(1))) if sqft_match else None,
+                    'collection': doc['collection']
+                }
+                parsed_properties.append(parsed_prop)
             
-            # System prompt for property questions
+            # Build structured context for OpenAI
+            context_parts = []
+            for i, prop in enumerate(parsed_properties[:5]):
+                prop_text = f"Property {i+1}:\n"
+                prop_text += f"- Address: {prop['address']}, {prop['city']}\n"
+                if prop['price']:
+                    prop_text += f"- Price: ${prop['price']:,.0f}\n"
+                if prop['bedrooms']:
+                    prop_text += f"- Bedrooms: {prop['bedrooms']}\n"
+                if prop['bathrooms']:
+                    prop_text += f"- Bathrooms: {prop['bathrooms']}\n"
+                if prop['sqft']:
+                    prop_text += f"- Square Feet: {prop['sqft']:,}\n"
+                context_parts.append(prop_text)
+            
+            context = "\n\n".join(context_parts)
+            
+            # Enhanced system prompt
             system_prompt = """You are PropBot, a friendly Boston real estate AI assistant.
 
-When answering property questions:
-- Be specific with addresses, prices, and features
-- Use emojis sparingly (1-2 per response)
-- Format property details clearly with bullet points
-- Highlight the best option
-- Keep responses concise (2-3 paragraphs)
-- Suggest relevant follow-up actions"""
+The property data is already parsed and formatted for you with exact prices and features.
 
-            if len(top_results) > 0:
+When showing properties:
+- Display the EXACT price as given (already in dollars)
+- Show bedrooms, bathrooms, and square footage
+- Format nicely with bullet points
+- Highlight the best value option
+- Be enthusiastic about great deals
+- Keep responses concise (2-4 paragraphs)"""
+
+            if len(parsed_properties) > 0:
                 user_message = f"""User Query: {query}
 
-Boston Real Estate Data:
+Properties Found:
 {context}
 
-Provide a helpful response with specific property recommendations."""
+Provide a helpful, well-formatted response with these specific properties."""
             else:
                 user_message = f"""User Query: {query}
 
-No property data found. Politely suggest they rephrase or try different criteria."""
+No properties found. Suggest they try different criteria."""
             
             # Get OpenAI response
             response = self.openai_client.chat.completions.create(
@@ -206,7 +225,7 @@ No property data found. Politely suggest they rephrase or try different criteria
                 {
                     "collection": doc['collection'],
                     "relevance": round(1 - doc['distance'], 3),
-                    "snippet": doc['document'][:200] + "..."
+                    "snippet": doc['document'][:800]
                 }
                 for doc in top_results[:5]
             ]
@@ -226,24 +245,11 @@ No property data found. Politely suggest they rephrase or try different criteria
             }
 
 def test_rag():
-    """Test enhanced RAG"""
-    logger.info("🧪 Testing Enhanced RAG...")
-    
+    """Test RAG"""
+    logger.info("🧪 Testing RAG...")
     rag = PropBotRAG()
-    
-    test_queries = [
-        "Hi I am Pranav",
-        "Show me 3 bedroom properties in Back Bay",
-        "Tell me about rentals under $3000"
-    ]
-    
-    for query in test_queries:
-        print(f"\n{'='*70}")
-        print(f"💬 Query: {query}")
-        print('='*70)
-        
-        result = rag.chat(query)
-        print(f"\n{result['answer']}\n")
+    result = rag.chat("Show me properties in Back Bay")
+    print(result['answer'])
 
 if __name__ == "__main__":
     test_rag()
