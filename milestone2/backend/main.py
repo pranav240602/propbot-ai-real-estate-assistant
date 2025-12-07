@@ -40,15 +40,13 @@ app.add_middleware(
 rag = PropBotRAG()
 logger.info("✅ RAG Pipeline initialized")
 
-# Create database tables
 Base.metadata.create_all(bind=engine)
 logger.info("✅ Database tables created")
 
-# Include authentication routes
 app.include_router(auth_routes.router)
 logger.info("✅ Authentication routes registered")
 
-# In-memory storage (keeping for backward compatibility)
+# In-memory storage for backward compatibility
 search_history = []
 saved_properties = []
 
@@ -65,13 +63,13 @@ class PropertySearch(BaseModel):
     bathrooms: Optional[int] = None
     min_price: Optional[float] = None
     max_price: Optional[float] = None
-    user_id: Optional[str] = "default_user"
+    user_id: Optional[int] = None  # Changed to int
 
 
 class SavePropertyRequest(BaseModel):
     property_id: str
     property_data: dict
-    user_id: Optional[str] = "default_user"
+    user_id: Optional[int] = None  # Changed to int
 
 
 @app.get("/")
@@ -99,25 +97,19 @@ def health_check():
 
 @app.post("/chat")
 async def chat(request: ChatRequest, db: Session = Depends(get_db)):
-    """
-    Enhanced chat endpoint with database history storage
-    """
+    """Enhanced chat endpoint with database history storage"""
     try:
         query = request.query
         user_id = request.user_id
         
-        # Verify user exists if user_id is provided
         if user_id:
             user = db.query(User).filter(User.id == user_id).first()
             if not user:
                 raise HTTPException(status_code=404, detail="User not found")
             
-            # Check if guest user has expired (fixed timezone issue)
             if user.is_guest and user.expires_at:
-                # Make both timezone-aware for comparison
                 now_utc = datetime.now(timezone.utc)
                 if user.expires_at.tzinfo is None:
-                    # If expires_at is naive, make it UTC aware
                     expires_at_utc = user.expires_at.replace(tzinfo=timezone.utc)
                 else:
                     expires_at_utc = user.expires_at
@@ -125,12 +117,10 @@ async def chat(request: ChatRequest, db: Session = Depends(get_db)):
                 if expires_at_utc < now_utc:
                     raise HTTPException(status_code=403, detail="Guest session expired")
         
-        # Get RAG response
         logger.info(f"Chat query: {query}")
         result = rag.chat(query)
         response_text = result.get("answer", "I couldn't find relevant information.")
         
-        # Save to database if user_id provided
         if user_id:
             chat_entry = ChatHistory(
                 user_id=user_id,
@@ -155,9 +145,7 @@ async def chat(request: ChatRequest, db: Session = Depends(get_db)):
 
 @app.get("/chat/history/{user_id}")
 async def get_chat_history_db(user_id: int, db: Session = Depends(get_db)):
-    """
-    Get chat history for a specific user from database (works for both guests and registered users)
-    """
+    """Get chat history for a specific user from database"""
     user = db.query(User).filter(User.id == user_id).first()
     if not user:
         raise HTTPException(status_code=404, detail="User not found")
@@ -211,7 +199,7 @@ def search_properties(search: PropertySearch):
                 "max_price": search.max_price
             },
             "query": query,
-            "results_count": result['documents_retrieved'],
+            "results_count": result.get('documents_retrieved', 0),
             "timestamp": datetime.now().isoformat()
         }
         search_history.append(search_entry)
@@ -219,7 +207,7 @@ def search_properties(search: PropertySearch):
         return {
             "query": query,
             "answer": result['answer'],
-            "sources": result['sources'],
+            "sources": result.get('sources', []),
             "search_id": search_entry["id"]
         }
     
@@ -229,7 +217,7 @@ def search_properties(search: PropertySearch):
 
 
 @app.get("/search-history/{user_id}")
-def get_search_history(user_id: str = "default_user", limit: int = 10):
+def get_search_history(user_id: int, limit: int = 10):
     """Get user's search history"""
     try:
         user_searches = [search for search in search_history if search["user_id"] == user_id]
@@ -245,7 +233,7 @@ def get_search_history(user_id: str = "default_user", limit: int = 10):
 
 
 @app.delete("/search-history/{user_id}")
-def clear_search_history(user_id: str):
+def clear_search_history(user_id: int):
     """Clear user's search history"""
     try:
         global search_history
@@ -283,7 +271,7 @@ def save_property(request: SavePropertyRequest):
 
 
 @app.get("/saved-properties/{user_id}")
-def get_saved_properties(user_id: str = "default_user"):
+def get_saved_properties(user_id: int):
     """Get user's saved properties"""
     try:
         user_saved = [prop for prop in saved_properties if prop["user_id"] == user_id]
@@ -298,7 +286,7 @@ def get_saved_properties(user_id: str = "default_user"):
 
 
 @app.delete("/saved-properties/{user_id}/{property_id}")
-def remove_saved_property(user_id: str, property_id: str):
+def remove_saved_property(user_id: int, property_id: str):
     """Remove a saved property"""
     try:
         global saved_properties
@@ -380,6 +368,12 @@ def get_analytics_dashboard():
                 "2BR": 11200,
                 "3BR": 7800,
                 "4BR+": 2478
+            },
+            "market_insights": {
+                "fastest_growing": "South End (+18% YoY)",
+                "best_value": "East Boston (12% under market average)",
+                "most_competitive": "Back Bay (95% of listings sold within 30 days)",
+                "investment_opportunity": "Dorchester (predicted 15% appreciation)"
             }
         }
     
@@ -486,7 +480,7 @@ def get_property_recommendations(property_id: str, limit: int = 5):
                     recommendations.append({
                         "property_id": f"REC-{len(recommendations) + 1}",
                         "description": doc['document'][:200],
-                "similarity_score": round(1 - doc['distance'], 3)
+                        "similarity_score": round(1 - doc['distance'], 3)
                     })
                     
                     if len(recommendations) >= limit:
@@ -520,7 +514,7 @@ def get_recommendations_by_features(search: PropertySearch):
         
         query = " ".join(query_parts) if query_parts else "properties"
         
-        result = rag.retrieve_documents(query, collection_name="properties")
+        result = rag.retrieve_documents(query, collection_name="properties", k=5)
         
         recommendations = []
         for idx, doc in enumerate(result[:5]):
