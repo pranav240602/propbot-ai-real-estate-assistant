@@ -9,4 +9,5 @@ COPY . .
 
 EXPOSE 8080
 
-CMD ["echo", "PropBot Docker build successful"]
+CMD ["streamlit", "run", "app.py", "--server.port=8080", "--server.address=0.0.0.0"]
+
