@@ -26,7 +26,7 @@ full_html = full_html.replace('<!-- JS_PLACEHOLDER -->', f'<script>{js_content}<
 # Render
 # Render with full width and height
 # Render
-components.html(full_html, height=900, scrolling=False)
+components.html(full_html, height=900, scrolling=False, width=None )
 
 st.markdown("""
 <style>
