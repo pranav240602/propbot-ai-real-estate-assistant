@@ -14,37 +14,73 @@
 <body>
 
 <!-- LOGIN PAGE -->
+<!-- LOGIN PAGE -->
 <div class="login-page" id="loginPage">
     <div class="login-container">
-        <div class="login-header">
-            <h1 class="login-title">Welcome to PropBot</h1>
-            <p class="login-subtitle">Your AI-powered real estate companion</p>
+        <!-- Login Form -->
+        <div id="loginFormSection">
+            <div class="login-header">
+                <h1 class="login-title">Welcome to PropBot</h1>
+                <p class="login-subtitle">Your AI-powered real estate companion</p>
+            </div>
+            
+            <div class="error-message" id="errorMessage"></div>
+            
+            <form class="login-form" onsubmit="handleLogin(event)">
+                <div class="form-field">
+                    <label for="loginEmail">Email or Username</label>
+                    <input type="text" id="loginEmail" placeholder="Enter your email" required>
+                </div>
+                
+                <div class="form-field">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" placeholder="Enter your password" required>
+                </div>
+                
+                <div class="login-options">
+                    <label class="remember-me">
+                        <input type="checkbox" id="rememberMe">
+                        <span>Remember me</span>
+                    </label>
+                    <a href="#" class="forgot-password">Forgot password?</a>
+                </div>
+                
+                <button type="submit" class="login-btn">Log in</button>
+                <button type="button" class="signup-link-btn" onclick="showSignupForm()">Don't have an account? Sign up</button>
+                <button type="button" class="guest-btn" onclick="loginAsGuest()">Continue as Guest</button>
+            </form>
         </div>
-        
-        <div class="error-message" id="errorMessage"></div>
-        
-        <form class="login-form" onsubmit="handleLogin(event)">
-            <div class="form-field">
-                <label for="loginEmail">Email or Username</label>
-                <input type="text" id="loginEmail" placeholder="Enter your email" required>
+
+        <!-- Signup Form -->
+        <div id="signupFormSection" style="display:none;">
+            <div class="login-header">
+                <h1 class="login-title">Create Account</h1>
+                <p class="login-subtitle">Join PropBot to find your dream home</p>
             </div>
             
-            <div class="form-field">
-                <label for="loginPassword">Password</label>
-                <input type="password" id="loginPassword" placeholder="Enter your password" required>
-            </div>
+            <div class="error-message" id="signupErrorMessage"></div>
+            <div class="success-message" id="signupSuccessMessage"></div>
             
-            <div class="login-options">
-                <label class="remember-me">
-                    <input type="checkbox" id="rememberMe">
-                    <span>Remember me</span>
-                </label>
-                <a href="#" class="forgot-password">Forgot password?</a>
-            </div>
-            
-            <button type="submit" class="login-btn">Log in</button>
-            <button type="button" class="guest-btn" onclick="loginAsGuest()">Continue as Guest</button>
-        </form>
+            <form class="login-form" onsubmit="handleSignup(event)">
+                <div class="form-field">
+                    <label for="signupEmail">Email or Username</label>
+                    <input type="text" id="signupEmail" placeholder="Enter your email" required>
+                </div>
+                
+                <div class="form-field">
+                    <label for="signupPassword">Password</label>
+                    <input type="password" id="signupPassword" placeholder="Create a password (6+ characters)" required>
+                </div>
+                
+                <div class="form-field">
+                    <label for="signupPasswordConfirm">Confirm Password</label>
+                    <input type="password" id="signupPasswordConfirm" placeholder="Re-enter your password" required>
+                </div>
+                
+                <button type="submit" class="login-btn">Create Account</button>
+                <button type="button" class="signup-link-btn" onclick="showLoginForm()">Already have an account? Log in</button>
+            </form>
+        </div>
     </div>
 </div>
 
@@ -79,8 +115,9 @@
     </div>
 
     <div class="properties-section">
-        <h2 class="section-title">Featured Properties</h2>
-        <div class="properties-grid" id="featuredProperties">
+    <h2 class="section-title">Featured Properties</h2>
+    <div class="properties-carousel-wrapper">
+        <div class="properties-carousel" id="featuredProperties">
             <div class="loading" style="text-align:center;padding:40px;color:white;">
                 Loading properties from PropBot AI...
             </div>
@@ -104,6 +141,10 @@
         <div class="menu-item" onclick="showHist()">
             <span>💬</span> Chat History
         </div>
+        <div class="menu-item" onclick="showSavedProps()">
+        <span>💾</span> Saved Properties
+        </div>
+
 
         <div id="dashSection" style="display:none;margin-top:12px;"></div>
 
@@ -122,6 +163,7 @@
         </div>
 
         <div id="histSection" style="display:none;margin-top:12px;"></div>
+        <div id="savedPropsSection" style="display:none;margin-top:12px;"></div>
     </div>
 </div>
 
@@ -140,7 +182,6 @@
             </div>
           </div>
           <div>
-            <button class="header-btn" onclick="showHome()">⌂</button>
             <button class="header-btn" onclick="closeCopilot()">✕</button>
           </div>
         </div>
@@ -224,7 +265,7 @@
 
       <div class="map-section">
         <div class="map-header">
-          <div class="map-title">🗺️ Property Map</div>
+          <div class="map-title">Property Map</div>
         </div>
         <div id="mapView"></div>
       </div>

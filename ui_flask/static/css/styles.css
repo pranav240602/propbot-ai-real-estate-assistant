@@ -165,6 +165,38 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
     transform: translateY(0);
 }
 
+.signup-link-btn {
+    padding: 12px;
+    background: transparent;
+    color: #93c5fd;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 16px;
+    width: 100%;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+.signup-link-btn:hover {
+    color: #bfdbfe;
+    background: rgba(255,255,255,0.1);
+}
+
+.success-message {
+    background: rgba(209, 250, 229, 0.95);
+    color: #065f46;
+    padding: 12px 16px;
+    border-radius: 10px;
+    font-size: 13px;
+    display: none;
+    margin-bottom: 16px;
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    backdrop-filter: blur(10px);
+}
+
 .guest-btn {
     padding: 16px;
     background: rgba(255, 255, 255, 0.15);
@@ -353,8 +385,9 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
 
 .properties-section{
     padding:20px 40px 40px;
-    max-width:1200px;
+    max-width:100%;
     margin:0 auto;
+    overflow:hidden;
 }
 .section-title{
     font-size:20px;
@@ -362,38 +395,81 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
     margin-bottom:16px;
     text-align:center;
 }
-.properties-grid{
-    display:grid;
-    grid-template-columns:repeat(3,minmax(0,1fr));
-    gap:18px;
-    margin:0 auto;
+
+.properties-carousel-wrapper {
+    position: relative;
+    overflow: hidden;
+    padding: 10px 0;
+}
+
+.properties-carousel {
+    display: flex;
+    gap: 20px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    padding: 10px 20px;
 }
 
 .property-card{
+    min-width: 350px;
+    max-width: 350px;
     background:rgba(15,23,42,0.9);
     border-radius:18px;
     overflow:hidden;
     box-shadow:0 16px 32px rgba(15,23,42,0.7);
     border:1px solid rgba(148,163,184,0.7);
+    flex-shrink: 0;
+    transition: all 0.3s;
 }
-.property-image{height:160px;background-size:cover;background-position:center;}
-.property-info{padding:16px 18px;}
-.property-price{font-size:22px;font-weight:700;color:#bfdbfe;margin-bottom:6px;}
-.property-details{font-size:13px;color:#cbd5f5;margin-bottom:4px;}
-.property-actions{margin-top:8px;display:flex;gap:8px;}
+
+.property-card:hover {
+    transform: translateY(-8px);
+    box-shadow:0 20px 40px rgba(15,23,42,0.9);
+}
+
+.property-image{
+    height:220px;
+    width:100%;
+    background-size:cover;
+    background-position:center;
+    background-color:#1e293b;
+    position:relative;
+}
+
+.property-info{padding:18px 20px;}
+.property-price{font-size:24px;font-weight:700;color:#bfdbfe;margin-bottom:8px;}
+.property-details{font-size:13px;color:#cbd5f5;margin-bottom:6px;line-height:1.5;}
+.property-address{font-size:12px;color:#94a3b8;margin-bottom:8px;font-style:italic;}
+.property-actions{margin-top:12px;display:flex;gap:8px;}
 .property-btn{
-    flex:1;padding:8px 10px;border-radius:999px;border:none;
-    font-size:12px;cursor:pointer;font-weight:500;
+    flex:1;padding:10px 12px;border-radius:999px;border:none;
+    font-size:12px;cursor:pointer;font-weight:600;
+    transition:all 0.3s;
 }
-.save-btn{background:#f97316;color:white;}
-.more-btn{background:#0f172a;color:#e5e7eb;border:1px solid rgba(148,163,184,0.5);}
+.save-btn{
+    background:#f97316;
+    color:white;
+}
+.save-btn:hover{
+    background:#ea580c;
+    transform:translateY(-2px);
+}
+.more-btn{
+    background:#0f172a;
+    color:#e5e7eb;
+    border:1px solid rgba(148,163,184,0.5);
+}
+.more-btn:hover{
+    background:#1e293b;
+    transform:translateY(-2px);
+}
 
 .loading{font-size:14px;}
 
 /* Left menu */
 .menu-button{
     position:fixed;top:85px;left:20px;width:50px;height:50px;
-    background:linear-gradient(135deg,#667eea,#764ba2);
+    background:linear-gradient(135deg,#667eea,#667eea);
     border:none;border-radius:50%;
     cursor:pointer;box-shadow:0 8px 20px rgba(102,126,234,0.4);
     z-index:1000;font-size:24px;color:white;
@@ -417,13 +493,16 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
     box-shadow:0 20px 60px rgba(0,0,0,0.3);
     z-index:1000;display:none;overflow:hidden;
     border:1px solid rgba(255,255,255,0.2);
+    max-height: 85vh;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 .dropdown-menu.active{display:block;}
 
 /* Menu header */
 .dropdown-menu > div:first-child {
     padding:20px 16px;
-    background:linear-gradient(135deg,rgba(102,126,234,0.85),rgba(118,75,162,0.85));
+    background:linear-gradient(135deg,rgba(102,126,234,0.85),rgba(102,126,234,0.85));
     backdrop-filter:blur(10px);
     color:white;
     font-size:18px;
@@ -500,7 +579,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
 /* PropBot button */
 .propbot-button{
     position:fixed;bottom:30px;right:30px;width:70px;height:70px;
-    background:linear-gradient(135deg,#5b5fc7,#3b3f8f);
+    background:linear-gradient(135deg,#667eea,#667eea);
     border:none;border-radius:50%;cursor:pointer;
     box-shadow:0 8px 24px rgba(91,95,199,0.5);
     z-index:1100;font-size:36px;color:white;
@@ -593,10 +672,13 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
     background:rgba(255,255,255,0.35);
     transform:scale(1.1);
 }
-
 .chat-messages{
-    flex:1;overflow-y:auto;padding:18px 20px;
+    flex:1;
+    overflow-y:auto;
+    padding:18px 20px;
     background:linear-gradient(to bottom, #f8fafc, #ffffff);
+    display: flex;
+    flex-direction: column;
 }
 .message{margin-bottom:18px;display:flex;}
 .message.bot{justify-content:flex-start;}
@@ -705,10 +787,10 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
 
 /* Listings column */
 .listings-section{
-    width:33%;
+    width:32%;
     display:flex;
     flex-direction:column;
-    background:rgba(255, 255, 255, 0.95);
+    background:rgba(30,58,138,0.85);
     backdrop-filter:blur(15px);
     border-radius:18px;
     box-shadow:0 8px 24px rgba(0,0,0,0.15);
@@ -716,25 +798,24 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
     border:1px solid rgba(255,255,255,0.3);
 }
 .listings-header{
-    padding:16px 18px;
+    padding:18px 20px;
     background:linear-gradient(135deg,#667eea 0%,#06305d 100%);
-    border-bottom:2px solid #e0e7ff;
+    border-bottom:2px solid #96abef;
     display:flex;
+    align-items:center;
     justify-content:space-between;
-    align-items:baseline;
 }
 .listings-title{
-    font-size:16px;
-    font-weight:700;
-    color:#1e293b;
+    font-size:16px;font-weight:700;color:#1e293b;
 }
 .listings-count{
     font-size:12px;
-    color:#667eea;
+    color:rgba(255, 255, 255, 0.8);
     font-weight:600;
 }
+
 #propertyListings{
-    flex:1;overflow-y:auto;padding:12px 14px;
+    flex:1;overflow-y:auto;padding:18px 20px;
     background:linear-gradient(to bottom, #ffffff, #f8fafc);
 }
 .listing-card{

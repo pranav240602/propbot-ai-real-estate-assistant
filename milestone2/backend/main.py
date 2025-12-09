@@ -1,5 +1,5 @@
 """
-FastAPI Backend for PropBot with RAG + History + Analytics
+FastAPI Backend for PropBot with RAG + Real Data Parsing
 """
 
 from fastapi import FastAPI, HTTPException, Depends
@@ -13,6 +13,7 @@ from database.db import engine, Base, get_db
 from auth import routes as auth_routes
 from auth.models import User, ChatHistory
 from sqlalchemy.orm import Session
+import re
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
@@ -46,9 +47,59 @@ logger.info("✅ Database tables created")
 app.include_router(auth_routes.router)
 logger.info("✅ Authentication routes registered")
 
-# In-memory storage for backward compatibility
 search_history = []
 saved_properties = []
+
+
+def parse_property_document(doc_text):
+    """Parse: '104 A 104 PUTNAM ST, Boston, MA 02128. THREE-FAM DWELLING. 6. 3. 719,400'"""
+    try:
+        parts = doc_text.split('.')
+        
+        if len(parts) >= 5:
+            address = parts[0].strip()
+            prop_type = parts[1].strip()
+            beds = int(parts[2].strip()) if parts[2].strip().isdigit() else 2
+            baths = int(parts[3].strip()) if parts[3].strip().isdigit() else 1
+            price_str = parts[4].strip().replace(',', '')
+            price = float(price_str) if price_str.isdigit() else 650000.0
+            
+            return {
+                'address': address,
+                'type': prop_type,
+                'beds': beds,
+                'baths': baths,
+                'price': price
+            }
+    except Exception as e:
+        logger.warning(f"Parse error: {e}")
+    
+    return {
+        'address': 'Address not available',
+        'type': 'RESIDENTIAL',
+        'beds': 2,
+        'baths': 1,
+        'price': 650000.0
+    }
+
+
+def get_property_image(index):
+    """Return different images for variety"""
+    images = [
+        'https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=400&h=300&fit=crop',
+        'https://images.unsplash.com/photo-1580587871743-aaf2933a56d1?w=400&h=300&fit=crop',
+        'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=400&h=300&fit=crop',
+        'https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=400&h=300&fit=crop',
+        'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=400&h=300&fit=crop',
+        'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=400&h=300&fit=crop',
+        'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=400&h=300&fit=crop',
+        'https://images.unsplash.com/photo-1599809275671-b5942cabc7a2?w=400&h=300&fit=crop',
+        'https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=400&h=300&fit=crop',
+        'https://images.unsplash.com/photo-1600210492493-0946911123ea?w=400&h=300&fit=crop',
+        'https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=400&h=300&fit=crop',
+        'https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=400&h=300&fit=crop'
+    ]
+    return images[index % len(images)]
 
 
 class ChatRequest(BaseModel):
@@ -63,13 +114,14 @@ class PropertySearch(BaseModel):
     bathrooms: Optional[int] = None
     min_price: Optional[float] = None
     max_price: Optional[float] = None
-    user_id: Optional[int] = None  # Changed to int
+    user_id: Optional[int] = None
+    mode: Optional[str] = "buy"
 
 
 class SavePropertyRequest(BaseModel):
     property_id: str
     property_data: dict
-    user_id: Optional[int] = None  # Changed to int
+    user_id: Optional[int] = None
 
 
 @app.get("/")
@@ -97,7 +149,7 @@ def health_check():
 
 @app.post("/chat")
 async def chat(request: ChatRequest, db: Session = Depends(get_db)):
-    """Enhanced chat endpoint with database history storage"""
+    """Enhanced chat endpoint"""
     try:
         query = request.query
         user_id = request.user_id
@@ -118,8 +170,25 @@ async def chat(request: ChatRequest, db: Session = Depends(get_db)):
                     raise HTTPException(status_code=403, detail="Guest session expired")
         
         logger.info(f"Chat query: {query}")
-        result = rag.chat(query)
-        response_text = result.get("answer", "I couldn't find relevant information.")
+        
+        greetings = ['hi', 'hello', 'hey', 'hii', 'hiii', 'sup', 'yo']
+        query_lower = query.lower().strip()
+        query_words = query_lower.split()
+        
+        is_greeting = (
+            len(query_words) <= 3 and 
+            any(greeting in query_lower for greeting in greetings)
+        )
+        
+        if is_greeting:
+            response_text = "Hi there! 👋 How can I help you find your dream home in Boston today?"
+            sources = []
+            docs_retrieved = 0
+        else:
+            result = rag.chat(query)
+            response_text = result.get("answer", "I couldn't find relevant information.")
+            sources = result.get("sources", [])
+            docs_retrieved = result.get("documents_retrieved", 0)
         
         if user_id:
             chat_entry = ChatHistory(
@@ -132,8 +201,8 @@ async def chat(request: ChatRequest, db: Session = Depends(get_db)):
         
         return {
             "answer": response_text,
-            "sources": result.get("sources", []),
-            "documents_retrieved": result.get("documents_retrieved", 0),
+            "sources": sources,
+            "documents_retrieved": docs_retrieved,
             "timestamp": datetime.now().isoformat(),
             "user_id": user_id
         }
@@ -145,7 +214,7 @@ async def chat(request: ChatRequest, db: Session = Depends(get_db)):
 
 @app.get("/chat/history/{user_id}")
 async def get_chat_history_db(user_id: int, db: Session = Depends(get_db)):
-    """Get chat history for a specific user from database"""
+    """Get chat history"""
     user = db.query(User).filter(User.id == user_id).first()
     if not user:
         raise HTTPException(status_code=404, detail="User not found")
@@ -157,7 +226,8 @@ async def get_chat_history_db(user_id: int, db: Session = Depends(get_db)):
     return {
         "user_id": user_id,
         "is_guest": user.is_guest,
-        "history": [
+        "total_chats": len(history),
+        "chats": [
             {
                 "query": chat.query,
                 "response": chat.response,
@@ -278,8 +348,8 @@ def get_saved_properties(user_id: int):
         
         return {
             "user_id": user_id,
-            "total_saved": len(user_saved),
-            "properties": user_saved
+            "total": len(user_saved),
+            "saved_properties": user_saved
         }
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
@@ -384,7 +454,7 @@ def get_analytics_dashboard():
 
 @app.get("/sample-queries")
 def get_sample_queries():
-    """Get sample queries for users to try"""
+    """Get sample queries"""
     return {
         "queries": [
             "Show me 3 bedroom properties in Back Bay under $1M",
@@ -401,7 +471,7 @@ def get_sample_queries():
 
 @app.post("/predict-price")
 def predict_price(property: PropertySearch):
-    """Predict property price"""
+    """Predict property price (NO CONFIDENCE)"""
     try:
         logger.info(f"Price prediction for: {property}")
         
@@ -414,16 +484,16 @@ def predict_price(property: PropertySearch):
             base_price += property.bathrooms * 50000
         
         if property.neighborhood:
-            if property.neighborhood.lower() == "back bay":
+            hood_lower = property.neighborhood.lower()
+            if "back bay" in hood_lower:
                 base_price *= 1.5
-            elif property.neighborhood.lower() == "beacon hill":
+            elif "beacon hill" in hood_lower:
                 base_price *= 1.4
-            elif property.neighborhood.lower() == "south end":
+            elif "south end" in hood_lower:
                 base_price *= 1.3
         
         return {
             "predicted_price": round(base_price, 2),
-            "confidence": 0.87,
             "price_range": {
                 "min": round(base_price * 0.9, 2),
                 "max": round(base_price * 1.1, 2)
@@ -502,9 +572,48 @@ def get_property_recommendations(property_id: str, limit: int = 5):
         raise HTTPException(status_code=500, detail=str(e))
 
 
+@app.get("/properties/list")
+def list_all_properties():
+    """Return all properties"""
+    try:
+        logger.info("Fetching all properties from ChromaDB")
+        
+        all_results = rag.collection.get(
+            include=['documents', 'metadatas']
+        )
+        
+        properties = []
+        for i, doc in enumerate(all_results['documents'][:20]):
+            parsed = parse_property_document(doc)
+            
+            properties.append({
+                'property_id': all_results['ids'][i],
+                'address': parsed['address'],
+                'price': parsed['price'],
+                'bedrooms': parsed['beds'],
+                'bathrooms': parsed['baths'],
+                'beds': parsed['beds'],
+                'baths': parsed['baths'],
+                'sqft': int(parsed['beds'] * 600 + parsed['baths'] * 200),
+                'image': get_property_image(i),
+                'description': doc[:150],
+                'match_score': 0.80
+            })
+        
+        logger.info(f"✅ Returning {len(properties)} properties")
+        
+        return {
+            'properties': properties,
+            'total': len(properties)
+        }
+    except Exception as e:
+        logger.error(f"Properties list error: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+
 @app.post("/recommendations/by-features")
 def get_recommendations_by_features(search: PropertySearch):
-    """Get recommendations based on features"""
+    """Get recommendations - Trust ChromaDB semantic search for neighborhoods"""
     try:
         query_parts = []
         if search.bedrooms:
@@ -512,17 +621,55 @@ def get_recommendations_by_features(search: PropertySearch):
         if search.neighborhood:
             query_parts.append(f"in {search.neighborhood}")
         
-        query = " ".join(query_parts) if query_parts else "properties"
+        query = " ".join(query_parts) if query_parts else "properties in Boston"
         
-        result = rag.retrieve_documents(query, collection_name="properties", k=5)
+        logger.info(f"Recommendation query: {query}")
+        
+        result = rag.retrieve_documents(query, collection_name="properties", k=15)
         
         recommendations = []
-        for idx, doc in enumerate(result[:5]):
+        filtered_count = 0
+        
+        for idx, doc in enumerate(result):
+            doc_id = doc.get('id', f"PROP-{idx + 1}")
+            doc_text = doc.get('document', '')
+            distance = doc.get('distance', 0.3)
+            
+            parsed = parse_property_document(doc_text)
+            
+            # ✅ ONLY FILTER OUT 0 BEDS (commercial properties)
+            if parsed['beds'] == 0:
+                filtered_count += 1
+                continue
+            
+            # ✅ FILTER BY BEDROOMS IF SPECIFIED
+            if search.bedrooms and parsed['beds'] != search.bedrooms:
+                filtered_count += 1
+                continue
+            
+            # ✅ FILTER BY BATHROOMS IF SPECIFIED
+            if search.bathrooms and parsed['baths'] != search.bathrooms:
+                filtered_count += 1
+                continue
+            
             recommendations.append({
-                "property_id": f"PROP-{idx + 1}",
-                "description": doc['document'][:300],
-                "match_score": round(1 - doc['distance'], 3)
+                'property_id': doc_id,
+                'address': parsed['address'],
+                'price': parsed['price'],
+                'bedrooms': parsed['beds'],
+                'bathrooms': parsed['baths'],
+                'beds': parsed['beds'],
+                'baths': parsed['baths'],
+                'sqft': int(parsed['beds'] * 600 + parsed['baths'] * 200),
+                'image': get_property_image(len(recommendations)),
+                'description': doc_text[:200] if len(doc_text) > 200 else doc_text,
+                'match_score': round(max(0, 1 - distance), 3)
             })
+            
+            if len(recommendations) >= 12:
+                break
+        
+        logger.info(f"✅ Returning {len(recommendations)} recommendations (filtered out {filtered_count})")
         
         return {
             "query": query,
@@ -531,12 +678,18 @@ def get_recommendations_by_features(search: PropertySearch):
         }
     
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        logger.error(f"Recommendations error: {e}")
+        return {
+            "query": query if 'query' in locals() else "properties",
+            "recommendations": [],
+            "total_found": 0,
+            "error": str(e)
+        }
 
 
 @app.post("/commute-time")
 def calculate_commute_time(property_address: str, destination: str):
-    """Calculate commute time from property to destination"""
+    """Calculate commute time"""
     try:
         logger.info(f"Calculating commute: {property_address} -> {destination}")
         
@@ -548,7 +701,9 @@ def calculate_commute_time(property_address: str, destination: str):
             "seaport": {"name": "Seaport District", "distance_miles": 4.0},
             "cambridge": {"name": "Cambridge/MIT", "distance_miles": 4.5},
             "harvard": {"name": "Harvard Square", "distance_miles": 5.0},
-            "airport": {"name": "Logan Airport", "distance_miles": 5.5}
+            "airport": {"name": "Logan Airport", "distance_miles": 5.5},
+            "mit": {"name": "MIT", "distance_miles": 4.5},
+            "logan": {"name": "Logan Airport", "distance_miles": 5.5}
         }
         
         dest_key = destination.lower()
