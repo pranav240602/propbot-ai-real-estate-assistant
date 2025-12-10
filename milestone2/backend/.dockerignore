@@ -1,0 +1,17 @@
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+venv/
+*.so
+.env
+.git
+.gitignore
+*.md
+gcloud.tar.gz
+google-cloud-sdk/
+install.sh
+main_backup.py
+main_backup2.py
+main.py.backup
